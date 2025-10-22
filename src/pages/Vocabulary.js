@@ -60,8 +60,9 @@ const Vocabulary = () => {
 
   const handleNextQuestion = () => {
     if (currentQuestionIndex < vocabularyQuestions.length - 1) {
-      setCurrentQuestionIndex(prev => prev + 1);
-      setSelectedAnswer(answers[currentQuestionIndex + 1] || null);
+      const newIndex = currentQuestionIndex + 1;
+      setCurrentQuestionIndex(newIndex);
+      setSelectedAnswer(answers[newIndex] || null);
       setShowResult(false);
     } else {
       // Vocabulary practice completed
@@ -80,8 +81,9 @@ const Vocabulary = () => {
 
   const handlePreviousQuestion = () => {
     if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex(prev => prev - 1);
-      setSelectedAnswer(answers[currentQuestionIndex - 1] || null);
+      const newIndex = currentQuestionIndex - 1;
+      setCurrentQuestionIndex(newIndex);
+      setSelectedAnswer(answers[newIndex] || null);
       setShowResult(false);
     }
   };
@@ -94,6 +96,36 @@ const Vocabulary = () => {
     setTimeSpent(0);
     setAnswers({});
     setStartTime(Date.now());
+  };
+
+  // Group navigation functions
+  const getGroupInfo = (groupNumber) => {
+    const startIndex = (groupNumber - 1) * 20;
+    const endIndex = Math.min(startIndex + 19, vocabularyQuestions.length - 1);
+    return {
+      startIndex,
+      endIndex,
+      startQuestion: startIndex + 1,
+      endQuestion: endIndex + 1,
+      totalQuestions: endIndex - startIndex + 1
+    };
+  };
+
+  const getCurrentGroup = () => {
+    return Math.floor(currentQuestionIndex / 20) + 1;
+  };
+
+  const handleGroupSelect = (groupNumber) => {
+    const groupInfo = getGroupInfo(groupNumber);
+    setCurrentQuestionIndex(groupInfo.startIndex);
+    setSelectedAnswer(answers[groupInfo.startIndex] || null);
+    setShowResult(false);
+    setStartTime(Date.now());
+  };
+
+  const isInCurrentGroup = (groupNumber) => {
+    const groupInfo = getGroupInfo(groupNumber);
+    return currentQuestionIndex >= groupInfo.startIndex && currentQuestionIndex <= groupInfo.endIndex;
   };
 
   const formatTime = (seconds) => {
@@ -134,9 +166,11 @@ const Vocabulary = () => {
               <div className="text-xs md:text-sm text-secondary-600">
                 {formatTime(timeSpent)}
               </div>
-              <div className="text-xs md:text-sm text-secondary-600">
-                {currentQuestionIndex + 1} من {vocabularyQuestions.length}
-              </div>
+            <div className="text-xs md:text-sm text-secondary-600">
+              {currentQuestionIndex + 1} من {vocabularyQuestions.length}
+              <span className="text-secondary-500 mr-1">•</span>
+              <span>المجموعة {getCurrentGroup()}</span>
+            </div>
             </div>
           </div>
         </div>
@@ -152,6 +186,39 @@ const Vocabulary = () => {
           isCorrect={selectedAnswer === (currentQuestion.answer ? 
             currentQuestion.choices?.indexOf(currentQuestion.answer) : -1)}
         />
+
+        {/* Group Navigation */}
+        <div className="mt-6 mb-8">
+          <h3 className="text-sm md:text-base font-medium text-secondary-700 mb-3 text-center">
+            اختر مجموعة المفردات
+          </h3>
+          <div className="flex flex-wrap justify-center gap-2 md:gap-3 overflow-x-auto pb-2">
+            {Array.from({ length: 10 }, (_, i) => {
+              const groupNumber = i + 1;
+              const groupInfo = getGroupInfo(groupNumber);
+              const isActive = isInCurrentGroup(groupNumber);
+              
+              return (
+                <button
+                  key={groupNumber}
+                  onClick={() => handleGroupSelect(groupNumber)}
+                  className={`px-3 md:px-4 py-2 md:py-3 rounded-lg font-medium text-xs md:text-sm transition-all duration-200 whitespace-nowrap ${
+                    isActive
+                      ? 'bg-primary-500 text-white shadow-lg transform scale-105'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md'
+                  }`}
+                >
+                  <div className="text-center">
+                    <div className="font-semibold">المجموعة {groupNumber}</div>
+                    <div className="text-xs opacity-75">
+                      {groupInfo.startQuestion}-{groupInfo.endQuestion}
+                    </div>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
 
         {/* Navigation */}
         <div className="flex flex-col md:flex-row justify-between items-center mt-6 md:mt-8 gap-3 md:gap-0">
