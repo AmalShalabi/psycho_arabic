@@ -23,10 +23,10 @@
     box-sizing: border-box;
   }
 
-  /* Mobile optimizations */
+  /* Mobile optimizations - Increased font sizes for better readability */
   @media (max-width: 768px) {
     html {
-      font-size: 14px;
+      font-size: 16px; /* Increased from 14px */
     }
     
     body {
@@ -37,22 +37,22 @@
 
   @media (max-width: 480px) {
     html {
-      font-size: 13px;
+      font-size: 15px; /* Increased from 13px */
     }
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg;
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105;
   }
   
   .btn-secondary {
-    @apply bg-secondary-100 hover:bg-secondary-200 text-secondary-800 font-medium py-3 px-6 rounded-lg transition-colors duration-200 border border-secondary-300;
+    @apply bg-secondary-100 hover:bg-secondary-200 text-secondary-800 font-medium py-3 px-6 rounded-xl transition-all duration-300 border border-secondary-300 shadow-md hover:shadow-lg hover:scale-105;
   }
   
   .card {
-    @apply bg-white rounded-xl shadow-lg p-6 border border-gray-100;
+    @apply bg-white rounded-2xl shadow-xl p-6 border border-gray-100 hover:shadow-2xl transition-all duration-300;
   }
   
   .input-field {
@@ -60,47 +60,47 @@
   }
   
   .question-option {
-    @apply w-full p-4 text-right border border-gray-200 rounded-lg hover:border-primary-300 hover:bg-primary-50 transition-all duration-200 cursor-pointer;
+    @apply w-full p-5 text-right border-2 border-gray-200 rounded-xl hover:border-primary-300 hover:bg-primary-50 transition-all duration-300 cursor-pointer shadow-sm hover:shadow-md;
   }
   
   .question-option.selected {
-    @apply border-primary-500 bg-primary-100 text-primary-800;
+    @apply border-primary-500 bg-primary-100 text-primary-800 shadow-md;
   }
   
   .question-option.correct {
-    @apply border-green-500 bg-green-100 text-green-800;
+    @apply border-green-500 bg-green-100 text-green-800 shadow-md;
   }
   
   .question-option.incorrect {
-    @apply border-red-500 bg-red-100 text-red-800;
+    @apply border-red-500 bg-red-100 text-red-800 shadow-md;
   }
 
-  /* Mobile responsive components */
+  /* Mobile responsive components - Enhanced for better readability */
   @media (max-width: 768px) {
     .btn-primary, .btn-secondary {
-      @apply py-2 px-4 text-sm;
+      @apply py-3 px-5 text-base; /* Increased from text-sm */
     }
     
     .card {
-      @apply p-4 rounded-lg;
+      @apply p-5 rounded-xl; /* Increased padding and rounded corners */
     }
     
     .question-option {
-      @apply p-3 text-sm;
+      @apply p-4 text-base; /* Increased from text-sm and p-3 */
     }
   }
 
   @media (max-width: 480px) {
     .btn-primary, .btn-secondary {
-      @apply py-2 px-3 text-xs;
+      @apply py-3 px-4 text-sm; /* Increased from text-xs */
     }
     
     .card {
-      @apply p-3 rounded-md;
+      @apply p-4 rounded-lg; /* Increased padding */
     }
     
     .question-option {
-      @apply p-2 text-xs;
+      @apply p-3 text-sm; /* Increased from text-xs and p-2 */
     }
   }
 }
