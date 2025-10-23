@@ -150,25 +150,25 @@ const Vocabulary = () => {
   const isFirstQuestion = currentQuestionIndex === 0;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-50">
+    <div className="single-screen-layout bg-gradient-to-br from-primary-50 to-secondary-50">
       {/* Header */}
-      <header className="bg-white shadow-lg border-b border-gray-100 sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      <header className="bg-white shadow-lg border-b border-gray-100 sticky top-0 z-10 compact-header">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
           <div className="flex items-center justify-between">
             <button
               onClick={() => navigate('/')}
-              className="text-secondary-600 hover:text-secondary-800 transition-colors p-2 rounded-lg hover:bg-gray-100"
+              className="text-secondary-600 hover:text-secondary-800 transition-colors p-1 rounded-lg hover:bg-gray-100"
             >
-              <ArrowLeft className="w-6 h-6 md:w-7 md:h-7" />
+              <ArrowLeft className="w-5 h-5 md:w-6 md:h-6" />
             </button>
             
-            <div className="flex items-center space-x-3 md:space-x-4 space-x-reverse">
-              <div className="text-sm md:text-base text-secondary-600 font-medium">
+            <div className="flex items-center space-x-2 md:space-x-3 space-x-reverse">
+              <div className="text-xs md:text-sm text-secondary-600 font-medium">
                 {formatTime(timeSpent)}
               </div>
-            <div className="text-sm md:text-base text-secondary-600 font-medium">
+            <div className="text-xs md:text-sm text-secondary-600 font-medium">
               {currentQuestionIndex + 1} من {vocabularyQuestions.length}
-              <span className="text-secondary-500 mr-2">•</span>
+              <span className="text-secondary-500 mr-1">•</span>
               <span>المجموعة {getCurrentGroup()}</span>
             </div>
             </div>
@@ -177,7 +177,7 @@ const Vocabulary = () => {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 compact-main">
         <QuestionCard
           question={currentQuestion}
           selectedAnswer={selectedAnswer}
@@ -188,11 +188,11 @@ const Vocabulary = () => {
         />
 
         {/* Group Navigation */}
-        <div className="mt-8 mb-10">
-          <h3 className="text-base md:text-lg font-semibold text-secondary-700 mb-4 text-center">
+        <div className="compact-groups">
+          <h3 className="text-sm md:text-base font-semibold text-secondary-700 mb-2 text-center">
             اختر مجموعة المفردات
           </h3>
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4 overflow-x-auto pb-3">
+          <div className="flex flex-wrap justify-center gap-1 md:gap-2 overflow-x-auto pb-1">
             {Array.from({ length: 10 }, (_, i) => {
               const groupNumber = i + 1;
               const groupInfo = getGroupInfo(groupNumber);
@@ -202,15 +202,15 @@ const Vocabulary = () => {
                 <button
                   key={groupNumber}
                   onClick={() => handleGroupSelect(groupNumber)}
-                  className={`px-4 md:px-5 py-3 md:py-4 rounded-xl font-medium text-sm md:text-base transition-all duration-300 whitespace-nowrap shadow-md hover:shadow-lg ${
+                  className={`px-2 md:px-3 py-1 md:py-2 rounded-lg font-medium text-xs md:text-sm transition-all duration-300 whitespace-nowrap shadow-sm hover:shadow-md ${
                     isActive
-                      ? 'bg-primary-500 text-white shadow-xl transform scale-105 border-2 border-primary-600'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-lg border-2 border-transparent hover:border-gray-300'
+                      ? 'bg-primary-500 text-white shadow-md transform scale-105 border border-primary-600'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:shadow-md border border-transparent hover:border-gray-300'
                   }`}
                 >
                   <div className="text-center">
-                    <div className="font-bold text-base md:text-lg">المجموعة {groupNumber}</div>
-                    <div className="text-xs md:text-sm opacity-75 mt-1">
+                    <div className="font-bold text-xs md:text-sm">{groupNumber}</div>
+                    <div className="text-xs opacity-75">
                       {groupInfo.startQuestion}-{groupInfo.endQuestion}
                     </div>
                   </div>
@@ -221,32 +221,32 @@ const Vocabulary = () => {
         </div>
 
         {/* Navigation */}
-        <div className="flex flex-col md:flex-row justify-between items-center mt-8 md:mt-10 gap-4 md:gap-0">
-          <div className="flex items-center space-x-3 space-x-reverse">
+        <div className="compact-navigation flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
+          <div className="flex items-center space-x-2 space-x-reverse">
             <button
               onClick={handlePreviousQuestion}
               disabled={isFirstQuestion}
-              className={`flex items-center space-x-2 space-x-reverse px-5 md:px-6 py-3 md:py-4 rounded-xl font-medium transition-all text-base md:text-lg shadow-md hover:shadow-lg ${
+              className={`flex items-center space-x-1 space-x-reverse px-3 md:px-4 py-2 md:py-3 rounded-lg font-medium transition-all text-sm md:text-base shadow-sm hover:shadow-md ${
                 isFirstQuestion
                   ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                   : 'bg-white text-secondary-700 hover:bg-gray-50 hover:scale-105'
               }`}
             >
-              <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
+              <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
               <span>السابق</span>
             </button>
 
             <button
               onClick={handleRestart}
-              className="flex items-center space-x-2 space-x-reverse px-5 md:px-6 py-3 md:py-4 rounded-xl font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all text-base md:text-lg shadow-md hover:shadow-lg hover:scale-105"
+              className="flex items-center space-x-1 space-x-reverse px-3 md:px-4 py-2 md:py-3 rounded-lg font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all text-sm md:text-base shadow-sm hover:shadow-md hover:scale-105"
             >
-              <RotateCcw className="w-5 h-5 md:w-6 md:h-6" />
+              <RotateCcw className="w-4 h-4 md:w-5 md:h-5" />
               <span>إعادة تشغيل</span>
             </button>
           </div>
 
-          <div className="flex items-center space-x-3 space-x-reverse text-sm md:text-base text-secondary-600 font-medium">
-            <Clock className="w-4 h-4 md:w-5 md:h-5" />
+          <div className="flex items-center space-x-2 space-x-reverse text-xs md:text-sm text-secondary-600 font-medium">
+            <Clock className="w-3 h-3 md:w-4 md:h-4" />
             <span>{formatTime(timeSpent)}</span>
             <span className="text-secondary-500">•</span>
             <span>النتيجة: {score.correct} من {score.total}</span>
@@ -255,10 +255,10 @@ const Vocabulary = () => {
           {showResult && (
             <button
               onClick={handleNextQuestion}
-              className="btn-primary text-base md:text-lg px-6 md:px-8 py-3 md:py-4 flex items-center space-x-2 space-x-reverse"
+              className="btn-primary text-sm md:text-base px-4 md:px-6 py-2 md:py-3 flex items-center space-x-1 space-x-reverse"
             >
               <span>{isLastQuestion ? 'إنهاء التدريب' : 'التالي'}</span>
-              <ArrowLeft className="w-5 h-5 md:w-6 md:h-6" />
+              <ArrowLeft className="w-4 h-4 md:w-5 md:h-5" />
             </button>
           )}
         </div>

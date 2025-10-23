@@ -72,9 +72,9 @@ const QuestionCard = ({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
-      className="card max-w-4xl mx-auto"
+      className="card max-w-4xl mx-auto compact-question"
     >
-      <div className="mb-6">
+      <div className="mb-3 md:mb-4">
         <div className="flex items-center justify-between mb-3 md:mb-4">
           <span className="text-xs md:text-sm font-medium text-secondary-600 bg-secondary-100 px-2 md:px-3 py-1 rounded-full">
             {question.section === 'quantitative' ? 'كمي' : 
@@ -87,9 +87,9 @@ const QuestionCard = ({
           </span>
         </div>
         
-        <div className="flex items-start justify-between gap-3 md:gap-4">
+        <div className="flex items-start justify-between gap-2 md:gap-3">
           <h2 
-            className="text-xl md:text-2xl font-bold text-secondary-800 leading-relaxed flex-1 cursor-pointer hover:text-primary-600 transition-colors"
+            className="text-lg md:text-xl font-bold text-secondary-800 leading-relaxed flex-1 cursor-pointer hover:text-primary-600 transition-colors"
             onClick={handleAudioPlay}
             title="اضغط للاستماع للنطق"
           >
@@ -99,20 +99,20 @@ const QuestionCard = ({
             <button
               onClick={handleAudioPlay}
               disabled={isPlaying}
-              className="flex-shrink-0 p-3 bg-primary-100 hover:bg-primary-200 rounded-xl transition-all duration-300 disabled:opacity-50 shadow-md hover:shadow-lg hover:scale-105"
+              className="flex-shrink-0 p-2 bg-primary-100 hover:bg-primary-200 rounded-lg transition-all duration-300 disabled:opacity-50 shadow-sm hover:shadow-md hover:scale-105"
               title="استمع للنطق"
             >
               {isPlaying ? (
-                <VolumeX className="w-5 h-5 md:w-6 md:h-6 text-primary-600" />
+                <VolumeX className="w-4 h-4 md:w-5 md:h-5 text-primary-600" />
               ) : (
-                <Volume2 className="w-5 h-5 md:w-6 md:h-6 text-primary-600" />
+                <Volume2 className="w-4 h-4 md:w-5 md:h-5 text-primary-600" />
               )}
             </button>
           )}
         </div>
       </div>
 
-      <div className="space-y-3 md:space-y-4">
+      <div className="compact-options">
         {(question.options || question.choices || []).map((option, index) => (
           <motion.button
             key={index}
@@ -123,11 +123,11 @@ const QuestionCard = ({
             className={getOptionClass(index)}
             disabled={showResult}
           >
-            <div className="flex items-center justify-between gap-3">
-              <span className="text-base md:text-lg font-medium text-right flex-1">{option}</span>
-              <div className="w-6 h-6 md:w-7 md:h-7 rounded-full border-2 border-gray-300 flex items-center justify-center flex-shrink-0">
+            <div className="flex items-center justify-between gap-2">
+              <span className="text-sm md:text-base font-medium text-right flex-1">{option}</span>
+              <div className="w-5 h-5 md:w-6 md:h-6 rounded-full border-2 border-gray-300 flex items-center justify-center flex-shrink-0">
                 {selectedAnswer === index && (
-                  <div className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-primary-600"></div>
+                  <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-primary-600"></div>
                 )}
               </div>
             </div>

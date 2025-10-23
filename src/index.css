@@ -52,7 +52,7 @@
   }
   
   .card {
-    @apply bg-white rounded-2xl shadow-xl p-6 border border-gray-100 hover:shadow-2xl transition-all duration-300;
+    @apply bg-white rounded-2xl shadow-xl p-4 md:p-6 border border-gray-100 hover:shadow-2xl transition-all duration-300;
   }
   
   .input-field {
@@ -60,7 +60,7 @@
   }
   
   .question-option {
-    @apply w-full p-5 text-right border-2 border-gray-200 rounded-xl hover:border-primary-300 hover:bg-primary-50 transition-all duration-300 cursor-pointer shadow-sm hover:shadow-md;
+    @apply w-full p-3 md:p-4 text-right border-2 border-gray-200 rounded-xl hover:border-primary-300 hover:bg-primary-50 transition-all duration-300 cursor-pointer shadow-sm hover:shadow-md;
   }
   
   .question-option.selected {
@@ -75,32 +75,61 @@
     @apply border-red-500 bg-red-100 text-red-800 shadow-md;
   }
 
-  /* Mobile responsive components - Enhanced for better readability */
+  /* Single-screen layout optimization */
+  .single-screen-layout {
+    @apply min-h-screen flex flex-col;
+  }
+
+  .compact-header {
+    @apply py-2 md:py-3;
+  }
+
+  .compact-main {
+    @apply py-2 md:py-4 flex-1 flex flex-col;
+  }
+
+  .compact-question {
+    @apply mb-2 md:mb-3;
+  }
+
+  .compact-options {
+    @apply space-y-1 md:space-y-2;
+  }
+
+  .compact-navigation {
+    @apply mt-2 md:mt-3;
+  }
+
+  .compact-groups {
+    @apply mt-2 md:mt-3 mb-2 md:mb-3;
+  }
+
+  /* Mobile responsive components - Optimized for single-screen layout */
   @media (max-width: 768px) {
     .btn-primary, .btn-secondary {
-      @apply py-3 px-5 text-base; /* Increased from text-sm */
+      @apply py-2 px-3 text-sm; /* Compact for mobile */
     }
     
     .card {
-      @apply p-5 rounded-xl; /* Increased padding and rounded corners */
+      @apply p-3 rounded-lg; /* Reduced padding for mobile */
     }
     
     .question-option {
-      @apply p-4 text-base; /* Increased from text-sm and p-3 */
+      @apply p-2 text-sm; /* Compact options for mobile */
     }
   }
 
   @media (max-width: 480px) {
     .btn-primary, .btn-secondary {
-      @apply py-3 px-4 text-sm; /* Increased from text-xs */
+      @apply py-2 px-3 text-xs; /* Very compact for small screens */
     }
     
     .card {
-      @apply p-4 rounded-lg; /* Increased padding */
+      @apply p-2 rounded-md; /* Minimal padding for small screens */
     }
     
     .question-option {
-      @apply p-3 text-sm; /* Increased from text-xs and p-2 */
+      @apply p-2 text-xs; /* Very compact for small screens */
     }
   }
 }
