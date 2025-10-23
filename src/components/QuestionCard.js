@@ -10,6 +10,7 @@ const QuestionCard = ({
   isCorrect = null 
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [speechSupported, setSpeechSupported] = useState(true);
 
   const handleOptionClick = (optionIndex) => {
     if (!showResult) {
@@ -17,12 +18,32 @@ const QuestionCard = ({
     }
   };
 
+  const speakWord = (word) => {
+    if ('speechSynthesis' in window) {
+      // Stop any current speech
+      speechSynthesis.cancel();
+      
+      const utterance = new SpeechSynthesisUtterance(word);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.8; // Slightly slower for better pronunciation
+      utterance.pitch = 1;
+      utterance.volume = 1;
+      
+      utterance.onstart = () => setIsPlaying(true);
+      utterance.onend = () => setIsPlaying(false);
+      utterance.onerror = () => setIsPlaying(false);
+      
+      speechSynthesis.speak(utterance);
+    } else {
+      setSpeechSupported(false);
+      // Show toast message
+      setTimeout(() => setSpeechSupported(true), 3000);
+    }
+  };
+
   const handleAudioPlay = () => {
-    if (question.audio) {
-      const audio = new Audio(question.audio);
-      audio.play();
-      setIsPlaying(true);
-      audio.onended = () => setIsPlaying(false);
+    if (question.question) {
+      speakWord(question.question);
     }
   };
 
@@ -67,10 +88,14 @@ const QuestionCard = ({
         </div>
         
         <div className="flex items-start justify-between gap-2 md:gap-4">
-          <h2 className="text-lg md:text-xl font-semibold text-secondary-800 leading-relaxed flex-1">
+          <h2 
+            className="text-lg md:text-xl font-semibold text-secondary-800 leading-relaxed flex-1 cursor-pointer hover:text-primary-600 transition-colors"
+            onClick={handleAudioPlay}
+            title="اضغط للاستماع للنطق"
+          >
             {question.question}
           </h2>
-          {question.audio && (
+          {(question.section === 'vocabulary' || question.audio) && (
             <button
               onClick={handleAudioPlay}
               disabled={isPlaying}
@@ -119,6 +144,18 @@ const QuestionCard = ({
         >
           <h4 className="font-semibold text-blue-800 mb-2 text-sm md:text-base">التفسير:</h4>
           <p className="text-blue-700 leading-relaxed text-sm md:text-base">{question.explanation}</p>
+        </motion.div>
+      )}
+
+      {/* Toast message for unsupported speech synthesis */}
+      {!speechSupported && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg z-50"
+        >
+          <p className="text-sm font-medium">Voice not supported on this device.</p>
         </motion.div>
       )}
     </motion.div>
