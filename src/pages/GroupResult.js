@@ -80,25 +80,24 @@ const GroupResult = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-50 flex flex-col">
-      <div className="flex-1 flex flex-col justify-center max-w-4xl mx-auto px-2 sm:px-4 lg:px-6 py-2 sm:py-4 lg:py-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="bg-white rounded-lg sm:rounded-2xl shadow-xl p-2 sm:p-4 md:p-6 lg:p-8 flex flex-col justify-between min-h-[90vh] max-h-[98vh]"
-        >
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col justify-center items-center h-screen max-h-[100vh] p-3 sm:p-6 text-center space-y-4 sm:space-y-6 bg-white rounded-lg sm:rounded-2xl shadow-xl mx-2 sm:mx-4 md:mx-6 lg:mx-8"
+      >
           {/* Header */}
-          <div className="text-center mb-2 sm:mb-4 md:mb-6">
+          <div className="text-center">
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-1 sm:mb-3 md:mb-4"
+              className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-2"
             >
               <Trophy className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 text-primary-600" />
             </motion.div>
             
-            <h1 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-secondary-800 mb-1 sm:mb-2">
+            <h1 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-secondary-800 mb-1">
               نتائج المجموعة {groupNumber}
             </h1>
             <p className="text-xs sm:text-base md:text-lg text-secondary-600">
@@ -107,17 +106,17 @@ const GroupResult = () => {
           </div>
 
           {/* Score Display */}
-          <div className="text-center mb-2 sm:mb-6 md:mb-8">
+          <div className="text-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className={`text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold ${getScoreColor(percentage)} mb-1 sm:mb-3 md:mb-4`}
+              className={`text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold ${getScoreColor(percentage)} mb-2`}
             >
               {percentage}%
             </motion.div>
             
-            <div className="text-sm sm:text-lg md:text-xl lg:text-2xl font-semibold text-secondary-700 mb-1 sm:mb-2">
+            <div className="text-sm sm:text-lg md:text-xl lg:text-2xl font-semibold text-secondary-700 mb-1">
               {score.correct} من {totalQuestions} إجابة صحيحة
             </div>
             
@@ -125,16 +124,16 @@ const GroupResult = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-xs sm:text-base md:text-lg text-secondary-600 mb-1 sm:mb-3 md:mb-4"
+              className="text-xs sm:text-base md:text-lg text-secondary-600"
             >
               {getMotivationalMessage(percentage)}
             </motion.p>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-1 sm:gap-3 md:gap-4 mb-2 sm:mb-6 md:mb-8">
+          <div className="grid grid-cols-3 gap-1 sm:gap-3 md:gap-4">
             <div className="bg-blue-50 rounded-lg sm:rounded-xl p-1 sm:p-3 md:p-4 text-center">
-              <Target className="w-3 h-3 sm:w-5 sm:h-5 md:w-6 md:h-6 text-blue-600 mx-auto mb-0 sm:mb-2" />
+              <Target className="w-3 h-3 sm:w-5 sm:h-5 md:w-6 md:h-6 text-blue-600 mx-auto mb-1" />
               <div className="text-sm sm:text-xl md:text-2xl font-bold text-blue-600">{score.correct}</div>
               <div className="text-xs sm:text-sm text-blue-700">صحيحة</div>
             </div>
@@ -145,14 +144,14 @@ const GroupResult = () => {
             </div>
             
             <div className="bg-green-50 rounded-lg sm:rounded-xl p-1 sm:p-3 md:p-4 text-center">
-              <Clock className="w-3 h-3 sm:w-5 sm:h-5 md:w-6 md:h-6 text-green-600 mx-auto mb-0 sm:mb-2" />
+              <Clock className="w-3 h-3 sm:w-5 sm:h-5 md:w-6 md:h-6 text-green-600 mx-auto mb-1" />
               <div className="text-sm sm:text-xl md:text-2xl font-bold text-green-600">{formatTime(timeSpent)}</div>
               <div className="text-xs sm:text-sm text-green-700">الوقت</div>
             </div>
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-1 sm:gap-3 md:gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-1 sm:gap-3 md:gap-4 justify-center w-full">
             {/* Previous Group Button */}
             {groupNumber > 1 && (
               <motion.button
@@ -214,8 +213,7 @@ const GroupResult = () => {
               <span>الرئيسية</span>
             </motion.button>
           </div>
-        </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 };
