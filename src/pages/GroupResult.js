@@ -1,12 +1,17 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { RotateCcw, ArrowRight, Home, Trophy, Target, Clock } from 'lucide-react';
+import { RotateCcw, ArrowRight, ArrowLeft, Home, Trophy, Target, Clock } from 'lucide-react';
 
 const GroupResult = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { groupNumber, groupRange, score, totalQuestions, timeSpent } = location.state || {};
+
+  // RTL/LTR detection for proper icon direction
+  const isRTL = document.dir === 'rtl' || document.documentElement.dir === 'rtl';
+  const nextIcon = isRTL ? <ArrowLeft className="w-5 h-5" /> : <ArrowRight className="w-5 h-5" />;
+  const prevIcon = isRTL ? <ArrowRight className="w-5 h-5" /> : <ArrowLeft className="w-5 h-5" />;
 
   const getMotivationalMessage = (percentage) => {
     if (percentage >= 90) return "ممتاز! أداء رائع جداً! 🎉";
@@ -32,6 +37,15 @@ const GroupResult = () => {
 
   const handleRetryGroup = () => {
     navigate(`/vocabulary?startGroup=${groupNumber}&startQuestion=${groupRange.start}`);
+  };
+
+  const handlePreviousGroup = () => {
+    const prevGroup = groupNumber - 1;
+    const prevGroupStart = (prevGroup - 1) * 20 + 1;
+    
+    if (prevGroup >= 1) {
+      navigate(`/vocabulary?startGroup=${prevGroup}&startQuestion=${prevGroupStart}`);
+    }
   };
 
   const handleNextGroup = () => {
@@ -139,6 +153,20 @@ const GroupResult = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-col md:flex-row gap-3 md:gap-4 justify-center">
+            {/* Previous Group Button */}
+            {groupNumber > 1 && (
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={handlePreviousGroup}
+                className="flex items-center justify-center space-x-2 space-x-reverse bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-xl transition-colors duration-200 shadow-lg hover:shadow-xl"
+              >
+                {prevIcon}
+                <span>المجموعة السابقة</span>
+              </motion.button>
+            )}
+
+            {/* Retry Group Button */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -149,6 +177,7 @@ const GroupResult = () => {
               <span>إعادة المجموعة</span>
             </motion.button>
 
+            {/* Next Group Button */}
             {!isLastGroup && (
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -156,11 +185,12 @@ const GroupResult = () => {
                 onClick={handleNextGroup}
                 className="flex items-center justify-center space-x-2 space-x-reverse bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-xl transition-colors duration-200 shadow-lg hover:shadow-xl"
               >
-                <ArrowRight className="w-5 h-5" />
+                {nextIcon}
                 <span>المجموعة التالية</span>
               </motion.button>
             )}
 
+            {/* Final Results Button */}
             {isLastGroup && (
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -173,6 +203,7 @@ const GroupResult = () => {
               </motion.button>
             )}
 
+            {/* Home Button */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
