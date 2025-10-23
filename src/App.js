@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Exam from './pages/Exam';
 import Practice from './pages/Practice';
 import Vocabulary from './pages/Vocabulary';
+import GroupResult from './pages/GroupResult';
 import Results from './pages/Results';
 import Progress from './pages/Progress';
 import Settings from './pages/Settings';
@@ -24,6 +25,7 @@ function App() {
             <Route path="/exam" element={<Exam />} />
             <Route path="/practice" element={<Practice />} />
             <Route path="/vocabulary" element={<Vocabulary />} />
+            <Route path="/group-result" element={<GroupResult />} />
             <Route path="/results" element={<Results />} />
             <Route path="/progress" element={<Progress />} />
             <Route path="/settings" element={<Settings />} />

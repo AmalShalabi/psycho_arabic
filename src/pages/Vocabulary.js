@@ -21,6 +21,23 @@ const Vocabulary = () => {
     const vocabQuestions = [...questionsData.vocabulary].sort((a, b) => a.id - b.id);
     setVocabularyQuestions(vocabQuestions);
     setStartTime(Date.now());
+    
+    // Handle navigation from GroupResult page
+    const location = window.location;
+    const urlParams = new URLSearchParams(location.search);
+    const startGroup = urlParams.get('startGroup');
+    const startQuestion = urlParams.get('startQuestion');
+    
+    if (startGroup && startQuestion) {
+      const questionIndex = parseInt(startQuestion) - 1; // Convert to 0-based index
+      setCurrentQuestionIndex(questionIndex);
+      setSelectedAnswer(null);
+      setShowResult(false);
+      setScore({ correct: 0, total: 0 });
+      setTimeSpent(0);
+      setAnswers({});
+      setStartTime(Date.now());
+    }
   }, []);
 
   // Timer effect
@@ -59,13 +76,51 @@ const Vocabulary = () => {
   };
 
   const handleNextQuestion = () => {
-    if (currentQuestionIndex < vocabularyQuestions.length - 1) {
+    const currentGroup = getCurrentGroup();
+    const groupInfo = getGroupInfo(currentGroup);
+    const isEndOfGroup = currentQuestionIndex === groupInfo.endIndex;
+    
+    if (isEndOfGroup) {
+      // Calculate score for current group only
+      const groupAnswers = {};
+      for (let i = groupInfo.startIndex; i <= groupInfo.endIndex; i++) {
+        if (answers[i] !== undefined) {
+          groupAnswers[i] = answers[i];
+        }
+      }
+      
+      const groupScore = {
+        correct: Object.entries(groupAnswers).filter(([index, answer]) => {
+          const question = vocabularyQuestions[parseInt(index)];
+          const correctIndex = question.answer ? 
+            question.choices?.indexOf(question.answer) : -1;
+          return answer === correctIndex;
+        }).length,
+        total: groupInfo.totalQuestions
+      };
+      
+      // Navigate to group result page
+      const groupResults = {
+        groupNumber: currentGroup,
+        groupRange: {
+          start: groupInfo.startQuestion,
+          end: groupInfo.endQuestion
+        },
+        score: groupScore,
+        totalQuestions: groupInfo.totalQuestions,
+        timeSpent: timeSpent,
+        answers: groupAnswers,
+        questions: vocabularyQuestions.slice(groupInfo.startIndex, groupInfo.endIndex + 1)
+      };
+      
+      navigate('/group-result', { state: groupResults });
+    } else if (currentQuestionIndex < vocabularyQuestions.length - 1) {
       const newIndex = currentQuestionIndex + 1;
       setCurrentQuestionIndex(newIndex);
       setSelectedAnswer(answers[newIndex] || null);
       setShowResult(false);
     } else {
-      // Vocabulary practice completed
+      // Vocabulary practice completed (all questions)
       const results = {
         score: score,
         timeSpent: timeSpent,
