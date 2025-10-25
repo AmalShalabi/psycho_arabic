@@ -2619,5 +2619,307 @@
       "answer": "يقيّم",
       "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=evaluate"
     }
+  ],
+  "sentenceCompletion": [
+    {
+      "id": 1,
+      "sentence": "The scientist's research was so ______ that it changed the entire field of medicine.",
+      "choices": ["accurate", "obvious", "original", "physical"],
+      "answer": "original"
+    },
+    {
+      "id": 2,
+      "sentence": "Students must ______ their knowledge through consistent practice and study.",
+      "choices": ["develop", "ignore", "abandon", "oppose"],
+      "answer": "develop"
+    },
+    {
+      "id": 3,
+      "sentence": "The committee will ______ the proposal at next week's meeting.",
+      "choices": ["discuss", "abandon", "ignore", "oppose"],
+      "answer": "discuss"
+    },
+    {
+      "id": 4,
+      "sentence": "The new policy will ______ all employees to work from home.",
+      "choices": ["prevent", "allow", "oppose", "ignore"],
+      "answer": "allow"
+    },
+    {
+      "id": 5,
+      "sentence": "The teacher asked students to ______ their answers with specific examples.",
+      "choices": ["ignore", "support", "abandon", "oppose"],
+      "answer": "support"
+    },
+    {
+      "id": 6,
+      "sentence": "The company's success depends on its ability to ______ to changing market conditions.",
+      "choices": ["ignore", "adapt", "abandon", "oppose"],
+      "answer": "adapt"
+    },
+    {
+      "id": 7,
+      "sentence": "The doctor's ______ diagnosis saved the patient's life.",
+      "choices": ["obvious", "accurate", "physical", "original"],
+      "answer": "accurate"
+    },
+    {
+      "id": 8,
+      "sentence": "The team worked together to ______ their goal of winning the championship.",
+      "choices": ["abandon", "achieve", "ignore", "oppose"],
+      "answer": "achieve"
+    },
+    {
+      "id": 9,
+      "sentence": "The manager had to ______ the difficult decision to lay off employees.",
+      "choices": ["ignore", "make", "abandon", "oppose"],
+      "answer": "make"
+    },
+    {
+      "id": 10,
+      "sentence": "The research study will ______ the effects of climate change on agriculture.",
+      "choices": ["ignore", "investigate", "abandon", "oppose"],
+      "answer": "investigate"
+    },
+    {
+      "id": 11,
+      "sentence": "The new technology will ______ the way we communicate with each other.",
+      "choices": ["ignore", "affect", "abandon", "oppose"],
+      "answer": "affect"
+    },
+    {
+      "id": 12,
+      "sentence": "The professor asked students to ______ the main points of the lecture.",
+      "choices": ["ignore", "identify", "abandon", "oppose"],
+      "answer": "identify"
+    },
+    {
+      "id": 13,
+      "sentence": "The government must ______ the needs of all citizens in its policies.",
+      "choices": ["ignore", "consider", "abandon", "oppose"],
+      "answer": "consider"
+    },
+    {
+      "id": 14,
+      "sentence": "The artist's work ______ the beauty of nature in a unique way.",
+      "choices": ["ignores", "reflects", "abandons", "opposes"],
+      "answer": "reflects"
+    },
+    {
+      "id": 15,
+      "sentence": "The team needs to ______ a new strategy for the upcoming project.",
+      "choices": ["ignore", "develop", "abandon", "oppose"],
+      "answer": "develop"
+    },
+    {
+      "id": 16,
+      "sentence": "The student's ______ approach to learning impressed the teachers.",
+      "choices": ["obvious", "systematic", "physical", "original"],
+      "answer": "systematic"
+    },
+    {
+      "id": 17,
+      "sentence": "The company will ______ its operations to several new countries.",
+      "choices": ["ignore", "expand", "abandon", "oppose"],
+      "answer": "expand"
+    },
+    {
+      "id": 18,
+      "sentence": "The scientist's findings ______ the previous theories about the phenomenon.",
+      "choices": ["ignore", "challenge", "abandon", "oppose"],
+      "answer": "challenge"
+    },
+    {
+      "id": 19,
+      "sentence": "The teacher tried to ______ the students to participate more in class.",
+      "choices": ["ignore", "encourage", "abandon", "oppose"],
+      "answer": "encourage"
+    },
+    {
+      "id": 20,
+      "sentence": "The committee will ______ the proposal before making a final decision.",
+      "choices": ["ignore", "evaluate", "abandon", "oppose"],
+      "answer": "evaluate"
+    },
+    {
+      "id": 21,
+      "sentence": "The new software will ______ the company's productivity significantly.",
+      "choices": ["ignore", "increase", "abandon", "oppose"],
+      "answer": "increase"
+    },
+    {
+      "id": 22,
+      "sentence": "The researcher had to ______ the data carefully before drawing conclusions.",
+      "choices": ["ignore", "analyze", "abandon", "oppose"],
+      "answer": "analyze"
+    },
+    {
+      "id": 23,
+      "sentence": "The team's ______ performance led to their victory in the competition.",
+      "choices": ["obvious", "outstanding", "physical", "original"],
+      "answer": "outstanding"
+    },
+    {
+      "id": 24,
+      "sentence": "The government must ______ the environmental impact of the new policy.",
+      "choices": ["ignore", "assess", "abandon", "oppose"],
+      "answer": "assess"
+    },
+    {
+      "id": 25,
+      "sentence": "The student's ______ understanding of the subject was evident in her presentation.",
+      "choices": ["obvious", "deep", "physical", "original"],
+      "answer": "deep"
+    },
+    {
+      "id": 26,
+      "sentence": "The company will ______ new employees through a comprehensive training program.",
+      "choices": ["ignore", "train", "abandon", "oppose"],
+      "answer": "train"
+    },
+    {
+      "id": 27,
+      "sentence": "The study will ______ the relationship between diet and health.",
+      "choices": ["ignore", "examine", "abandon", "oppose"],
+      "answer": "examine"
+    },
+    {
+      "id": 28,
+      "sentence": "The team's ______ approach to problem-solving was highly effective.",
+      "choices": ["obvious", "creative", "physical", "original"],
+      "answer": "creative"
+    },
+    {
+      "id": 29,
+      "sentence": "The organization will ______ its services to reach more people.",
+      "choices": ["ignore", "extend", "abandon", "oppose"],
+      "answer": "extend"
+    },
+    {
+      "id": 30,
+      "sentence": "The researcher's ______ methodology ensured reliable results.",
+      "choices": ["obvious", "rigorous", "physical", "original"],
+      "answer": "rigorous"
+    },
+    {
+      "id": 31,
+      "sentence": "The company must ______ its financial resources to survive the crisis.",
+      "choices": ["ignore", "manage", "abandon", "oppose"],
+      "answer": "manage"
+    },
+    {
+      "id": 32,
+      "sentence": "The teacher's ______ explanation helped students understand the complex concept.",
+      "choices": ["obvious", "clear", "physical", "original"],
+      "answer": "clear"
+    },
+    {
+      "id": 33,
+      "sentence": "The team will ______ the project timeline to meet the deadline.",
+      "choices": ["ignore", "adjust", "abandon", "oppose"],
+      "answer": "adjust"
+    },
+    {
+      "id": 34,
+      "sentence": "The scientist's ______ research contributed to major medical breakthroughs.",
+      "choices": ["obvious", "pioneering", "physical", "original"],
+      "answer": "pioneering"
+    },
+    {
+      "id": 35,
+      "sentence": "The organization will ______ its mission to serve the community better.",
+      "choices": ["ignore", "fulfill", "abandon", "oppose"],
+      "answer": "fulfill"
+    },
+    {
+      "id": 36,
+      "sentence": "The student's ______ analysis of the data impressed the professor.",
+      "choices": ["obvious", "thorough", "physical", "original"],
+      "answer": "thorough"
+    },
+    {
+      "id": 37,
+      "sentence": "The company will ______ its market share through innovative products.",
+      "choices": ["ignore", "expand", "abandon", "oppose"],
+      "answer": "expand"
+    },
+    {
+      "id": 38,
+      "sentence": "The researcher's ______ findings challenged existing theories.",
+      "choices": ["obvious", "significant", "physical", "original"],
+      "answer": "significant"
+    },
+    {
+      "id": 39,
+      "sentence": "The team must ______ the challenges they face to succeed.",
+      "choices": ["ignore", "overcome", "abandon", "oppose"],
+      "answer": "overcome"
+    },
+    {
+      "id": 40,
+      "sentence": "The teacher's ______ teaching style engaged all students.",
+      "choices": ["obvious", "dynamic", "physical", "original"],
+      "answer": "dynamic"
+    },
+    {
+      "id": 41,
+      "sentence": "The organization will ______ its resources to support the new initiative.",
+      "choices": ["ignore", "allocate", "abandon", "oppose"],
+      "answer": "allocate"
+    },
+    {
+      "id": 42,
+      "sentence": "The student's ______ understanding of the material was impressive.",
+      "choices": ["obvious", "comprehensive", "physical", "original"],
+      "answer": "comprehensive"
+    },
+    {
+      "id": 43,
+      "sentence": "The company will ______ its operations to improve efficiency.",
+      "choices": ["ignore", "streamline", "abandon", "oppose"],
+      "answer": "streamline"
+    },
+    {
+      "id": 44,
+      "sentence": "The researcher's ______ approach to the problem yielded innovative solutions.",
+      "choices": ["obvious", "systematic", "physical", "original"],
+      "answer": "systematic"
+    },
+    {
+      "id": 45,
+      "sentence": "The team will ______ the project requirements before starting work.",
+      "choices": ["ignore", "review", "abandon", "oppose"],
+      "answer": "review"
+    },
+    {
+      "id": 46,
+      "sentence": "The student's ______ presentation demonstrated mastery of the subject.",
+      "choices": ["obvious", "excellent", "physical", "original"],
+      "answer": "excellent"
+    },
+    {
+      "id": 47,
+      "sentence": "The organization will ______ its goals through strategic planning.",
+      "choices": ["ignore", "achieve", "abandon", "oppose"],
+      "answer": "achieve"
+    },
+    {
+      "id": 48,
+      "sentence": "The teacher's ______ feedback helped students improve their work.",
+      "choices": ["obvious", "constructive", "physical", "original"],
+      "answer": "constructive"
+    },
+    {
+      "id": 49,
+      "sentence": "The team will ______ the project timeline to accommodate new requirements.",
+      "choices": ["ignore", "modify", "abandon", "oppose"],
+      "answer": "modify"
+    },
+    {
+      "id": 50,
+      "sentence": "The researcher's ______ insights opened new avenues for investigation.",
+      "choices": ["obvious", "valuable", "physical", "original"],
+      "answer": "valuable"
+    }
   ]
 }
