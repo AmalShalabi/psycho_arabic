@@ -1,235 +1,4 @@
 {
-  "quantitative": [
-    {
-      "id": 1,
-      "section": "quantitative",
-      "difficulty": "easy",
-      "question": "ما نتيجة 4 × 7؟",
-      "options": [
-        "11",
-        "21",
-        "28",
-        "32"
-      ],
-      "correct": 2,
-      "explanation": "النتيجة الصحيحة هي 28 لأن 4 × 7 = 28.",
-      "timeLimit": 60
-    },
-    {
-      "id": 2,
-      "section": "quantitative",
-      "difficulty": "easy",
-      "question": "إذا كان س + 5 = 12، فما قيمة س؟",
-      "options": [
-        "5",
-        "7",
-        "17",
-        "60"
-      ],
-      "correct": 1,
-      "explanation": "س = 12 - 5 = 7",
-      "timeLimit": 90
-    },
-    {
-      "id": 3,
-      "section": "quantitative",
-      "difficulty": "medium",
-      "question": "ما مساحة المستطيل الذي طوله 8 سم وعرضه 6 سم؟",
-      "options": [
-        "14 سم²",
-        "28 سم²",
-        "48 سم²",
-        "56 سم²"
-      ],
-      "correct": 2,
-      "explanation": "مساحة المستطيل = الطول × العرض = 8 × 6 = 48 سم²",
-      "timeLimit": 120
-    },
-    {
-      "id": 4,
-      "section": "quantitative",
-      "difficulty": "medium",
-      "question": "إذا كان 3x - 7 = 14، فما قيمة x؟",
-      "options": [
-        "3",
-        "7",
-        "21",
-        "63"
-      ],
-      "correct": 1,
-      "explanation": "3x = 14 + 7 = 21، إذن x = 21 ÷ 3 = 7",
-      "timeLimit": 120
-    },
-    {
-      "id": 5,
-      "section": "quantitative",
-      "difficulty": "hard",
-      "question": "ما قيمة 2³ + 3²؟",
-      "options": [
-        "12",
-        "17",
-        "25",
-        "35"
-      ],
-      "correct": 1,
-      "explanation": "2³ = 8 و 3² = 9، إذن 8 + 9 = 17",
-      "timeLimit": 150
-    }
-  ],
-  "verbal": [
-    {
-      "id": 6,
-      "section": "verbal",
-      "difficulty": "easy",
-      "question": "ما معنى كلمة 'مثابر'؟",
-      "options": [
-        "كسلان",
-        "مجتهد",
-        "غاضب",
-        "حزين"
-      ],
-      "correct": 1,
-      "explanation": "مثابر تعني مجتهد ومستمر في العمل",
-      "timeLimit": 90
-    },
-    {
-      "id": 7,
-      "section": "verbal",
-      "difficulty": "easy",
-      "question": "أي من الكلمات التالية تعني عكس 'كبير'؟",
-      "options": [
-        "ضخم",
-        "هائل",
-        "صغير",
-        "عظيم"
-      ],
-      "correct": 2,
-      "explanation": "صغير هو عكس كبير",
-      "timeLimit": 60
-    },
-    {
-      "id": 8,
-      "section": "verbal",
-      "difficulty": "medium",
-      "question": "ما العلاقة بين 'طالب' و 'مدرسة'؟",
-      "options": [
-        "جزء من",
-        "نوع من",
-        "مكان لل",
-        "أداة ل"
-      ],
-      "correct": 2,
-      "explanation": "المدرسة هي مكان للطالب",
-      "timeLimit": 120
-    },
-    {
-      "id": 9,
-      "section": "verbal",
-      "difficulty": "medium",
-      "question": "أي من الجمل التالية صحيحة نحوياً؟",
-      "options": [
-        "الطالب يذهب إلى المدرسة",
-        "الطالب يذهبون إلى المدرسة",
-        "الطالب يذهبن إلى المدرسة",
-        "الطالب يذهبو إلى المدرسة"
-      ],
-      "correct": 0,
-      "explanation": "الطالب يذهب إلى المدرسة - الجملة صحيحة نحوياً",
-      "timeLimit": 120
-    },
-    {
-      "id": 10,
-      "section": "verbal",
-      "difficulty": "hard",
-      "question": "ما معنى العبارة 'الوقت كالسيف إن لم تقطعه قطعك'؟",
-      "options": [
-        "الوقت سريع",
-        "الوقت ثمين ويجب استغلاله",
-        "الوقت خطير",
-        "الوقت صعب"
-      ],
-      "correct": 1,
-      "explanation": "المثل يعني أن الوقت ثمين ويجب استغلاله وإلا فات",
-      "timeLimit": 150
-    }
-  ],
-  "english": [
-    {
-      "id": 11,
-      "section": "english",
-      "difficulty": "easy",
-      "question": "What is the meaning of 'beautiful'?",
-      "options": [
-        "قبيح",
-        "جميل",
-        "كبير",
-        "صغير"
-      ],
-      "correct": 1,
-      "explanation": "Beautiful means جميل in Arabic",
-      "timeLimit": 60
-    },
-    {
-      "id": 12,
-      "section": "english",
-      "difficulty": "easy",
-      "question": "Choose the correct form: 'I ___ to school every day.'",
-      "options": [
-        "go",
-        "goes",
-        "going",
-        "went"
-      ],
-      "correct": 0,
-      "explanation": "With 'I', we use 'go' (present simple)",
-      "timeLimit": 90
-    },
-    {
-      "id": 13,
-      "section": "english",
-      "difficulty": "medium",
-      "question": "What is the opposite of 'expensive'?",
-      "options": [
-        "cheap",
-        "big",
-        "small",
-        "old"
-      ],
-      "correct": 0,
-      "explanation": "The opposite of expensive is cheap",
-      "timeLimit": 90
-    },
-    {
-      "id": 14,
-      "section": "english",
-      "difficulty": "medium",
-      "question": "Complete: 'If I ___ time, I would help you.'",
-      "options": [
-        "have",
-        "had",
-        "will have",
-        "would have"
-      ],
-      "correct": 1,
-      "explanation": "Second conditional uses 'had' for the if clause",
-      "timeLimit": 120
-    },
-    {
-      "id": 15,
-      "section": "english",
-      "difficulty": "hard",
-      "question": "What does 'procrastinate' mean?",
-      "options": [
-        "to delay",
-        "to hurry",
-        "to finish",
-        "to start"
-      ],
-      "correct": 0,
-      "explanation": "Procrastinate means to delay or postpone doing something",
-      "timeLimit": 150
-    }
-  ],
   "vocabulary": [
     {
       "id": 1,
@@ -2624,301 +2393,551 @@
     {
       "id": 1,
       "sentence": "The scientist's discovery was a major ______ in the field of medicine.",
-      "choices": ["breakthrough", "illusion", "gesture", "contrast"],
+      "choices": [
+        "breakthrough",
+        "illusion",
+        "gesture",
+        "contrast"
+      ],
       "answer": "breakthrough"
     },
     {
       "id": 2,
       "sentence": "She showed great ______ when dealing with difficult clients.",
-      "choices": ["patience", "chaos", "aggression", "vanity"],
+      "choices": [
+        "patience",
+        "chaos",
+        "aggression",
+        "vanity"
+      ],
       "answer": "patience"
     },
     {
       "id": 3,
       "sentence": "The company needs to ______ its outdated policies to stay competitive.",
-      "choices": ["maintain", "ignore", "update", "abandon"],
+      "choices": [
+        "maintain",
+        "ignore",
+        "update",
+        "abandon"
+      ],
       "answer": "update"
     },
     {
       "id": 4,
       "sentence": "His ______ approach to problem-solving impressed the entire team.",
-      "choices": ["systematic", "random", "chaotic", "confused"],
+      "choices": [
+        "systematic",
+        "random",
+        "chaotic",
+        "confused"
+      ],
       "answer": "systematic"
     },
     {
       "id": 5,
       "sentence": "The research team will ______ the data before drawing conclusions.",
-      "choices": ["ignore", "analyze", "destroy", "hide"],
+      "choices": [
+        "ignore",
+        "analyze",
+        "destroy",
+        "hide"
+      ],
       "answer": "analyze"
     },
     {
       "id": 6,
       "sentence": "The new technology will ______ how we communicate with each other.",
-      "choices": ["preserve", "maintain", "revolutionize", "destroy"],
+      "choices": [
+        "preserve",
+        "maintain",
+        "revolutionize",
+        "destroy"
+      ],
       "answer": "revolutionize"
     },
     {
       "id": 7,
       "sentence": "The student's ______ understanding of the subject was evident in her presentation.",
-      "choices": ["superficial", "deep", "confused", "wrong"],
+      "choices": [
+        "superficial",
+        "deep",
+        "confused",
+        "wrong"
+      ],
       "answer": "deep"
     },
     {
       "id": 8,
       "sentence": "The manager had to ______ the difficult decision to restructure the department.",
-      "choices": ["avoid", "postpone", "make", "ignore"],
+      "choices": [
+        "avoid",
+        "postpone",
+        "make",
+        "ignore"
+      ],
       "answer": "make"
     },
     {
       "id": 9,
       "sentence": "The artist's work ______ the beauty of nature in a unique way.",
-      "choices": ["ignores", "destroys", "reflects", "hides"],
+      "choices": [
+        "ignores",
+        "destroys",
+        "reflects",
+        "hides"
+      ],
       "answer": "reflects"
     },
     {
       "id": 10,
       "sentence": "The team will ______ the project requirements before starting work.",
-      "choices": ["ignore", "review", "destroy", "forget"],
+      "choices": [
+        "ignore",
+        "review",
+        "destroy",
+        "forget"
+      ],
       "answer": "review"
     },
     {
       "id": 11,
       "sentence": "The government must ______ the environmental impact of the new policy.",
-      "choices": ["ignore", "assess", "destroy", "hide"],
+      "choices": [
+        "ignore",
+        "assess",
+        "destroy",
+        "hide"
+      ],
       "answer": "assess"
     },
     {
       "id": 12,
       "sentence": "The teacher's ______ explanation helped students understand the complex concept.",
-      "choices": ["confusing", "clear", "wrong", "irrelevant"],
+      "choices": [
+        "confusing",
+        "clear",
+        "wrong",
+        "irrelevant"
+      ],
       "answer": "clear"
     },
     {
       "id": 13,
       "sentence": "The company will ______ its operations to several new countries.",
-      "choices": ["reduce", "expand", "destroy", "abandon"],
+      "choices": [
+        "reduce",
+        "expand",
+        "destroy",
+        "abandon"
+      ],
       "answer": "expand"
     },
     {
       "id": 14,
       "sentence": "The researcher's findings ______ the previous theories about the phenomenon.",
-      "choices": ["support", "challenge", "ignore", "destroy"],
+      "choices": [
+        "support",
+        "challenge",
+        "ignore",
+        "destroy"
+      ],
       "answer": "challenge"
     },
     {
       "id": 15,
       "sentence": "The team needs to ______ a new strategy for the upcoming project.",
-      "choices": ["abandon", "develop", "destroy", "ignore"],
+      "choices": [
+        "abandon",
+        "develop",
+        "destroy",
+        "ignore"
+      ],
       "answer": "develop"
     },
     {
       "id": 16,
       "sentence": "The new software will ______ the company's productivity significantly.",
-      "choices": ["decrease", "increase", "destroy", "ignore"],
+      "choices": [
+        "decrease",
+        "increase",
+        "destroy",
+        "ignore"
+      ],
       "answer": "increase"
     },
     {
       "id": 17,
       "sentence": "The committee will ______ the proposal before making a final decision.",
-      "choices": ["ignore", "evaluate", "destroy", "hide"],
+      "choices": [
+        "ignore",
+        "evaluate",
+        "destroy",
+        "hide"
+      ],
       "answer": "evaluate"
     },
     {
       "id": 18,
       "sentence": "The student's ______ analysis of the data impressed the professor.",
-      "choices": ["superficial", "thorough", "wrong", "irrelevant"],
+      "choices": [
+        "superficial",
+        "thorough",
+        "wrong",
+        "irrelevant"
+      ],
       "answer": "thorough"
     },
     {
       "id": 19,
       "sentence": "The organization will ______ its mission to serve the community better.",
-      "choices": ["abandon", "fulfill", "ignore", "destroy"],
+      "choices": [
+        "abandon",
+        "fulfill",
+        "ignore",
+        "destroy"
+      ],
       "answer": "fulfill"
     },
     {
       "id": 20,
       "sentence": "The team must ______ the challenges they face to succeed.",
-      "choices": ["avoid", "overcome", "ignore", "create"],
+      "choices": [
+        "avoid",
+        "overcome",
+        "ignore",
+        "create"
+      ],
       "answer": "overcome"
     },
     {
       "id": 21,
       "sentence": "The teacher tried to ______ the students to participate more in class.",
-      "choices": ["discourage", "encourage", "prevent", "ignore"],
+      "choices": [
+        "discourage",
+        "encourage",
+        "prevent",
+        "ignore"
+      ],
       "answer": "encourage"
     },
     {
       "id": 22,
       "sentence": "The company will ______ its resources to support the new initiative.",
-      "choices": ["waste", "allocate", "destroy", "hide"],
+      "choices": [
+        "waste",
+        "allocate",
+        "destroy",
+        "hide"
+      ],
       "answer": "allocate"
     },
     {
       "id": 23,
       "sentence": "The student's ______ understanding of the material was impressive.",
-      "choices": ["limited", "comprehensive", "wrong", "irrelevant"],
+      "choices": [
+        "limited",
+        "comprehensive",
+        "wrong",
+        "irrelevant"
+      ],
       "answer": "comprehensive"
     },
     {
       "id": 24,
       "sentence": "The company will ______ its operations to improve efficiency.",
-      "choices": ["complicate", "streamline", "destroy", "ignore"],
+      "choices": [
+        "complicate",
+        "streamline",
+        "destroy",
+        "ignore"
+      ],
       "answer": "streamline"
     },
     {
       "id": 25,
       "sentence": "The researcher's ______ approach to the problem yielded innovative solutions.",
-      "choices": ["random", "systematic", "chaotic", "confused"],
+      "choices": [
+        "random",
+        "systematic",
+        "chaotic",
+        "confused"
+      ],
       "answer": "systematic"
     },
     {
       "id": 26,
       "sentence": "The team's ______ performance led to their victory in the competition.",
-      "choices": ["poor", "outstanding", "average", "terrible"],
+      "choices": [
+        "poor",
+        "outstanding",
+        "average",
+        "terrible"
+      ],
       "answer": "outstanding"
     },
     {
       "id": 27,
       "sentence": "The scientist's ______ research contributed to major medical breakthroughs.",
-      "choices": ["outdated", "pioneering", "irrelevant", "wrong"],
+      "choices": [
+        "outdated",
+        "pioneering",
+        "irrelevant",
+        "wrong"
+      ],
       "answer": "pioneering"
     },
     {
       "id": 28,
       "sentence": "The organization will ______ its goals through strategic planning.",
-      "choices": ["abandon", "achieve", "ignore", "destroy"],
+      "choices": [
+        "abandon",
+        "achieve",
+        "ignore",
+        "destroy"
+      ],
       "answer": "achieve"
     },
     {
       "id": 29,
       "sentence": "The teacher's ______ feedback helped students improve their work.",
-      "choices": ["destructive", "constructive", "irrelevant", "confusing"],
+      "choices": [
+        "destructive",
+        "constructive",
+        "irrelevant",
+        "confusing"
+      ],
       "answer": "constructive"
     },
     {
       "id": 30,
       "sentence": "The team will ______ the project timeline to accommodate new requirements.",
-      "choices": ["ignore", "modify", "destroy", "abandon"],
+      "choices": [
+        "ignore",
+        "modify",
+        "destroy",
+        "abandon"
+      ],
       "answer": "modify"
     },
     {
       "id": 31,
       "sentence": "The researcher's ______ insights opened new avenues for investigation.",
-      "choices": ["useless", "valuable", "irrelevant", "wrong"],
+      "choices": [
+        "useless",
+        "valuable",
+        "irrelevant",
+        "wrong"
+      ],
       "answer": "valuable"
     },
     {
       "id": 32,
       "sentence": "The company must ______ its financial resources to survive the crisis.",
-      "choices": ["waste", "manage", "destroy", "ignore"],
+      "choices": [
+        "waste",
+        "manage",
+        "destroy",
+        "ignore"
+      ],
       "answer": "manage"
     },
     {
       "id": 33,
       "sentence": "The team will ______ the project timeline to meet the deadline.",
-      "choices": ["ignore", "adjust", "destroy", "abandon"],
+      "choices": [
+        "ignore",
+        "adjust",
+        "destroy",
+        "abandon"
+      ],
       "answer": "adjust"
     },
     {
       "id": 34,
       "sentence": "The student's ______ presentation demonstrated mastery of the subject.",
-      "choices": ["poor", "excellent", "confusing", "irrelevant"],
+      "choices": [
+        "poor",
+        "excellent",
+        "confusing",
+        "irrelevant"
+      ],
       "answer": "excellent"
     },
     {
       "id": 35,
       "sentence": "The organization will ______ its services to reach more people.",
-      "choices": ["reduce", "extend", "destroy", "abandon"],
+      "choices": [
+        "reduce",
+        "extend",
+        "destroy",
+        "abandon"
+      ],
       "answer": "extend"
     },
     {
       "id": 36,
       "sentence": "The researcher's ______ methodology ensured reliable results.",
-      "choices": ["flawed", "rigorous", "random", "confused"],
+      "choices": [
+        "flawed",
+        "rigorous",
+        "random",
+        "confused"
+      ],
       "answer": "rigorous"
     },
     {
       "id": 37,
       "sentence": "The team's ______ approach to problem-solving was highly effective.",
-      "choices": ["random", "creative", "chaotic", "confused"],
+      "choices": [
+        "random",
+        "creative",
+        "chaotic",
+        "confused"
+      ],
       "answer": "creative"
     },
     {
       "id": 38,
       "sentence": "The researcher's ______ findings challenged existing theories.",
-      "choices": ["insignificant", "significant", "irrelevant", "wrong"],
+      "choices": [
+        "insignificant",
+        "significant",
+        "irrelevant",
+        "wrong"
+      ],
       "answer": "significant"
     },
     {
       "id": 39,
       "sentence": "The teacher's ______ teaching style engaged all students.",
-      "choices": ["boring", "dynamic", "confusing", "irrelevant"],
+      "choices": [
+        "boring",
+        "dynamic",
+        "confusing",
+        "irrelevant"
+      ],
       "answer": "dynamic"
     },
     {
       "id": 40,
       "sentence": "The company will ______ its market share through innovative products.",
-      "choices": ["lose", "expand", "destroy", "ignore"],
+      "choices": [
+        "lose",
+        "expand",
+        "destroy",
+        "ignore"
+      ],
       "answer": "expand"
     },
     {
       "id": 41,
       "sentence": "The student's ______ approach to learning impressed the teachers.",
-      "choices": ["random", "systematic", "chaotic", "confused"],
+      "choices": [
+        "random",
+        "systematic",
+        "chaotic",
+        "confused"
+      ],
       "answer": "systematic"
     },
     {
       "id": 42,
       "sentence": "The committee will ______ the proposal at next week's meeting.",
-      "choices": ["ignore", "discuss", "destroy", "hide"],
+      "choices": [
+        "ignore",
+        "discuss",
+        "destroy",
+        "hide"
+      ],
       "answer": "discuss"
     },
     {
       "id": 43,
       "sentence": "The new policy will ______ all employees to work from home.",
-      "choices": ["prevent", "allow", "force", "discourage"],
+      "choices": [
+        "prevent",
+        "allow",
+        "force",
+        "discourage"
+      ],
       "answer": "allow"
     },
     {
       "id": 44,
       "sentence": "The teacher asked students to ______ their answers with specific examples.",
-      "choices": ["ignore", "support", "destroy", "hide"],
+      "choices": [
+        "ignore",
+        "support",
+        "destroy",
+        "hide"
+      ],
       "answer": "support"
     },
     {
       "id": 45,
       "sentence": "The company's success depends on its ability to ______ to changing market conditions.",
-      "choices": ["resist", "adapt", "ignore", "destroy"],
+      "choices": [
+        "resist",
+        "adapt",
+        "ignore",
+        "destroy"
+      ],
       "answer": "adapt"
     },
     {
       "id": 46,
       "sentence": "The doctor's ______ diagnosis saved the patient's life.",
-      "choices": ["wrong", "accurate", "confusing", "irrelevant"],
+      "choices": [
+        "wrong",
+        "accurate",
+        "confusing",
+        "irrelevant"
+      ],
       "answer": "accurate"
     },
     {
       "id": 47,
       "sentence": "The team worked together to ______ their goal of winning the championship.",
-      "choices": ["abandon", "achieve", "ignore", "destroy"],
+      "choices": [
+        "abandon",
+        "achieve",
+        "ignore",
+        "destroy"
+      ],
       "answer": "achieve"
     },
     {
       "id": 48,
       "sentence": "The research study will ______ the effects of climate change on agriculture.",
-      "choices": ["ignore", "investigate", "destroy", "hide"],
+      "choices": [
+        "ignore",
+        "investigate",
+        "destroy",
+        "hide"
+      ],
       "answer": "investigate"
     },
     {
       "id": 49,
       "sentence": "The new technology will ______ the way we communicate with each other.",
-      "choices": ["preserve", "affect", "destroy", "ignore"],
+      "choices": [
+        "preserve",
+        "affect",
+        "destroy",
+        "ignore"
+      ],
       "answer": "affect"
     },
     {
       "id": 50,
       "sentence": "The professor asked students to ______ the main points of the lecture.",
-      "choices": ["ignore", "identify", "destroy", "hide"],
+      "choices": [
+        "ignore",
+        "identify",
+        "destroy",
+        "hide"
+      ],
       "answer": "identify"
     }
   ]
