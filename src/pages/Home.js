@@ -8,7 +8,8 @@ import {
   Settings, 
   Brain,
   Clock,
-  Target
+  Target,
+  FileText
 } from 'lucide-react';
 
 const Home = () => {
@@ -35,6 +36,13 @@ const Home = () => {
       icon: Brain,
       color: 'from-orange-500 to-orange-600',
       action: () => navigate('/vocabulary')
+    },
+    {
+      title: 'إكمال الجمل',
+      description: 'تدريب على 50 سؤال إكمال الجمل بالإنجليزية',
+      icon: FileText,
+      color: 'from-teal-500 to-teal-600',
+      action: () => navigate('/sentence-completion')
     },
     {
       title: 'سجل التقدم',
@@ -170,7 +178,7 @@ const Home = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-primary-600 mb-1 md:mb-2">209+</div>
+              <div className="text-2xl md:text-3xl font-bold text-primary-600 mb-1 md:mb-2">259+</div>
               <div className="text-sm md:text-base text-secondary-600">سؤال تدريبي</div>
             </div>
             <div className="text-center">

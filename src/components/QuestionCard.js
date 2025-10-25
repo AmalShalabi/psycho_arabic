@@ -80,7 +80,8 @@ const QuestionCard = ({
             {question.section === 'quantitative' ? 'كمي' : 
              question.section === 'verbal' ? 'لفظي' : 
              question.section === 'english' ? 'إنجليزي' : 
-             question.section === 'vocabulary' ? 'مفردات إنجليزية' : 'مفردات إنجليزية'}
+             question.section === 'vocabulary' ? 'مفردات إنجليزية' : 
+             question.section === 'sentence-completion' ? 'إكمال الجمل' : 'مفردات إنجليزية'}
           </span>
           <span className="text-xs md:text-sm text-secondary-500">
             السؤال {question.id}

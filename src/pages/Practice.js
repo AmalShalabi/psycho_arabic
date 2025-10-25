@@ -26,7 +26,8 @@ const Practice = () => {
         ...questionsData.quantitative,
         ...questionsData.verbal,
         ...questionsData.english,
-        ...questionsData.vocabulary
+        ...questionsData.vocabulary,
+        ...questionsData.sentenceCompletion
       ];
     } else {
       filtered = questionsData[selectedSection] || [];
@@ -192,7 +193,8 @@ const Practice = () => {
                     { value: 'quantitative', label: 'كمي' },
                     { value: 'verbal', label: 'لفظي' },
                     { value: 'english', label: 'إنجليزي' },
-                    { value: 'vocabulary', label: 'مفردات إنجليزية' }
+                    { value: 'vocabulary', label: 'مفردات إنجليزية' },
+                    { value: 'sentenceCompletion', label: 'إكمال الجمل' }
                   ].map((option) => (
                     <button
                       key={option.value}

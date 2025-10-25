@@ -28,6 +28,8 @@ const Results = () => {
       storedResults = localStorage.getItem('practiceResults');
     } else if (type === 'vocabulary') {
       storedResults = localStorage.getItem('vocabularyResults');
+    } else if (type === 'sentence-completion') {
+      storedResults = localStorage.getItem('sentenceCompletionResults');
     } else {
       storedResults = localStorage.getItem('examResults');
     }
@@ -52,6 +54,7 @@ const Results = () => {
 
   const isPractice = searchParams.get('type') === 'practice';
   const isVocabulary = searchParams.get('type') === 'vocabulary';
+  const isSentenceCompletion = searchParams.get('type') === 'sentence-completion';
   const percentage = Math.round((results.correctAnswers / results.totalQuestions) * 100);
   const timeSpent = results.timeSpent || 0;
 
@@ -134,6 +137,8 @@ const Results = () => {
       navigate('/practice');
     } else if (isVocabulary) {
       navigate('/vocabulary');
+    } else if (isSentenceCompletion) {
+      navigate('/sentence-completion');
     } else {
       navigate('/exam');
     }
@@ -152,7 +157,7 @@ const Results = () => {
               <ArrowLeft className="w-6 h-6" />
             </button>
             <h1 className="text-xl font-bold text-secondary-800">
-              {isPractice ? 'نتائج التدريب' : isVocabulary ? 'نتائج المفردات' : 'نتائج الامتحان'}
+              {isPractice ? 'نتائج التدريب' : isVocabulary ? 'نتائج المفردات' : isSentenceCompletion ? 'نتائج إكمال الجمل' : 'نتائج الامتحان'}
             </h1>
             <div></div>
           </div>
@@ -317,7 +322,7 @@ const Results = () => {
             className="btn-primary flex items-center justify-center space-x-2 space-x-reverse"
           >
             <RotateCcw className="w-5 h-5" />
-            <span>{isPractice ? 'تدريب جديد' : isVocabulary ? 'مفردات جديدة' : 'امتحان جديد'}</span>
+            <span>{isPractice ? 'تدريب جديد' : isVocabulary ? 'مفردات جديدة' : isSentenceCompletion ? 'إكمال جمل جديد' : 'امتحان جديد'}</span>
           </button>
           
           <button
