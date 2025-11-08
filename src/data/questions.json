@@ -2596,6 +2596,479 @@
           "section": "vocabulary"
         }
       ]
+    },
+    {
+      "unit": "Unit 3",
+      "words": [
+        {
+          "id": 200,
+          "question": "accustomed",
+          "choices": [
+            "معتاد",
+            "غريب",
+            "مستمر",
+            "متردد"
+          ],
+          "answer": "معتاد",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=accustomed",
+          "section": "vocabulary"
+        },
+        {
+          "id": 201,
+          "question": "ambassador",
+          "choices": [
+            "سفير",
+            "عامل",
+            "مدير",
+            "مواطن"
+          ],
+          "answer": "سفير",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=ambassador",
+          "section": "vocabulary"
+        },
+        {
+          "id": 202,
+          "question": "appreciate",
+          "choices": [
+            "يقدّر",
+            "يكره",
+            "يهمل",
+            "يتجاهل"
+          ],
+          "answer": "يقدّر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=appreciate",
+          "section": "vocabulary"
+        },
+        {
+          "id": 203,
+          "question": "articulate",
+          "choices": [
+            "يتكلم بوضوح",
+            "يكتب بسرعة",
+            "يصمت",
+            "يضحك"
+          ],
+          "answer": "يتكلم بوضوح",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=articulate",
+          "section": "vocabulary"
+        },
+        {
+          "id": 204,
+          "question": "associate",
+          "choices": [
+            "يربط",
+            "يفصل",
+            "ينكر",
+            "ينسى"
+          ],
+          "answer": "يربط",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=associate",
+          "section": "vocabulary"
+        },
+        {
+          "id": 205,
+          "question": "attribute",
+          "choices": [
+            "ينسب إلى",
+            "يحذف",
+            "يشارك",
+            "يبتعد"
+          ],
+          "answer": "ينسب إلى",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=attribute",
+          "section": "vocabulary"
+        },
+        {
+          "id": 206,
+          "question": "auction",
+          "choices": [
+            "مزاد",
+            "عقد",
+            "تجارة",
+            "مهرجان"
+          ],
+          "answer": "مزاد",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=auction",
+          "section": "vocabulary"
+        },
+        {
+          "id": 207,
+          "question": "banquet",
+          "choices": [
+            "وليمة",
+            "غداء",
+            "فطور",
+            "مشروب"
+          ],
+          "answer": "وليمة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=banquet",
+          "section": "vocabulary"
+        },
+        {
+          "id": 208,
+          "question": "blasphemy",
+          "choices": [
+            "تجديف",
+            "عبادة",
+            "صلاة",
+            "تسبيح"
+          ],
+          "answer": "تجديف",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=blasphemy",
+          "section": "vocabulary"
+        },
+        {
+          "id": 209,
+          "question": "cockroach",
+          "choices": [
+            "صرصور",
+            "نملة",
+            "ذبابة",
+            "فراشة"
+          ],
+          "answer": "صرصور",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=cockroach",
+          "section": "vocabulary"
+        },
+        {
+          "id": 210,
+          "question": "comparison",
+          "choices": [
+            "مقارنة",
+            "اتفاق",
+            "اختلاف",
+            "تناقض"
+          ],
+          "answer": "مقارنة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=comparison",
+          "section": "vocabulary"
+        },
+        {
+          "id": 211,
+          "question": "complex",
+          "choices": [
+            "معقد",
+            "بسيط",
+            "واضح",
+            "سهل"
+          ],
+          "answer": "معقد",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=complex",
+          "section": "vocabulary"
+        },
+        {
+          "id": 212,
+          "question": "conduct",
+          "choices": [
+            "سلوك",
+            "عمل",
+            "كلمة",
+            "فكرة"
+          ],
+          "answer": "سلوك",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=conduct",
+          "section": "vocabulary"
+        },
+        {
+          "id": 213,
+          "question": "constitution",
+          "choices": [
+            "دستور",
+            "حكومة",
+            "مقال",
+            "قانون"
+          ],
+          "answer": "دستور",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=constitution",
+          "section": "vocabulary"
+        },
+        {
+          "id": 214,
+          "question": "cult",
+          "choices": [
+            "طائفة",
+            "حزب",
+            "مجموعة",
+            "نادي"
+          ],
+          "answer": "طائفة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=cult",
+          "section": "vocabulary"
+        },
+        {
+          "id": 215,
+          "question": "derive",
+          "choices": [
+            "يستمد",
+            "يفقد",
+            "يتجاهل",
+            "يمنع"
+          ],
+          "answer": "يستمد",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=derive",
+          "section": "vocabulary"
+        },
+        {
+          "id": 216,
+          "question": "despair",
+          "choices": [
+            "يأس",
+            "أمل",
+            "نجاح",
+            "فرح"
+          ],
+          "answer": "يأس",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=despair",
+          "section": "vocabulary"
+        },
+        {
+          "id": 217,
+          "question": "discrimination",
+          "choices": [
+            "تمييز",
+            "احترام",
+            "حب",
+            "اتحاد"
+          ],
+          "answer": "تمييز",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=discrimination",
+          "section": "vocabulary"
+        },
+        {
+          "id": 218,
+          "question": "dynasty",
+          "choices": [
+            "سلالة",
+            "أسرة",
+            "حكم",
+            "عائلة"
+          ],
+          "answer": "سلالة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=dynasty",
+          "section": "vocabulary"
+        },
+        {
+          "id": 219,
+          "question": "entity",
+          "choices": [
+            "كيان",
+            "مادة",
+            "عنصر",
+            "موقع"
+          ],
+          "answer": "كيان",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=entity",
+          "section": "vocabulary"
+        },
+        {
+          "id": 220,
+          "question": "esteem",
+          "choices": [
+            "احترام",
+            "كراهية",
+            "خوف",
+            "إهمال"
+          ],
+          "answer": "احترام",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=esteem",
+          "section": "vocabulary"
+        },
+        {
+          "id": 221,
+          "question": "ferocious",
+          "choices": [
+            "شرس",
+            "لطيف",
+            "ضعيف",
+            "ودود"
+          ],
+          "answer": "شرس",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=ferocious",
+          "section": "vocabulary"
+        },
+        {
+          "id": 222,
+          "question": "frustration",
+          "choices": [
+            "إحباط",
+            "فرح",
+            "راحة",
+            "ثقة"
+          ],
+          "answer": "إحباط",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=frustration",
+          "section": "vocabulary"
+        },
+        {
+          "id": 223,
+          "question": "garment",
+          "choices": [
+            "ملبس",
+            "طعام",
+            "صوت",
+            "عملة"
+          ],
+          "answer": "ملبس",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=garment",
+          "section": "vocabulary"
+        },
+        {
+          "id": 224,
+          "question": "ignite",
+          "choices": [
+            "يشعل",
+            "يطفيء",
+            "يبرد",
+            "ينسى"
+          ],
+          "answer": "يشعل",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=ignite",
+          "section": "vocabulary"
+        },
+        {
+          "id": 225,
+          "question": "illuminate",
+          "choices": [
+            "يضيء",
+            "يظلم",
+            "يخفي",
+            "يغير"
+          ],
+          "answer": "يضيء",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=illuminate",
+          "section": "vocabulary"
+        },
+        {
+          "id": 226,
+          "question": "impoverish",
+          "choices": [
+            "يفقر",
+            "يغني",
+            "يجهل",
+            "يحبس"
+          ],
+          "answer": "يفقر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=impoverish",
+          "section": "vocabulary"
+        },
+        {
+          "id": 227,
+          "question": "inauguration",
+          "choices": [
+            "افتتاح",
+            "إغلاق",
+            "تجديد",
+            "توديع"
+          ],
+          "answer": "افتتاح",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=inauguration",
+          "section": "vocabulary"
+        },
+        {
+          "id": 228,
+          "question": "parasite",
+          "choices": [
+            "طفيلي",
+            "حيوان",
+            "نبات",
+            "إنسان"
+          ],
+          "answer": "طفيلي",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=parasite",
+          "section": "vocabulary"
+        },
+        {
+          "id": 229,
+          "question": "propaganda",
+          "choices": [
+            "دعاية",
+            "إعلان",
+            "خداع",
+            "مساعدة"
+          ],
+          "answer": "دعاية",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=propaganda",
+          "section": "vocabulary"
+        },
+        {
+          "id": 230,
+          "question": "refute",
+          "choices": [
+            "يدحض",
+            "يؤكد",
+            "ينشر",
+            "يكتب"
+          ],
+          "answer": "يدحض",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=refute",
+          "section": "vocabulary"
+        },
+        {
+          "id": 231,
+          "question": "stun",
+          "choices": [
+            "يذهل",
+            "يخاف",
+            "يضحك",
+            "يصرخ"
+          ],
+          "answer": "يذهل",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=stun",
+          "section": "vocabulary"
+        },
+        {
+          "id": 232,
+          "question": "subordinate",
+          "choices": [
+            "تابع",
+            "قائد",
+            "منافس",
+            "مستقل"
+          ],
+          "answer": "تابع",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=subordinate",
+          "section": "vocabulary"
+        },
+        {
+          "id": 233,
+          "question": "superstition",
+          "choices": [
+            "خرافة",
+            "حقيقة",
+            "علم",
+            "معرفة"
+          ],
+          "answer": "خرافة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=superstition",
+          "section": "vocabulary"
+        },
+        {
+          "id": 234,
+          "question": "triumph",
+          "choices": [
+            "انتصار",
+            "هزيمة",
+            "صراع",
+            "محاولة"
+          ],
+          "answer": "انتصار",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=triumph",
+          "section": "vocabulary"
+        },
+        {
+          "id": 235,
+          "question": "zeal",
+          "choices": [
+            "حماس",
+            "كسل",
+            "خوف",
+            "حيرة"
+          ],
+          "answer": "حماس",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=zeal",
+          "section": "vocabulary"
+        }
+      ]
     }
   ],
   "sentenceCompletion": [
