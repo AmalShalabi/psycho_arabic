@@ -1,2392 +1,2601 @@
 {
   "vocabulary": [
     {
-      "id": 1,
-      "question": "abandon",
-      "choices": [
-        "يتخلى عن",
-        "يؤكد",
-        "ينتج",
-        "يشارك"
-      ],
-      "answer": "يتخلى عن",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=abandon"
-    },
-    {
-      "id": 2,
-      "question": "ability",
-      "choices": [
-        "قدرة",
-        "رغبة",
-        "نتيجة",
-        "وسيلة"
-      ],
-      "answer": "قدرة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=ability"
-    },
-    {
-      "id": 3,
-      "question": "absorb",
-      "choices": [
-        "يعتمد",
-        "يشرح",
-        "يمتص",
-        "يختار"
-      ],
-      "answer": "يمتص",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=absorb"
-    },
-    {
-      "id": 4,
-      "question": "accurate",
-      "choices": [
-        "غريب",
-        "بسيط",
-        "غامض",
-        "دقيق"
-      ],
-      "answer": "دقيق",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=accurate"
-    },
-    {
-      "id": 5,
-      "question": "achieve",
-      "choices": [
-        "يفكر",
-        "يترك",
-        "يحقق",
-        "يستبدل"
-      ],
-      "answer": "يحقق",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=achieve"
-    },
-    {
-      "id": 6,
-      "question": "acknowledge",
-      "choices": [
-        "يعترف",
-        "يشتري",
-        "يبحث",
-        "ينكر"
-      ],
-      "answer": "يعترف",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=acknowledge"
-    },
-    {
-      "id": 7,
-      "question": "adapt",
-      "choices": [
-        "يتجاهل",
-        "ينتقد",
-        "يبيع",
-        "يتأقلم"
-      ],
-      "answer": "يتأقلم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=adapt"
-    },
-    {
-      "id": 8,
-      "question": "adequate",
-      "choices": [
-        "كافٍ",
-        "غير مهم",
-        "غريب",
-        "ضعيف"
-      ],
-      "answer": "كافٍ",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=adequate"
-    },
-    {
-      "id": 9,
-      "question": "affect",
-      "choices": [
-        "يؤثر",
-        "ينقل",
-        "يسمع",
-        "يقلد"
-      ],
-      "answer": "يؤثر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=affect"
-    },
-    {
-      "id": 10,
-      "question": "allow",
-      "choices": [
-        "ينسى",
-        "يسمح",
-        "يمنع",
-        "يخفي"
-      ],
-      "answer": "يسمح",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=allow"
-    },
-    {
-      "id": 11,
-      "question": "analyze",
-      "choices": [
-        "يختار",
-        "يقارن",
-        "يحلل",
-        "يكتب"
-      ],
-      "answer": "يحلل",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=analyze"
-    },
-    {
-      "id": 12,
-      "question": "approach",
-      "choices": [
-        "يقترب",
-        "يبتعد",
-        "يرفض",
-        "ينام"
-      ],
-      "answer": "يقترب",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=approach"
-    },
-    {
-      "id": 13,
-      "question": "assist",
-      "choices": [
-        "يهرب",
-        "ينسى",
-        "يساعد",
-        "يضحك"
-      ],
-      "answer": "يساعد",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=assist"
-    },
-    {
-      "id": 14,
-      "question": "assume",
-      "choices": [
-        "ينفي",
-        "يفترض",
-        "يؤكد",
-        "يسمع"
-      ],
-      "answer": "يفترض",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=assume"
-    },
-    {
-      "id": 15,
-      "question": "attempt",
-      "choices": [
-        "مشكلة",
-        "محاولة",
-        "عقوبة",
-        "هزيمة"
-      ],
-      "answer": "محاولة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=attempt"
-    },
-    {
-      "id": 16,
-      "question": "aware",
-      "choices": [
-        "مغلق",
-        "صامت",
-        "واعي",
-        "مشوش"
-      ],
-      "answer": "واعي",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=aware"
-    },
-    {
-      "id": 17,
-      "question": "benefit",
-      "choices": [
-        "تعب",
-        "خطر",
-        "ضرر",
-        "فائدة"
-      ],
-      "answer": "فائدة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=benefit"
-    },
-    {
-      "id": 18,
-      "question": "claim",
-      "choices": [
-        "يدّعي",
-        "ينتظر",
-        "يُعاقب",
-        "يشتري"
-      ],
-      "answer": "يدّعي",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=claim"
-    },
-    {
-      "id": 19,
-      "question": "compare",
-      "choices": [
-        "يبحث",
-        "يكتب",
-        "ينكر",
-        "يقارن"
-      ],
-      "answer": "يقارن",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=compare"
-    },
-    {
-      "id": 20,
-      "question": "conclude",
-      "choices": [
-        "يستنتج",
-        "يؤجل",
-        "يرفض",
-        "يبدأ"
-      ],
-      "answer": "يستنتج",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=conclude"
-    },
-    {
-      "id": 21,
-      "question": "confirm",
-      "choices": [
-        "ينفي",
-        "يؤخر",
-        "يؤكد",
-        "يفكر"
-      ],
-      "answer": "يؤكد",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=confirm"
-    },
-    {
-      "id": 22,
-      "question": "contain",
-      "choices": [
-        "ينكر",
-        "يتغير",
-        "يفقد",
-        "يحتوي"
-      ],
-      "answer": "يحتوي",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=contain"
-    },
-    {
-      "id": 23,
-      "question": "contrast",
-      "choices": [
-        "تباين",
-        "تشابه",
-        "مشكلة",
-        "إشارة"
-      ],
-      "answer": "تباين",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=contrast"
-    },
-    {
-      "id": 24,
-      "question": "create",
-      "choices": [
-        "يهرب",
-        "يُنشئ",
-        "يخفي",
-        "ينسى"
-      ],
-      "answer": "يُنشئ",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=create"
-    },
-    {
-      "id": 25,
-      "question": "define",
-      "choices": [
-        "ينكر",
-        "يقرأ",
-        "يُعرّف",
-        "يُخفي"
-      ],
-      "answer": "يُعرّف",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=define"
-    },
-    {
-      "id": 26,
-      "question": "describe",
-      "choices": [
-        "يتجاهل",
-        "يرفض",
-        "يصف",
-        "يتخلى"
-      ],
-      "answer": "يصف",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=describe"
-    },
-    {
-      "id": 27,
-      "question": "develop",
-      "choices": [
-        "يُطوّر",
-        "يسافر",
-        "ينكر",
-        "يهدم"
-      ],
-      "answer": "يُطوّر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=develop"
-    },
-    {
-      "id": 28,
-      "question": "discuss",
-      "choices": [
-        "يهرب",
-        "يصرخ",
-        "يناقش",
-        "يسكت"
-      ],
-      "answer": "يناقش",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=discuss"
-    },
-    {
-      "id": 29,
-      "question": "effect",
-      "choices": [
-        "قانون",
-        "خطة",
-        "مشكلة",
-        "تأثير"
-      ],
-      "answer": "تأثير",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=effect"
-    },
-    {
-      "id": 30,
-      "question": "encourage",
-      "choices": [
-        "يشجع",
-        "يخاف",
-        "ينتقد",
-        "يرفض"
-      ],
-      "answer": "يشجع",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=encourage"
-    },
-    {
-      "id": 31,
-      "question": "essential",
-      "choices": [
-        "غير مهم",
-        "سهل",
-        "غامض",
-        "أساسي"
-      ],
-      "answer": "أساسي",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=essential"
-    },
-    {
-      "id": 32,
-      "question": "explain",
-      "choices": [
-        "يشرح",
-        "يهرب",
-        "يبتسم",
-        "يسمع"
-      ],
-      "answer": "يشرح",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=explain"
-    },
-    {
-      "id": 33,
-      "question": "focus",
-      "choices": [
-        "يتجاهل",
-        "يركز",
-        "ينتظر",
-        "ينتقد"
-      ],
-      "answer": "يركز",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=focus"
-    },
-    {
-      "id": 34,
-      "question": "gain",
-      "choices": [
-        "يكسب",
-        "ينكر",
-        "يخسر",
-        "يختبئ"
-      ],
-      "answer": "يكسب",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=gain"
-    },
-    {
-      "id": 35,
-      "question": "goal",
-      "choices": [
-        "مشكلة",
-        "وسيلة",
-        "فكرة",
-        "هدف"
-      ],
-      "answer": "هدف",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=goal"
-    },
-    {
-      "id": 36,
-      "question": "ignore",
-      "choices": [
-        "يشرح",
-        "يتجاهل",
-        "يساعد",
-        "يهتم"
-      ],
-      "answer": "يتجاهل",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=ignore"
-    },
-    {
-      "id": 37,
-      "question": "improve",
-      "choices": [
-        "ينكر",
-        "يترك",
-        "يهدم",
-        "يحسّن"
-      ],
-      "answer": "يحسّن",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=improve"
-    },
-    {
-      "id": 38,
-      "question": "include",
-      "choices": [
-        "يخفي",
-        "ينفي",
-        "يتضمن",
-        "ينسى"
-      ],
-      "answer": "يتضمن",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=include"
-    },
-    {
-      "id": 39,
-      "question": "increase",
-      "choices": [
-        "يزيد",
-        "يختفي",
-        "ينقص",
-        "يخسر"
-      ],
-      "answer": "يزيد",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=increase"
-    },
-    {
-      "id": 40,
-      "question": "maintain",
-      "choices": [
-        "يهدم",
-        "يحافظ",
-        "يتعب",
-        "ينكر"
-      ],
-      "answer": "يحافظ",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=maintain"
-    },
-    {
-      "id": 41,
-      "question": "obtain",
-      "choices": [
-        "يتجاهل",
-        "ينكر",
-        "يفقد",
-        "يحصل على"
-      ],
-      "answer": "يحصل على",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=obtain"
-    },
-    {
-      "id": 42,
-      "question": "observe",
-      "choices": [
-        "ينسى",
-        "يراقب",
-        "يتجاهل",
-        "يخفي"
-      ],
-      "answer": "يراقب",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=observe"
-    },
-    {
-      "id": 43,
-      "question": "occur",
-      "choices": [
-        "يحدث",
-        "ينسى",
-        "يتوقف",
-        "يختفي"
-      ],
-      "answer": "يحدث",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=occur"
-    },
-    {
-      "id": 44,
-      "question": "obvious",
-      "choices": [
-        "صعب",
-        "واضح",
-        "غامض",
-        "مشوش"
-      ],
-      "answer": "واضح",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=obvious"
-    },
-    {
-      "id": 45,
-      "question": "offer",
-      "choices": [
-        "يرفض",
-        "يخفي",
-        "يعرض",
-        "ينسى"
-      ],
-      "answer": "يعرض",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=offer"
-    },
-    {
-      "id": 46,
-      "question": "operate",
-      "choices": [
-        "يعمل",
-        "يتوقف",
-        "ينسى",
-        "يخفي"
-      ],
-      "answer": "يعمل",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=operate"
-    },
-    {
-      "id": 47,
-      "question": "oppose",
-      "choices": [
-        "يشرح",
-        "يساعد",
-        "يوافق",
-        "يعارض"
-      ],
-      "answer": "يعارض",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=oppose"
-    },
-    {
-      "id": 48,
-      "question": "option",
-      "choices": [
-        "مشكلة",
-        "خيار",
-        "حل",
-        "سؤال"
-      ],
-      "answer": "خيار",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=option"
-    },
-    {
-      "id": 49,
-      "question": "order",
-      "choices": [
-        "مشكلة",
-        "فوضى",
-        "ترتيب",
-        "حل"
-      ],
-      "answer": "ترتيب",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=order"
-    },
-    {
-      "id": 50,
-      "question": "organize",
-      "choices": [
-        "ينسى",
-        "ينظم",
-        "يفسد",
-        "يخفي"
-      ],
-      "answer": "ينظم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=organize"
-    },
-    {
-      "id": 51,
-      "question": "original",
-      "choices": [
-        "أصلي",
-        "صعب",
-        "مزيف",
-        "غريب"
-      ],
-      "answer": "أصلي",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=original"
-    },
-    {
-      "id": 52,
-      "question": "outcome",
-      "choices": [
-        "بداية",
-        "حل",
-        "مشكلة",
-        "نتيجة"
-      ],
-      "answer": "نتيجة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=outcome"
-    },
-    {
-      "id": 53,
-      "question": "overcome",
-      "choices": [
-        "يتجاهل",
-        "ينسى",
-        "يتغلب على",
-        "يستسلم"
-      ],
-      "answer": "يتغلب على",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=overcome"
-    },
-    {
-      "id": 54,
-      "question": "participate",
-      "choices": [
-        "ينسى",
-        "يرفض",
-        "يتجاهل",
-        "يشارك"
-      ],
-      "answer": "يشارك",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=participate"
-    },
-    {
-      "id": 55,
-      "question": "particular",
-      "choices": [
-        "عام",
-        "صعب",
-        "محدد",
-        "غامض"
-      ],
-      "answer": "محدد",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=particular"
-    },
-    {
-      "id": 56,
-      "question": "pattern",
-      "choices": [
-        "فوضى",
-        "مشكلة",
-        "حل",
-        "نمط"
-      ],
-      "answer": "نمط",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=pattern"
-    },
-    {
-      "id": 57,
-      "question": "perform",
-      "choices": [
-        "يخفي",
-        "ينسى",
-        "يؤدي",
-        "يتوقف"
-      ],
-      "answer": "يؤدي",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=perform"
-    },
-    {
-      "id": 58,
-      "question": "period",
-      "choices": [
-        "حل",
-        "مشكلة",
-        "لحظة",
-        "فترة"
-      ],
-      "answer": "فترة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=period"
-    },
-    {
-      "id": 59,
-      "question": "permit",
-      "choices": [
-        "يمنع",
-        "يخفي",
-        "ينسى",
-        "يسمح"
-      ],
-      "answer": "يسمح",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=permit"
-    },
-    {
-      "id": 60,
-      "question": "persist",
-      "choices": [
-        "يستمر",
-        "يخفي",
-        "ينسى",
-        "يتوقف"
-      ],
-      "answer": "يستمر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=persist"
-    },
-    {
-      "id": 61,
-      "question": "phase",
-      "choices": [
-        "نهاية",
-        "مشكلة",
-        "مرحلة",
-        "حل"
-      ],
-      "answer": "مرحلة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=phase"
-    },
-    {
-      "id": 62,
-      "question": "phenomenon",
-      "choices": [
-        "مشكلة",
-        "سؤال",
-        "حل",
-        "ظاهرة"
-      ],
-      "answer": "ظاهرة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=phenomenon"
-    },
-    {
-      "id": 63,
-      "question": "physical",
-      "choices": [
-        "عقلي",
-        "عاطفي",
-        "روحي",
-        "جسدي"
-      ],
-      "answer": "جسدي",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=physical"
-    },
-    {
-      "id": 64,
-      "question": "policy",
-      "choices": [
-        "مشكلة",
-        "سؤال",
-        "سياسة",
-        "حل"
-      ],
-      "answer": "سياسة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=policy"
-    },
-    {
-      "id": 65,
-      "question": "position",
-      "choices": [
-        "مشكلة",
-        "حركة",
-        "موضع",
-        "حل"
-      ],
-      "answer": "موضع",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=position"
-    },
-    {
-      "id": 66,
-      "question": "positive",
-      "choices": [
-        "سلبي",
-        "محايد",
-        "غامض",
-        "إيجابي"
-      ],
-      "answer": "إيجابي",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=positive"
-    },
-    {
-      "id": 67,
-      "question": "possible",
-      "choices": [
-        "مستحيل",
-        "ممكن",
-        "غامض",
-        "صعب"
-      ],
-      "answer": "ممكن",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=possible"
-    },
-    {
-      "id": 68,
-      "question": "potential",
-      "choices": [
-        "إمكانية",
-        "حل",
-        "مشكلة",
-        "واقع"
-      ],
-      "answer": "إمكانية",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=potential"
-    },
-    {
-      "id": 69,
-      "question": "power",
-      "choices": [
-        "مشكلة",
-        "ضعف",
-        "قوة",
-        "حل"
-      ],
-      "answer": "قوة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=power"
-    },
-    {
-      "id": 70,
-      "question": "practice",
-      "choices": [
-        "مشكلة",
-        "نظرية",
-        "حل",
-        "ممارسة"
-      ],
-      "answer": "ممارسة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=practice"
-    },
-    {
-      "id": 71,
-      "question": "predict",
-      "choices": [
-        "ينسى",
-        "يرفض",
-        "يتنبأ",
-        "يتجاهل"
-      ],
-      "answer": "يتنبأ",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=predict"
-    },
-    {
-      "id": 72,
-      "question": "prepare",
-      "choices": [
-        "يتجاهل",
-        "يرفض",
-        "ينسى",
-        "يستعد"
-      ],
-      "answer": "يستعد",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=prepare"
-    },
-    {
-      "id": 73,
-      "question": "present",
-      "choices": [
-        "حاضر",
-        "ماضي",
-        "غامض",
-        "مستقبل"
-      ],
-      "answer": "حاضر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=present"
-    },
-    {
-      "id": 74,
-      "question": "pressure",
-      "choices": [
-        "مشكلة",
-        "ضغط",
-        "حل",
-        "راحة"
-      ],
-      "answer": "ضغط",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=pressure"
-    },
-    {
-      "id": 75,
-      "question": "prevent",
-      "choices": [
-        "يسمح",
-        "يمنع",
-        "يشرح",
-        "يساعد"
-      ],
-      "answer": "يمنع",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=prevent"
-    },
-    {
-      "id": 76,
-      "question": "previous",
-      "choices": [
-        "لاحق",
-        "سابق",
-        "حاضر",
-        "غامض"
-      ],
-      "answer": "سابق",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=previous"
-    },
-    {
-      "id": 77,
-      "question": "primary",
-      "choices": [
-        "أساسي",
-        "غير مهم",
-        "غامض",
-        "ثانوي"
-      ],
-      "answer": "أساسي",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=primary"
-    },
-    {
-      "id": 78,
-      "question": "principle",
-      "choices": [
-        "مبدأ",
-        "مشكلة",
-        "سؤال",
-        "حل"
-      ],
-      "answer": "مبدأ",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=principle"
-    },
-    {
-      "id": 79,
-      "question": "process",
-      "choices": [
-        "مشكلة",
-        "نتيجة",
-        "حل",
-        "عملية"
-      ],
-      "answer": "عملية",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=process"
-    },
-    {
-      "id": 80,
-      "question": "produce",
-      "choices": [
-        "يستهلك",
-        "يخفي",
-        "ينتج",
-        "ينسى"
-      ],
-      "answer": "ينتج",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=produce"
-    },
-    {
-      "id": 81,
-      "question": "illustrate",
-      "choices": [
-        "يوضح",
-        "ينتظر",
-        "يهرب",
-        "يهمل"
-      ],
-      "answer": "يوضح",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=illustrate"
-    },
-    {
-      "id": 82,
-      "question": "impact",
-      "choices": [
-        "قرار",
-        "سبب",
-        "تأثير",
-        "نتيجة"
-      ],
-      "answer": "تأثير",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=impact"
-    },
-    {
-      "id": 83,
-      "question": "indicate",
-      "choices": [
-        "يشير",
-        "ينتظر",
-        "يهمل",
-        "يهرب"
-      ],
-      "answer": "يشير",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=indicate"
-    },
-    {
-      "id": 84,
-      "question": "influence",
-      "choices": [
-        "يهمل",
-        "يهرب",
-        "ينتظر",
-        "يؤثر"
-      ],
-      "answer": "يؤثر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=influence"
-    },
-    {
-      "id": 85,
-      "question": "inform",
-      "choices": [
-        "ينتظر",
-        "يهمل",
-        "يهرب",
-        "يُعلم"
-      ],
-      "answer": "يُعلم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=inform"
-    },
-    {
-      "id": 86,
-      "question": "insist",
-      "choices": [
-        "ينتظر",
-        "يهمل",
-        "يهرب",
-        "يصرّ"
-      ],
-      "answer": "يصرّ",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=insist"
-    },
-    {
-      "id": 87,
-      "question": "intend",
-      "choices": [
-        "يهرب",
-        "ينوي",
-        "ينتظر",
-        "يهمل"
-      ],
-      "answer": "ينوي",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=intend"
-    },
-    {
-      "id": 88,
-      "question": "interpret",
-      "choices": [
-        "ينتظر",
-        "يهرب",
-        "يُفسر",
-        "يهمل"
-      ],
-      "answer": "يُفسر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=interpret"
-    },
-    {
-      "id": 89,
-      "question": "introduce",
-      "choices": [
-        "يهمل",
-        "يهرب",
-        "ينتظر",
-        "يقدّم"
-      ],
-      "answer": "يقدّم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=introduce"
-    },
-    {
-      "id": 90,
-      "question": "investigate",
-      "choices": [
-        "يهرب",
-        "يهمل",
-        "ينتظر",
-        "يحقق"
-      ],
-      "answer": "يحقق",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=investigate"
-    },
-    {
-      "id": 91,
-      "question": "involve",
-      "choices": [
-        "يشمل",
-        "ينتظر",
-        "يهمل",
-        "يهرب"
-      ],
-      "answer": "يشمل",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=involve"
-    },
-    {
-      "id": 92,
-      "question": "issue",
-      "choices": [
-        "قرار",
-        "نتيجة",
-        "مسألة",
-        "سبب"
-      ],
-      "answer": "مسألة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=issue"
-    },
-    {
-      "id": 93,
-      "question": "justify",
-      "choices": [
-        "ينتظر",
-        "يبرّر",
-        "يهمل",
-        "يهرب"
-      ],
-      "answer": "يبرّر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=justify"
-    },
-    {
-      "id": 94,
-      "question": "measure",
-      "choices": [
-        "يهرب",
-        "ينتظر",
-        "يهمل",
-        "يقيس"
-      ],
-      "answer": "يقيس",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=measure"
-    },
-    {
-      "id": 95,
-      "question": "mention",
-      "choices": [
-        "يهرب",
-        "يهمل",
-        "ينتظر",
-        "يذكر"
-      ],
-      "answer": "يذكر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=mention"
-    },
-    {
-      "id": 96,
-      "question": "persuade",
-      "choices": [
-        "يهرب",
-        "ينتظر",
-        "يقنع",
-        "يهمل"
-      ],
-      "answer": "يقنع",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=persuade"
-    },
-    {
-      "id": 97,
-      "question": "plan",
-      "choices": [
-        "يهمل",
-        "ينتظر",
-        "يخطط",
-        "يهرب"
-      ],
-      "answer": "يخطط",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=plan"
-    },
-    {
-      "id": 98,
-      "question": "prefer",
-      "choices": [
-        "يهمل",
-        "يهرب",
-        "ينتظر",
-        "يفضل"
-      ],
-      "answer": "يفضل",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=prefer"
-    },
-    {
-      "id": 99,
-      "question": "promote",
-      "choices": [
-        "يهمل",
-        "يروّج",
-        "ينتظر",
-        "يهرب"
-      ],
-      "answer": "يروّج",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=promote"
-    },
-    {
-      "id": 100,
-      "question": "propose",
-      "choices": [
-        "يهمل",
-        "يقترح",
-        "ينتظر",
-        "يهرب"
-      ],
-      "answer": "يقترح",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=propose"
-    },
-    {
-      "id": 101,
-      "question": "protect",
-      "choices": [
-        "ينتظر",
-        "يهرب",
-        "يحمي",
-        "يهمل"
-      ],
-      "answer": "يحمي",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=protect"
-    },
-    {
-      "id": 102,
-      "question": "prove",
-      "choices": [
-        "ينتظر",
-        "يثبت",
-        "يهمل",
-        "يهرب"
-      ],
-      "answer": "يثبت",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=prove"
-    },
-    {
-      "id": 103,
-      "question": "provide",
-      "choices": [
-        "يهرب",
-        "ينتظر",
-        "يوفّر",
-        "يهمل"
-      ],
-      "answer": "يوفّر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=provide"
-    },
-    {
-      "id": 104,
-      "question": "purpose",
-      "choices": [
-        "سبب",
-        "قرار",
-        "خطة",
-        "هدف"
-      ],
-      "answer": "هدف",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=purpose"
-    },
-    {
-      "id": 105,
-      "question": "qualify",
-      "choices": [
-        "ينتظر",
-        "يهرب",
-        "يؤهّل",
-        "يهمل"
-      ],
-      "answer": "يؤهّل",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=qualify"
-    },
-    {
-      "id": 106,
-      "question": "question",
-      "choices": [
-        "سؤال",
-        "قرار",
-        "إجابة",
-        "مشكلة"
-      ],
-      "answer": "سؤال",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=question"
-    },
-    {
-      "id": 107,
-      "question": "realize",
-      "choices": [
-        "يهرب",
-        "ينتظر",
-        "يهمل",
-        "يدرك"
-      ],
-      "answer": "يدرك",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=realize"
-    },
-    {
-      "id": 108,
-      "question": "recognize",
-      "choices": [
-        "يتعرف",
-        "يهرب",
-        "يهمل",
-        "ينتظر"
-      ],
-      "answer": "يتعرف",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=recognize"
-    },
-    {
-      "id": 109,
-      "question": "reduce",
-      "choices": [
-        "يزيد",
-        "يقلّل",
-        "يهمل",
-        "يهرب"
-      ],
-      "answer": "يقلّل",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=reduce"
-    },
-    {
-      "id": 110,
-      "question": "reflect",
-      "choices": [
-        "يهرب",
-        "يهمل",
-        "يعكس",
-        "ينتظر"
-      ],
-      "answer": "يعكس",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=reflect"
-    },
-    {
-      "id": 111,
-      "question": "relate",
-      "choices": [
-        "يهمل",
-        "يهرب",
-        "ينتظر",
-        "يربط"
-      ],
-      "answer": "يربط",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=relate"
-    },
-    {
-      "id": 112,
-      "question": "require",
-      "choices": [
-        "ينتظر",
-        "يهمل",
-        "يتطلب",
-        "يهرب"
-      ],
-      "answer": "يتطلب",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=require"
-    },
-    {
-      "id": 113,
-      "question": "respond",
-      "choices": [
-        "يستجيب",
-        "يهرب",
-        "يهمل",
-        "ينتظر"
-      ],
-      "answer": "يستجيب",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=respond"
-    },
-    {
-      "id": 114,
-      "question": "result",
-      "choices": [
-        "سبب",
-        "نتيجة",
-        "قرار",
-        "خطر"
-      ],
-      "answer": "نتيجة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=result"
-    },
-    {
-      "id": 115,
-      "question": "review",
-      "choices": [
-        "يهرب",
-        "يراجع",
-        "يهمل",
-        "ينتظر"
-      ],
-      "answer": "يراجع",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=review"
-    },
-    {
-      "id": 116,
-      "question": "rule",
-      "choices": [
-        "خطة",
-        "قرار",
-        "وسيلة",
-        "قانون"
-      ],
-      "answer": "قانون",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=rule"
-    },
-    {
-      "id": 117,
-      "question": "select",
-      "choices": [
-        "يهرب",
-        "يختار",
-        "ينتظر",
-        "يهمل"
-      ],
-      "answer": "يختار",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=select"
-    },
-    {
-      "id": 118,
-      "question": "separate",
-      "choices": [
-        "يهرب",
-        "يجمع",
-        "يهمل",
-        "يفصل"
-      ],
-      "answer": "يفصل",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=separate"
-    },
-    {
-      "id": 119,
-      "question": "share",
-      "choices": [
-        "يهرب",
-        "يهمل",
-        "ينتظر",
-        "يشارك"
-      ],
-      "answer": "يشارك",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=share"
-    },
-    {
-      "id": 120,
-      "question": "show",
-      "choices": [
-        "يُظهر",
-        "يهمل",
-        "ينتظر",
-        "يهرب"
-      ],
-      "answer": "يُظهر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=show"
-    },
-    {
-      "id": 121,
-      "question": "solve",
-      "choices": [
-        "يهرب",
-        "يحلّ",
-        "يهمل",
-        "ينتظر"
-      ],
-      "answer": "يحلّ",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=solve"
-    },
-    {
-      "id": 122,
-      "question": "state",
-      "choices": [
-        "يهمل",
-        "ينتظر",
-        "يصرّح",
-        "يهرب"
-      ],
-      "answer": "يصرّح",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=state"
-    },
-    {
-      "id": 123,
-      "question": "study",
-      "choices": [
-        "يهمل",
-        "يدرس",
-        "ينتظر",
-        "يهرب"
-      ],
-      "answer": "يدرس",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=study"
-    },
-    {
-      "id": 124,
-      "question": "suggest",
-      "choices": [
-        "يقترح",
-        "يهرب",
-        "ينتظر",
-        "يهمل"
-      ],
-      "answer": "يقترح",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=suggest"
-    },
-    {
-      "id": 125,
-      "question": "support",
-      "choices": [
-        "يدعم",
-        "يهمل",
-        "ينتظر",
-        "يهرب"
-      ],
-      "answer": "يدعم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=support"
-    },
-    {
-      "id": 126,
-      "question": "teach",
-      "choices": [
-        "يهرب",
-        "يهمل",
-        "يُدرّس",
-        "ينتظر"
-      ],
-      "answer": "يُدرّس",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=teach"
-    },
-    {
-      "id": 127,
-      "question": "tell",
-      "choices": [
-        "ينتظر",
-        "يهمل",
-        "يهرب",
-        "يخبر"
-      ],
-      "answer": "يخبر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=tell"
-    },
-    {
-      "id": 128,
-      "question": "test",
-      "choices": [
-        "يهرب",
-        "يختبر",
-        "ينتظر",
-        "يهمل"
-      ],
-      "answer": "يختبر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=test"
-    },
-    {
-      "id": 129,
-      "question": "track",
-      "choices": [
-        "ينتظر",
-        "يتتبع",
-        "يهمل",
-        "يهرب"
-      ],
-      "answer": "يتتبع",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=track"
-    },
-    {
-      "id": 130,
-      "question": "translate",
-      "choices": [
-        "يترجم",
-        "يهمل",
-        "يهرب",
-        "ينتظر"
-      ],
-      "answer": "يترجم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=translate"
-    },
-    {
-      "id": 131,
-      "question": "understand",
-      "choices": [
-        "يهرب",
-        "ينتظر",
-        "يهمل",
-        "يفهم"
-      ],
-      "answer": "يفهم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=understand"
-    },
-    {
-      "id": 132,
-      "question": "use",
-      "choices": [
-        "يهرب",
-        "ينتظر",
-        "يستخدم",
-        "يهمل"
-      ],
-      "answer": "يستخدم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=use"
-    },
-    {
-      "id": 133,
-      "question": "verify",
-      "choices": [
-        "يُحقّق",
-        "يهمل",
-        "ينتظر",
-        "يهرب"
-      ],
-      "answer": "يُحقّق",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=verify"
-    },
-    {
-      "id": 134,
-      "question": "view",
-      "choices": [
-        "ينتظر",
-        "يهرب",
-        "يشاهد",
-        "يهمل"
-      ],
-      "answer": "يشاهد",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=view"
-    },
-    {
-      "id": 135,
-      "question": "warn",
-      "choices": [
-        "ينتظر",
-        "يهمل",
-        "يهرب",
-        "يحذّر"
-      ],
-      "answer": "يحذّر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=warn"
-    },
-    {
-      "id": 136,
-      "question": "write",
-      "choices": [
-        "يهرب",
-        "يكتب",
-        "يهمل",
-        "ينتظر"
-      ],
-      "answer": "يكتب",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=write"
-    },
-    {
-      "id": 137,
-      "question": "adaptation",
-      "choices": [
-        "إلغاء",
-        "رفض",
-        "تكيّف",
-        "إعداد"
-      ],
-      "answer": "تكيّف",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=adaptation"
-    },
-    {
-      "id": 138,
-      "question": "analysis",
-      "choices": [
-        "تحليل",
-        "خطة",
-        "خطر",
-        "إشارة"
-      ],
-      "answer": "تحليل",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=analysis"
-    },
-    {
-      "id": 139,
-      "question": "assessment",
-      "choices": [
-        "انفصال",
-        "خطر",
-        "تقييم",
-        "هجوم"
-      ],
-      "answer": "تقييم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=assessment"
-    },
-    {
-      "id": 140,
-      "question": "assumption",
-      "choices": [
-        "افتراض",
-        "انتظار",
-        "خيار",
-        "رفض"
-      ],
-      "answer": "افتراض",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=assumption"
-    },
-    {
-      "id": 141,
-      "question": "challenge",
-      "choices": [
-        "خطر",
-        "توقف",
-        "تحدي",
-        "خسارة"
-      ],
-      "answer": "تحدي",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=challenge"
-    },
-    {
-      "id": 142,
-      "question": "comparison",
-      "choices": [
-        "خطر",
-        "إلغاء",
-        "اختلاف",
-        "مقارنة"
-      ],
-      "answer": "مقارنة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=comparison"
-    },
-    {
-      "id": 143,
-      "question": "consequence",
-      "choices": [
-        "سبب",
-        "نتيجة",
-        "خطة",
-        "خطر"
-      ],
-      "answer": "نتيجة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=consequence"
-    },
-    {
-      "id": 144,
-      "question": "consideration",
-      "choices": [
-        "إهمال",
-        "خطر",
-        "خيار",
-        "اعتبار"
-      ],
-      "answer": "اعتبار",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=consideration"
-    },
-    {
-      "id": 145,
-      "question": "creation",
-      "choices": [
-        "خسارة",
-        "رفض",
-        "دمار",
-        "إبداع"
-      ],
-      "answer": "إبداع",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=creation"
-    },
-    {
-      "id": 146,
-      "question": "criticism",
-      "choices": [
-        "تجاهل",
-        "نقد",
-        "تهنئة",
-        "مدح"
-      ],
-      "answer": "نقد",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=criticism"
-    },
-    {
-      "id": 147,
-      "question": "decision",
-      "choices": [
-        "رفض",
-        "قرار",
-        "خيار",
-        "خطر"
-      ],
-      "answer": "قرار",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=decision"
-    },
-    {
-      "id": 148,
-      "question": "definition",
-      "choices": [
-        "إلغاء",
-        "خطر",
-        "تعريف",
-        "غموض"
-      ],
-      "answer": "تعريف",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=definition"
-    },
-    {
-      "id": 149,
-      "question": "development",
-      "choices": [
-        "تطوير",
-        "خطر",
-        "دمار",
-        "إلغاء"
-      ],
-      "answer": "تطوير",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=development"
-    },
-    {
-      "id": 150,
-      "question": "difference",
-      "choices": [
-        "خطر",
-        "تشابه",
-        "رفض",
-        "فرق"
-      ],
-      "answer": "فرق",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=difference"
-    },
-    {
-      "id": 151,
-      "question": "discussion",
-      "choices": [
-        "إلغاء",
-        "صمت",
-        "نقاش",
-        "خطر"
-      ],
-      "answer": "نقاش",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=discussion"
-    },
-    {
-      "id": 152,
-      "question": "evaluation",
-      "choices": [
-        "تقييم",
-        "خطر",
-        "إلغاء",
-        "رفض"
-      ],
-      "answer": "تقييم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=evaluation"
-    },
-    {
-      "id": 153,
-      "question": "evidence",
-      "choices": [
-        "خسارة",
-        "دليل",
-        "إلغاء",
-        "خطر"
-      ],
-      "answer": "دليل",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=evidence"
-    },
-    {
-      "id": 154,
-      "question": "explanation",
-      "choices": [
-        "غموض",
-        "خطر",
-        "إلغاء",
-        "تفسير"
-      ],
-      "answer": "تفسير",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=explanation"
-    },
-    {
-      "id": 155,
-      "question": "expression",
-      "choices": [
-        "تعبير",
-        "إلغاء",
-        "صمت",
-        "خطر"
-      ],
-      "answer": "تعبير",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=expression"
-    },
-    {
-      "id": 156,
-      "question": "function",
-      "choices": [
-        "خطة",
-        "رفض",
-        "خطر",
-        "وظيفة"
-      ],
-      "answer": "وظيفة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=function"
-    },
-    {
-      "id": 157,
-      "question": "idea",
-      "choices": [
-        "خطر",
-        "إلغاء",
-        "فكرة",
-        "خسارة"
-      ],
-      "answer": "فكرة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=idea"
-    },
-    {
-      "id": 158,
-      "question": "improvement",
-      "choices": [
-        "فشل",
-        "خطر",
-        "إلغاء",
-        "تحسين"
-      ],
-      "answer": "تحسين",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=improvement"
-    },
-    {
-      "id": 159,
-      "question": "information",
-      "choices": [
-        "إلغاء",
-        "خطر",
-        "معلومات",
-        "رفض"
-      ],
-      "answer": "معلومات",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=information"
-    },
-    {
-      "id": 160,
-      "question": "instruction",
-      "choices": [
-        "إلغاء",
-        "رفض",
-        "خطر",
-        "تعليمات"
-      ],
-      "answer": "تعليمات",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=instruction"
-    },
-    {
-      "id": 161,
-      "question": "intention",
-      "choices": [
-        "نية",
-        "إلغاء",
-        "رفض",
-        "خطر"
-      ],
-      "answer": "نية",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=intention"
-    },
-    {
-      "id": 162,
-      "question": "interpretation",
-      "choices": [
-        "رفض",
-        "إلغاء",
-        "خطر",
-        "تفسير"
-      ],
-      "answer": "تفسير",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=interpretation"
-    },
-    {
-      "id": 163,
-      "question": "knowledge",
-      "choices": [
-        "إلغاء",
-        "رفض",
-        "خطر",
-        "معرفة"
-      ],
-      "answer": "معرفة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=knowledge"
-    },
-    {
-      "id": 164,
-      "question": "learning",
-      "choices": [
-        "تعلم",
-        "خطر",
-        "إلغاء",
-        "رفض"
-      ],
-      "answer": "تعلم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=learning"
-    },
-    {
-      "id": 165,
-      "question": "method",
-      "choices": [
-        "خطر",
-        "إلغاء",
-        "رفض",
-        "طريقة"
-      ],
-      "answer": "طريقة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=method"
-    },
-    {
-      "id": 166,
-      "question": "objective",
-      "choices": [
-        "رفض",
-        "خطر",
-        "إلغاء",
-        "هدف"
-      ],
-      "answer": "هدف",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=objective"
-    },
-    {
-      "id": 167,
-      "question": "opinion",
-      "choices": [
-        "إلغاء",
-        "خطر",
-        "رفض",
-        "رأي"
-      ],
-      "answer": "رأي",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=opinion"
-    },
-    {
-      "id": 168,
-      "question": "performance",
-      "choices": [
-        "إلغاء",
-        "رفض",
-        "أداء",
-        "خطر"
-      ],
-      "answer": "أداء",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=performance"
-    },
-    {
-      "id": 169,
-      "question": "perspective",
-      "choices": [
-        "رفض",
-        "وجهة نظر",
-        "خطر",
-        "إلغاء"
-      ],
-      "answer": "وجهة نظر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=perspective"
-    },
-    {
-      "id": 170,
-      "question": "priority",
-      "choices": [
-        "خطر",
-        "أولوية",
-        "إلغاء",
-        "رفض"
-      ],
-      "answer": "أولوية",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=priority"
-    },
-    {
-      "id": 171,
-      "question": "problem",
-      "choices": [
-        "رفض",
-        "خطر",
-        "مشكلة",
-        "إلغاء"
-      ],
-      "answer": "مشكلة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=problem"
-    },
-    {
-      "id": 172,
-      "question": "product",
-      "choices": [
-        "خطر",
-        "منتج",
-        "إلغاء",
-        "رفض"
-      ],
-      "answer": "منتج",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=product"
-    },
-    {
-      "id": 173,
-      "question": "project",
-      "choices": [
-        "رفض",
-        "خطر",
-        "إلغاء",
-        "مشروع"
-      ],
-      "answer": "مشروع",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=project"
-    },
-    {
-      "id": 174,
-      "question": "reason",
-      "choices": [
-        "خطر",
-        "رفض",
-        "سبب",
-        "إلغاء"
-      ],
-      "answer": "سبب",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=reason"
-    },
-    {
-      "id": 175,
-      "question": "recommendation",
-      "choices": [
-        "إلغاء",
-        "رفض",
-        "خطر",
-        "توصية"
-      ],
-      "answer": "توصية",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=recommendation"
-    },
-    {
-      "id": 176,
-      "question": "relation",
-      "choices": [
-        "علاقة",
-        "إلغاء",
-        "رفض",
-        "خطر"
-      ],
-      "answer": "علاقة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=relation"
-    },
-    {
-      "id": 177,
-      "question": "report",
-      "choices": [
-        "رفض",
-        "إلغاء",
-        "خطر",
-        "تقرير"
-      ],
-      "answer": "تقرير",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=report"
-    },
-    {
-      "id": 178,
-      "question": "requirement",
-      "choices": [
-        "متطلب",
-        "رفض",
-        "خطر",
-        "إلغاء"
-      ],
-      "answer": "متطلب",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=requirement"
-    },
-    {
-      "id": 179,
-      "question": "research",
-      "choices": [
-        "رفض",
-        "إلغاء",
-        "خطر",
-        "بحث"
-      ],
-      "answer": "بحث",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=research"
-    },
-    {
-      "id": 180,
-      "question": "response",
-      "choices": [
-        "خطر",
-        "استجابة",
-        "رفض",
-        "إلغاء"
-      ],
-      "answer": "استجابة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=response"
-    },
-    {
-      "id": 181,
-      "question": "role",
-      "choices": [
-        "خطر",
-        "دور",
-        "إلغاء",
-        "رفض"
-      ],
-      "answer": "دور",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=role"
-    },
-    {
-      "id": 182,
-      "question": "solution",
-      "choices": [
-        "رفض",
-        "حلّ",
-        "خطر",
-        "إلغاء"
-      ],
-      "answer": "حلّ",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=solution"
-    },
-    {
-      "id": 183,
-      "question": "strategy",
-      "choices": [
-        "إلغاء",
-        "رفض",
-        "استراتيجية",
-        "خطر"
-      ],
-      "answer": "استراتيجية",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=strategy"
-    },
-    {
-      "id": 184,
-      "question": "structure",
-      "choices": [
-        "رفض",
-        "إلغاء",
-        "هيكل",
-        "خطر"
-      ],
-      "answer": "هيكل",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=structure"
-    },
-    {
-      "id": 185,
-      "question": "task",
-      "choices": [
-        "خطر",
-        "مهمة",
-        "إلغاء",
-        "رفض"
-      ],
-      "answer": "مهمة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=task"
-    },
-    {
-      "id": 186,
-      "question": "technique",
-      "choices": [
-        "خطر",
-        "تقنية",
-        "رفض",
-        "إلغاء"
-      ],
-      "answer": "تقنية",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=technique"
-    },
-    {
-      "id": 187,
-      "question": "theme",
-      "choices": [
-        "خطر",
-        "رفض",
-        "إلغاء",
-        "موضوع"
-      ],
-      "answer": "موضوع",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=theme"
-    },
-    {
-      "id": 188,
-      "question": "topic",
-      "choices": [
-        "خطر",
-        "موضوع",
-        "رفض",
-        "إلغاء"
-      ],
-      "answer": "موضوع",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=topic"
-    },
-    {
-      "id": 189,
-      "question": "tool",
-      "choices": [
-        "إلغاء",
-        "رفض",
-        "أداة",
-        "خطر"
-      ],
-      "answer": "أداة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=tool"
-    },
-    {
-      "id": 190,
-      "question": "understanding",
-      "choices": [
-        "فهم",
-        "إلغاء",
-        "رفض",
-        "خطر"
-      ],
-      "answer": "فهم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=understanding"
-    },
-    {
-      "id": 191,
-      "question": "value",
-      "choices": [
-        "إلغاء",
-        "رفض",
-        "قيمة",
-        "خطر"
-      ],
-      "answer": "قيمة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=value"
-    },
-    {
-      "id": 192,
-      "question": "vision",
-      "choices": [
-        "خطر",
-        "رفض",
-        "رؤية",
-        "إلغاء"
-      ],
-      "answer": "رؤية",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=vision"
-    },
-    {
-      "id": 193,
-      "question": "way",
-      "choices": [
-        "رفض",
-        "إلغاء",
-        "طريقة",
-        "خطر"
-      ],
-      "answer": "طريقة",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=way"
-    },
-    {
-      "id": 194,
-      "question": "work",
-      "choices": [
-        "عمل",
-        "رفض",
-        "خطر",
-        "إلغاء"
-      ],
-      "answer": "عمل",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=work"
-    },
-    {
-      "id": 195,
-      "question": "achievement",
-      "choices": [
-        "إنجاز",
-        "خطر",
-        "رفض",
-        "إلغاء"
-      ],
-      "answer": "إنجاز",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=achievement"
-    },
-    {
-      "id": 196,
-      "question": "apply",
-      "choices": [
-        "رفض",
-        "إلغاء",
-        "يطبق",
-        "خطر"
-      ],
-      "answer": "يطبق",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=apply"
-    },
-    {
-      "id": 197,
-      "question": "assess",
-      "choices": [
-        "رفض",
-        "خطر",
-        "يقيم",
-        "إلغاء"
-      ],
-      "answer": "يقيم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=assess"
-    },
-    {
-      "id": 198,
-      "question": "decide",
-      "choices": [
-        "خطر",
-        "رفض",
-        "إلغاء",
-        "يقرر"
-      ],
-      "answer": "يقرر",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=decide"
-    },
-    {
-      "id": 199,
-      "question": "evaluate",
-      "choices": [
-        "رفض",
-        "يقيّم",
-        "خطر",
-        "إلغاء"
-      ],
-      "answer": "يقيّم",
-      "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=evaluate"
+      "unit": "Unit 1",
+      "words": [
+        {
+          "id": 1,
+          "question": "apartment",
+          "choices": [
+            "شقة",
+            "مدينة",
+            "بحر",
+            "كرة"
+          ],
+          "answer": "شقة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=apartment",
+          "section": "vocabulary"
+        },
+        {
+          "id": 2,
+          "question": "average",
+          "choices": [
+            "متوسط",
+            "كتاب",
+            "قلم",
+            "ذرة"
+          ],
+          "answer": "متوسط",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=average",
+          "section": "vocabulary"
+        },
+        {
+          "id": 3,
+          "question": "artist",
+          "choices": [
+            "آلة",
+            "فنان",
+            "قطار",
+            "رجل"
+          ],
+          "answer": "فنان",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=artist",
+          "section": "vocabulary"
+        },
+        {
+          "id": 4,
+          "question": "adapt",
+          "choices": [
+            "طائرة",
+            "حديقة",
+            "يتأقلم",
+            "امرأة"
+          ],
+          "answer": "يتأقلم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=adapt",
+          "section": "vocabulary"
+        },
+        {
+          "id": 5,
+          "question": "achieve",
+          "choices": [
+            "دكان",
+            "يحقق",
+            "طفل",
+            "قهوة"
+          ],
+          "answer": "يحقق",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=achieve",
+          "section": "vocabulary"
+        },
+        {
+          "id": 6,
+          "question": "above",
+          "choices": [
+            "سفينة",
+            "موسيقى",
+            "كلب",
+            "فوق"
+          ],
+          "answer": "فوق",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=above",
+          "section": "vocabulary"
+        },
+        {
+          "id": 7,
+          "question": "ancient",
+          "choices": [
+            "مكتبة",
+            "زهرة",
+            "قديم",
+            "قطة"
+          ],
+          "answer": "قديم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=ancient",
+          "section": "vocabulary"
+        },
+        {
+          "id": 8,
+          "question": "back",
+          "choices": [
+            "بحر",
+            "ملعب",
+            "كرة",
+            "ظهر"
+          ],
+          "answer": "ظهر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=back",
+          "section": "vocabulary"
+        },
+        {
+          "id": 9,
+          "question": "become",
+          "choices": [
+            "ذرة",
+            "شركة",
+            "يصبح",
+            "قلم"
+          ],
+          "answer": "يصبح",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=become",
+          "section": "vocabulary"
+        },
+        {
+          "id": 10,
+          "question": "badge",
+          "choices": [
+            "شارة",
+            "آلة",
+            "مرض",
+            "رجل"
+          ],
+          "answer": "شارة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=badge",
+          "section": "vocabulary"
+        },
+        {
+          "id": 11,
+          "question": "bullets",
+          "choices": [
+            "طائرة",
+            "صداقة",
+            "امرأة",
+            "رصاصات"
+          ],
+          "answer": "رصاصات",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=bullets",
+          "section": "vocabulary"
+        },
+        {
+          "id": 12,
+          "question": "behavior",
+          "choices": [
+            "قهوة",
+            "طفل",
+            "سلوك",
+            "خبر"
+          ],
+          "answer": "سلوك",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=behavior",
+          "section": "vocabulary"
+        },
+        {
+          "id": 13,
+          "question": "bright",
+          "choices": [
+            "كلب",
+            "موسيقى",
+            "ساطع",
+            "قصة"
+          ],
+          "answer": "ساطع",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=bright",
+          "section": "vocabulary"
+        },
+        {
+          "id": 14,
+          "question": "biting",
+          "choices": [
+            "مكتبة",
+            "مسرح",
+            "قطة",
+            "لاسع"
+          ],
+          "answer": "لاسع",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=biting",
+          "section": "vocabulary"
+        },
+        {
+          "id": 15,
+          "question": "believe",
+          "choices": [
+            "قلم رصاص",
+            "ملعب",
+            "كرة",
+            "يؤمن"
+          ],
+          "answer": "يؤمن",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=believe",
+          "section": "vocabulary"
+        },
+        {
+          "id": 16,
+          "question": "commitment",
+          "choices": [
+            "شركة",
+            "التزام",
+            "ذرة",
+            "ملح"
+          ],
+          "answer": "التزام",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=commitment",
+          "section": "vocabulary"
+        },
+        {
+          "id": 17,
+          "question": "continent",
+          "choices": [
+            "قارة",
+            "مرض",
+            "سكر",
+            "رجل"
+          ],
+          "answer": "قارة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=continent",
+          "section": "vocabulary"
+        },
+        {
+          "id": 18,
+          "question": "crush",
+          "choices": [
+            "امرأة",
+            "يسحق",
+            "خبز",
+            "صداقة"
+          ],
+          "answer": "يسحق",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=crush",
+          "section": "vocabulary"
+        },
+        {
+          "id": 19,
+          "question": "continuously",
+          "choices": [
+            "سوق",
+            "خبر",
+            "باستمرار",
+            "طفل"
+          ],
+          "answer": "باستمرار",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=continuously",
+          "section": "vocabulary"
+        },
+        {
+          "id": 20,
+          "question": "cycle",
+          "choices": [
+            "دورة",
+            "قصة",
+            "كلب",
+            "طريق"
+          ],
+          "answer": "دورة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=cycle",
+          "section": "vocabulary"
+        },
+        {
+          "id": 21,
+          "question": "common",
+          "choices": [
+            "محطة",
+            "مسرح",
+            "قطة",
+            "شائع"
+          ],
+          "answer": "شائع",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=common",
+          "section": "vocabulary"
+        },
+        {
+          "id": 22,
+          "question": "crop",
+          "choices": [
+            "شاطئ",
+            "محصول",
+            "قلم رصاص",
+            "ملعب"
+          ],
+          "answer": "محصول",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=crop",
+          "section": "vocabulary"
+        },
+        {
+          "id": 23,
+          "question": "case",
+          "choices": [
+            "ثلج",
+            "شركة",
+            "حالة",
+            "ملح"
+          ],
+          "answer": "حالة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=case",
+          "section": "vocabulary"
+        },
+        {
+          "id": 24,
+          "question": "consisting",
+          "choices": [
+            "مكوّن من",
+            "سكر",
+            "مرض",
+            "مطر"
+          ],
+          "answer": "مكوّن من",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=consisting",
+          "section": "vocabulary"
+        },
+        {
+          "id": 25,
+          "question": "classroom",
+          "choices": [
+            "ضباب",
+            "صداقة",
+            "خبز",
+            "صف دراسي"
+          ],
+          "answer": "صف دراسي",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=classroom",
+          "section": "vocabulary"
+        },
+        {
+          "id": 26,
+          "question": "clear",
+          "choices": [
+            "لحم",
+            "واضح",
+            "خبر",
+            "سوق"
+          ],
+          "answer": "واضح",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=clear",
+          "section": "vocabulary"
+        },
+        {
+          "id": 27,
+          "question": "date",
+          "choices": [
+            "قصة",
+            "مكتب",
+            "تاريخ",
+            "طريق"
+          ],
+          "answer": "تاريخ",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=date",
+          "section": "vocabulary"
+        },
+        {
+          "id": 28,
+          "question": "decide",
+          "choices": [
+            "شاشة",
+            "مسرح",
+            "يقرر",
+            "محطة"
+          ],
+          "answer": "يقرر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=decide",
+          "section": "vocabulary"
+        },
+        {
+          "id": 29,
+          "question": "direction",
+          "choices": [
+            "حاسوب",
+            "اتجاه",
+            "شاطئ",
+            "قلم رصاص"
+          ],
+          "answer": "اتجاه",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=direction",
+          "section": "vocabulary"
+        },
+        {
+          "id": 30,
+          "question": "excel",
+          "choices": [
+            "ملح",
+            "ثلج",
+            "هاتف",
+            "يتفوق"
+          ],
+          "answer": "يتفوق",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=excel",
+          "section": "vocabulary"
+        },
+        {
+          "id": 31,
+          "question": "enthusiasm",
+          "choices": [
+            "مطر",
+            "سكر",
+            "حماس",
+            "راديو"
+          ],
+          "answer": "حماس",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=enthusiasm",
+          "section": "vocabulary"
+        },
+        {
+          "id": 32,
+          "question": "element",
+          "choices": [
+            "جامعة",
+            "ضباب",
+            "خبز",
+            "عنصر"
+          ],
+          "answer": "عنصر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=element",
+          "section": "vocabulary"
+        },
+        {
+          "id": 33,
+          "question": "etiquette",
+          "choices": [
+            "مدرسة",
+            "سوق",
+            "لحم",
+            "آداب التعامل"
+          ],
+          "answer": "آداب التعامل",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=etiquette",
+          "section": "vocabulary"
+        },
+        {
+          "id": 34,
+          "question": "enjoy",
+          "choices": [
+            "طريق",
+            "يستمتع",
+            "درس",
+            "مكتب"
+          ],
+          "answer": "يستمتع",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=enjoy",
+          "section": "vocabulary"
+        },
+        {
+          "id": 35,
+          "question": "elections",
+          "choices": [
+            "حقيبة ظهر",
+            "محطة",
+            "انتخابات",
+            "شاشة"
+          ],
+          "answer": "انتخابات",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=elections",
+          "section": "vocabulary"
+        },
+        {
+          "id": 36,
+          "question": "employee",
+          "choices": [
+            "موظف",
+            "شاطئ",
+            "حاسوب",
+            "مقعد"
+          ],
+          "answer": "موظف",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=employee",
+          "section": "vocabulary"
+        },
+        {
+          "id": 37,
+          "question": "fresh",
+          "choices": [
+            "ثلج",
+            "قانون",
+            "هاتف",
+            "طازج"
+          ],
+          "answer": "طازج",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=fresh",
+          "section": "vocabulary"
+        },
+        {
+          "id": 38,
+          "question": "function",
+          "choices": [
+            "مطر",
+            "راديو",
+            "وظيفة",
+            "ملابس"
+          ],
+          "answer": "وظيفة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=function",
+          "section": "vocabulary"
+        },
+        {
+          "id": 39,
+          "question": "freeze",
+          "choices": [
+            "ضباب",
+            "جامعة",
+            "يتجمد",
+            "مجوهرات"
+          ],
+          "answer": "يتجمد",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=freeze",
+          "section": "vocabulary"
+        },
+        {
+          "id": 40,
+          "question": "faint",
+          "choices": [
+            "مدرسة",
+            "نجم",
+            "يُغمى عليه",
+            "لحم"
+          ],
+          "answer": "يُغمى عليه",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=faint",
+          "section": "vocabulary"
+        },
+        {
+          "id": 41,
+          "question": "fluent",
+          "choices": [
+            "قمر",
+            "مكتب",
+            "درس",
+            "بطلاقة"
+          ],
+          "answer": "بطلاقة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=fluent",
+          "section": "vocabulary"
+        },
+        {
+          "id": 42,
+          "question": "factor",
+          "choices": [
+            "شاشة",
+            "شمس",
+            "حقيبة ظهر",
+            "عامل"
+          ],
+          "answer": "عامل",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=factor",
+          "section": "vocabulary"
+        },
+        {
+          "id": 43,
+          "question": "gain",
+          "choices": [
+            "مقعد",
+            "يكسب",
+            "حاسوب",
+            "ساعة"
+          ],
+          "answer": "يكسب",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=gain",
+          "section": "vocabulary"
+        },
+        {
+          "id": 44,
+          "question": "gallery",
+          "choices": [
+            "مرآة",
+            "معرض",
+            "هاتف",
+            "قانون"
+          ],
+          "answer": "معرض",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=gallery",
+          "section": "vocabulary"
+        },
+        {
+          "id": 45,
+          "question": "gap",
+          "choices": [
+            "مفتاح",
+            "ملابس",
+            "فجوة",
+            "راديو"
+          ],
+          "answer": "فجوة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=gap",
+          "section": "vocabulary"
+        },
+        {
+          "id": 46,
+          "question": "humid",
+          "choices": [
+            "باب",
+            "مجوهرات",
+            "رطب",
+            "جامعة"
+          ],
+          "answer": "رطب",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=humid",
+          "section": "vocabulary"
+        },
+        {
+          "id": 47,
+          "question": "harsh",
+          "choices": [
+            "نافذة",
+            "نجم",
+            "قاسٍ",
+            "مدرسة"
+          ],
+          "answer": "قاسٍ",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=harsh",
+          "section": "vocabulary"
+        },
+        {
+          "id": 48,
+          "question": "humans",
+          "choices": [
+            "درج",
+            "قمر",
+            "بشر",
+            "درس"
+          ],
+          "answer": "بشر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=humans",
+          "section": "vocabulary"
+        },
+        {
+          "id": 49,
+          "question": "hole",
+          "choices": [
+            "هاتف محمول",
+            "شمس",
+            "حفرة",
+            "حقيبة ظهر"
+          ],
+          "answer": "حفرة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=hole",
+          "section": "vocabulary"
+        },
+        {
+          "id": 50,
+          "question": "host",
+          "choices": [
+            "ساعة",
+            "مضيف",
+            "حدود",
+            "مقعد"
+          ],
+          "answer": "مضيف",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=host",
+          "section": "vocabulary"
+        },
+        {
+          "id": 51,
+          "question": "idea",
+          "choices": [
+            "طاقة",
+            "مرآة",
+            "قانون",
+            "فكرة"
+          ],
+          "answer": "فكرة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=idea",
+          "section": "vocabulary"
+        },
+        {
+          "id": 52,
+          "question": "identify",
+          "choices": [
+            "يحدد",
+            "مفتاح",
+            "قيمة",
+            "ملابس"
+          ],
+          "answer": "يحدد",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=identify",
+          "section": "vocabulary"
+        },
+        {
+          "id": 53,
+          "question": "ignorant",
+          "choices": [
+            "مسافة",
+            "جاهل",
+            "باب",
+            "مجوهرات"
+          ],
+          "answer": "جاهل",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=ignorant",
+          "section": "vocabulary"
+        },
+        {
+          "id": 54,
+          "question": "illness",
+          "choices": [
+            "مرض",
+            "حجم",
+            "نجم",
+            "نافذة"
+          ],
+          "answer": "مرض",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=illness",
+          "section": "vocabulary"
+        },
+        {
+          "id": 55,
+          "question": "immune",
+          "choices": [
+            "مُحصّن",
+            "قمر",
+            "مقياس",
+            "درج"
+          ],
+          "answer": "مُحصّن",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=immune",
+          "section": "vocabulary"
+        },
+        {
+          "id": 56,
+          "question": "jail",
+          "choices": [
+            "قبيلة",
+            "سجن",
+            "هاتف محمول",
+            "شمس"
+          ],
+          "answer": "سجن",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=jail",
+          "section": "vocabulary"
+        },
+        {
+          "id": 57,
+          "question": "keep",
+          "choices": [
+            "حدود",
+            "ساعة",
+            "يحافظ",
+            "إشارة"
+          ],
+          "answer": "يحافظ",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=keep",
+          "section": "vocabulary"
+        },
+        {
+          "id": 58,
+          "question": "kidnap",
+          "choices": [
+            "طاقة",
+            "يخطف",
+            "مرآة",
+            "معبد"
+          ],
+          "answer": "يخطف",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=kidnap",
+          "section": "vocabulary"
+        },
+        {
+          "id": 59,
+          "question": "limbs",
+          "choices": [
+            "مفتاح",
+            "قيمة",
+            "وصفة",
+            "أطراف"
+          ],
+          "answer": "أطراف",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=limbs",
+          "section": "vocabulary"
+        },
+        {
+          "id": 60,
+          "question": "lake",
+          "choices": [
+            "باب",
+            "صيدلية",
+            "بحيرة",
+            "مسافة"
+          ],
+          "answer": "بحيرة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=lake",
+          "section": "vocabulary"
+        },
+        {
+          "id": 61,
+          "question": "lens",
+          "choices": [
+            "عدسة",
+            "حجم",
+            "مستشفى",
+            "نافذة"
+          ],
+          "answer": "عدسة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=lens",
+          "section": "vocabulary"
+        },
+        {
+          "id": 62,
+          "question": "lack",
+          "choices": [
+            "نقص",
+            "حدس",
+            "مقياس",
+            "درج"
+          ],
+          "answer": "نقص",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=lack",
+          "section": "vocabulary"
+        },
+        {
+          "id": 63,
+          "question": "maintain",
+          "choices": [
+            "ثقة",
+            "يحافظ على",
+            "قبيلة",
+            "هاتف محمول"
+          ],
+          "answer": "يحافظ على",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=maintain",
+          "section": "vocabulary"
+        },
+        {
+          "id": 64,
+          "question": "male",
+          "choices": [
+            "إشارة",
+            "حدود",
+            "ذكر",
+            "هدف"
+          ],
+          "answer": "ذكر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=male",
+          "section": "vocabulary"
+        },
+        {
+          "id": 65,
+          "question": "mammals",
+          "choices": [
+            "ثدييات",
+            "طاقة",
+            "مهمة",
+            "معبد"
+          ],
+          "answer": "ثدييات",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=mammals",
+          "section": "vocabulary"
+        },
+        {
+          "id": 66,
+          "question": "manner",
+          "choices": [
+            "وصفة",
+            "ثروة",
+            "قيمة",
+            "أسلوب"
+          ],
+          "answer": "أسلوب",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=manner",
+          "section": "vocabulary"
+        },
+        {
+          "id": 67,
+          "question": "ocean",
+          "choices": [
+            "مسافة",
+            "صيدلية",
+            "محيط",
+            "فضاء"
+          ],
+          "answer": "محيط",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=ocean",
+          "section": "vocabulary"
+        },
+        {
+          "id": 68,
+          "question": "offense",
+          "choices": [
+            "حيوان",
+            "حجم",
+            "إساءة",
+            "مستشفى"
+          ],
+          "answer": "إساءة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=offense",
+          "section": "vocabulary"
+        },
+        {
+          "id": 69,
+          "question": "only",
+          "choices": [
+            "حدس",
+            "صقر",
+            "مقياس",
+            "فقط"
+          ],
+          "answer": "فقط",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=only",
+          "section": "vocabulary"
+        },
+        {
+          "id": 70,
+          "question": "painter",
+          "choices": [
+            "طريق سريع",
+            "ثقة",
+            "رسام",
+            "قبيلة"
+          ],
+          "answer": "رسام",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=painter",
+          "section": "vocabulary"
+        },
+        {
+          "id": 71,
+          "question": "plant",
+          "choices": [
+            "إشارة",
+            "مطار",
+            "نبات",
+            "هدف"
+          ],
+          "answer": "نبات",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=plant",
+          "section": "vocabulary"
+        },
+        {
+          "id": 72,
+          "question": "passed away",
+          "choices": [
+            "مهمة",
+            "معبد",
+            "منارة",
+            "توفي"
+          ],
+          "answer": "توفي",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=passed%20away",
+          "section": "vocabulary"
+        },
+        {
+          "id": 73,
+          "question": "produce",
+          "choices": [
+            "صاروخ",
+            "وصفة",
+            "ثروة",
+            "ينتج"
+          ],
+          "answer": "ينتج",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=produce",
+          "section": "vocabulary"
+        },
+        {
+          "id": 74,
+          "question": "popular",
+          "choices": [
+            "صيدلية",
+            "جرس",
+            "فضاء",
+            "مشهور"
+          ],
+          "answer": "مشهور",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=popular",
+          "section": "vocabulary"
+        },
+        {
+          "id": 75,
+          "question": "prize",
+          "choices": [
+            "مستشفى",
+            "حيوان",
+            "جائزة",
+            "سلم"
+          ],
+          "answer": "جائزة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=prize",
+          "section": "vocabulary"
+        },
+        {
+          "id": 76,
+          "question": "power",
+          "choices": [
+            "حدس",
+            "صقر",
+            "قوة",
+            "مصباح"
+          ],
+          "answer": "قوة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=power",
+          "section": "vocabulary"
+        },
+        {
+          "id": 77,
+          "question": "pure",
+          "choices": [
+            "طريق سريع",
+            "ثقة",
+            "ليل",
+            "نقي"
+          ],
+          "answer": "نقي",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=pure",
+          "section": "vocabulary"
+        },
+        {
+          "id": 78,
+          "question": "plural",
+          "choices": [
+            "نهار",
+            "مطار",
+            "هدف",
+            "جمع"
+          ],
+          "answer": "جمع",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=plural",
+          "section": "vocabulary"
+        },
+        {
+          "id": 79,
+          "question": "quality",
+          "choices": [
+            "عاصفة",
+            "جودة",
+            "منارة",
+            "مهمة"
+          ],
+          "answer": "جودة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=quality",
+          "section": "vocabulary"
+        },
+        {
+          "id": 80,
+          "question": "quantity",
+          "choices": [
+            "ثروة",
+            "بيت",
+            "كمية",
+            "صاروخ"
+          ],
+          "answer": "كمية",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=quantity",
+          "section": "vocabulary"
+        },
+        {
+          "id": 81,
+          "question": "regrow",
+          "choices": [
+            "ينمو مجددًا",
+            "جرس",
+            "فضاء",
+            "غرفة"
+          ],
+          "answer": "ينمو مجددًا",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=regrow",
+          "section": "vocabulary"
+        },
+        {
+          "id": 82,
+          "question": "roar",
+          "choices": [
+            "صندوق",
+            "حيوان",
+            "سلم",
+            "زئير"
+          ],
+          "answer": "زئير",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=roar",
+          "section": "vocabulary"
+        },
+        {
+          "id": 83,
+          "question": "religious",
+          "choices": [
+            "ديني",
+            "وسادة",
+            "مصباح",
+            "صقر"
+          ],
+          "answer": "ديني",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=religious",
+          "section": "vocabulary"
+        },
+        {
+          "id": 84,
+          "question": "royal",
+          "choices": [
+            "ملكي",
+            "طريق سريع",
+            "ليل",
+            "جدار"
+          ],
+          "answer": "ملكي",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=royal",
+          "section": "vocabulary"
+        },
+        {
+          "id": 85,
+          "question": "rare",
+          "choices": [
+            "نادر",
+            "مطار",
+            "نهار",
+            "سمكة"
+          ],
+          "answer": "نادر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=rare",
+          "section": "vocabulary"
+        },
+        {
+          "id": 86,
+          "question": "ruthlessly",
+          "choices": [
+            "منارة",
+            "بلا رحمة",
+            "قارب",
+            "عاصفة"
+          ],
+          "answer": "بلا رحمة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=ruthlessly",
+          "section": "vocabulary"
+        },
+        {
+          "id": 87,
+          "question": "savior",
+          "choices": [
+            "بيت",
+            "مخلّص",
+            "صاروخ",
+            "مكتسبات"
+          ],
+          "answer": "مخلّص",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=savior",
+          "section": "vocabulary"
+        },
+        {
+          "id": 88,
+          "question": "scale",
+          "choices": [
+            "جرس",
+            "غرفة",
+            "مقياس",
+            "منجم"
+          ],
+          "answer": "مقياس",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=scale",
+          "section": "vocabulary"
+        },
+        {
+          "id": 89,
+          "question": "scare",
+          "choices": [
+            "يخيف",
+            "صندوق",
+            "مصنع",
+            "سلم"
+          ],
+          "answer": "يخيف",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=scare",
+          "section": "vocabulary"
+        },
+        {
+          "id": 90,
+          "question": "scientist",
+          "choices": [
+            "حافلة",
+            "وسادة",
+            "مصباح",
+            "عالم"
+          ],
+          "answer": "عالم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=scientist",
+          "section": "vocabulary"
+        },
+        {
+          "id": 91,
+          "question": "score",
+          "choices": [
+            "ملعب رياضي",
+            "نتيجة",
+            "جدار",
+            "ليل"
+          ],
+          "answer": "نتيجة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=score",
+          "section": "vocabulary"
+        },
+        {
+          "id": 92,
+          "question": "sensation",
+          "choices": [
+            "نهار",
+            "كوب",
+            "إحساس",
+            "سمكة"
+          ],
+          "answer": "إحساس",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=sensation",
+          "section": "vocabulary"
+        },
+        {
+          "id": 93,
+          "question": "separate",
+          "choices": [
+            "قارب",
+            "عاصفة",
+            "يفصل",
+            "طبق"
+          ],
+          "answer": "يفصل",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=separate",
+          "section": "vocabulary"
+        },
+        {
+          "id": 94,
+          "question": "sequence",
+          "choices": [
+            "بيت",
+            "حديقة عامة",
+            "مكتسبات",
+            "تسلسل"
+          ],
+          "answer": "تسلسل",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=sequence",
+          "section": "vocabulary"
+        },
+        {
+          "id": 95,
+          "question": "servant",
+          "choices": [
+            "منجم",
+            "معطف",
+            "غرفة",
+            "خادم"
+          ],
+          "answer": "خادم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=servant",
+          "section": "vocabulary"
+        },
+        {
+          "id": 96,
+          "question": "several",
+          "choices": [
+            "صندوق",
+            "مصنع",
+            "عدة",
+            "جملة"
+          ],
+          "answer": "عدة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=several",
+          "section": "vocabulary"
+        },
+        {
+          "id": 97,
+          "question": "shamefully",
+          "choices": [
+            "حافلة",
+            "لوحة",
+            "بخزي",
+            "وسادة"
+          ],
+          "answer": "بخزي",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=shamefully",
+          "section": "vocabulary"
+        },
+        {
+          "id": 98,
+          "question": "tension",
+          "choices": [
+            "توتر",
+            "معسكر",
+            "ملعب رياضي",
+            "جدار"
+          ],
+          "answer": "توتر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=tension",
+          "section": "vocabulary"
+        },
+        {
+          "id": 99,
+          "question": "textbook",
+          "choices": [
+            "كتاب دراسي",
+            "علم",
+            "كوب",
+            "سمكة"
+          ],
+          "answer": "كتاب دراسي",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=textbook",
+          "section": "vocabulary"
+        },
+        {
+          "id": 100,
+          "question": "through",
+          "choices": [
+            "عبر",
+            "طبق",
+            "قارب",
+            "صورة"
+          ],
+          "answer": "عبر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=through",
+          "section": "vocabulary"
+        },
+        {
+          "id": 101,
+          "question": "throne",
+          "choices": [
+            "عرش",
+            "حديقة عامة",
+            "مكتسبات",
+            "لوحة مفاتيح"
+          ],
+          "answer": "عرش",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=throne",
+          "section": "vocabulary"
+        },
+        {
+          "id": 102,
+          "question": "tutor",
+          "choices": [
+            "منجم",
+            "معلم خاص",
+            "تمثال",
+            "معطف"
+          ],
+          "answer": "معلم خاص",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=tutor",
+          "section": "vocabulary"
+        },
+        {
+          "id": 103,
+          "question": "until",
+          "choices": [
+            "مصنع",
+            "قبو",
+            "حتى",
+            "جملة"
+          ],
+          "answer": "حتى",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=until",
+          "section": "vocabulary"
+        },
+        {
+          "id": 104,
+          "question": "upwards",
+          "choices": [
+            "إلى الأعلى",
+            "لوحة",
+            "حافلة",
+            "سلسلة"
+          ],
+          "answer": "إلى الأعلى",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=upwards",
+          "section": "vocabulary"
+        },
+        {
+          "id": 105,
+          "question": "vow",
+          "choices": [
+            "معسكر",
+            "حقيبة",
+            "ملعب رياضي",
+            "يتعهد"
+          ],
+          "answer": "يتعهد",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=vow",
+          "section": "vocabulary"
+        },
+        {
+          "id": 106,
+          "question": "velour",
+          "choices": [
+            "علم",
+            "مخمل",
+            "مدينة",
+            "كوب"
+          ],
+          "answer": "مخمل",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=velour",
+          "section": "vocabulary"
+        },
+        {
+          "id": 107,
+          "question": "wreck",
+          "choices": [
+            "طبق",
+            "كتاب",
+            "حطام",
+            "صورة"
+          ],
+          "answer": "حطام",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=wreck",
+          "section": "vocabulary"
+        },
+        {
+          "id": 108,
+          "question": "willow",
+          "choices": [
+            "لوحة مفاتيح",
+            "قطار",
+            "صفصاف",
+            "حديقة عامة"
+          ],
+          "answer": "صفصاف",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=willow",
+          "section": "vocabulary"
+        },
+        {
+          "id": 109,
+          "question": "widow",
+          "choices": [
+            "معطف",
+            "حديقة",
+            "تمثال",
+            "أرملة"
+          ],
+          "answer": "أرملة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=widow",
+          "section": "vocabulary"
+        },
+        {
+          "id": 110,
+          "question": "worldwide",
+          "choices": [
+            "دكان",
+            "قبو",
+            "جملة",
+            "عالمي"
+          ],
+          "answer": "عالمي",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=worldwide",
+          "section": "vocabulary"
+        },
+        {
+          "id": 111,
+          "question": "war",
+          "choices": [
+            "سلسلة",
+            "حرب",
+            "لوحة",
+            "سفينة"
+          ],
+          "answer": "حرب",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=war",
+          "section": "vocabulary"
+        },
+        {
+          "id": 112,
+          "question": "xylophone",
+          "choices": [
+            "زهرة",
+            "حقيبة",
+            "إكسيليفون",
+            "معسكر"
+          ],
+          "answer": "إكسيليفون",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=xylophone",
+          "section": "vocabulary"
+        },
+        {
+          "id": 113,
+          "question": "yarn",
+          "choices": [
+            "خيط صوفي",
+            "بحر",
+            "علم",
+            "مدينة"
+          ],
+          "answer": "خيط صوفي",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=yarn",
+          "section": "vocabulary"
+        },
+        {
+          "id": 114,
+          "question": "yolk",
+          "choices": [
+            "صورة",
+            "قلم",
+            "كتاب",
+            "صفار البيض"
+          ],
+          "answer": "صفار البيض",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=yolk",
+          "section": "vocabulary"
+        },
+        {
+          "id": 115,
+          "question": "zone",
+          "choices": [
+            "آلة",
+            "قطار",
+            "منطقة",
+            "لوحة مفاتيح"
+          ],
+          "answer": "منطقة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=zone",
+          "section": "vocabulary"
+        },
+        {
+          "id": 116,
+          "question": "divide",
+          "choices": [
+            "تمثال",
+            "حديقة",
+            "يقسم",
+            "طائرة"
+          ],
+          "answer": "يقسم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=divide",
+          "section": "vocabulary"
+        }
+      ]
+    },
+    {
+      "unit": "Unit 2",
+      "words": [
+        {
+          "id": 117,
+          "question": "select",
+          "choices": [
+            "يهرب",
+            "يختار",
+            "ينتظر",
+            "يهمل"
+          ],
+          "answer": "يختار",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=select",
+          "section": "vocabulary"
+        },
+        {
+          "id": 118,
+          "question": "separate",
+          "choices": [
+            "يهرب",
+            "يجمع",
+            "يهمل",
+            "يفصل"
+          ],
+          "answer": "يفصل",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=separate",
+          "section": "vocabulary"
+        },
+        {
+          "id": 119,
+          "question": "share",
+          "choices": [
+            "يهرب",
+            "يهمل",
+            "ينتظر",
+            "يشارك"
+          ],
+          "answer": "يشارك",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=share",
+          "section": "vocabulary"
+        },
+        {
+          "id": 120,
+          "question": "show",
+          "choices": [
+            "يُظهر",
+            "يهمل",
+            "ينتظر",
+            "يهرب"
+          ],
+          "answer": "يُظهر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=show",
+          "section": "vocabulary"
+        },
+        {
+          "id": 121,
+          "question": "solve",
+          "choices": [
+            "يهرب",
+            "يحلّ",
+            "يهمل",
+            "ينتظر"
+          ],
+          "answer": "يحلّ",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=solve",
+          "section": "vocabulary"
+        },
+        {
+          "id": 122,
+          "question": "state",
+          "choices": [
+            "يهمل",
+            "ينتظر",
+            "يصرّح",
+            "يهرب"
+          ],
+          "answer": "يصرّح",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=state",
+          "section": "vocabulary"
+        },
+        {
+          "id": 123,
+          "question": "study",
+          "choices": [
+            "يهمل",
+            "يدرس",
+            "ينتظر",
+            "يهرب"
+          ],
+          "answer": "يدرس",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=study",
+          "section": "vocabulary"
+        },
+        {
+          "id": 124,
+          "question": "suggest",
+          "choices": [
+            "يقترح",
+            "يهرب",
+            "ينتظر",
+            "يهمل"
+          ],
+          "answer": "يقترح",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=suggest",
+          "section": "vocabulary"
+        },
+        {
+          "id": 125,
+          "question": "support",
+          "choices": [
+            "يدعم",
+            "يهمل",
+            "ينتظر",
+            "يهرب"
+          ],
+          "answer": "يدعم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=support",
+          "section": "vocabulary"
+        },
+        {
+          "id": 126,
+          "question": "teach",
+          "choices": [
+            "يهرب",
+            "يهمل",
+            "يُدرّس",
+            "ينتظر"
+          ],
+          "answer": "يُدرّس",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=teach",
+          "section": "vocabulary"
+        },
+        {
+          "id": 127,
+          "question": "tell",
+          "choices": [
+            "ينتظر",
+            "يهمل",
+            "يهرب",
+            "يخبر"
+          ],
+          "answer": "يخبر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=tell",
+          "section": "vocabulary"
+        },
+        {
+          "id": 128,
+          "question": "test",
+          "choices": [
+            "يهرب",
+            "يختبر",
+            "ينتظر",
+            "يهمل"
+          ],
+          "answer": "يختبر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=test",
+          "section": "vocabulary"
+        },
+        {
+          "id": 129,
+          "question": "track",
+          "choices": [
+            "ينتظر",
+            "يتتبع",
+            "يهمل",
+            "يهرب"
+          ],
+          "answer": "يتتبع",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=track",
+          "section": "vocabulary"
+        },
+        {
+          "id": 130,
+          "question": "translate",
+          "choices": [
+            "يترجم",
+            "يهمل",
+            "يهرب",
+            "ينتظر"
+          ],
+          "answer": "يترجم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=translate",
+          "section": "vocabulary"
+        },
+        {
+          "id": 131,
+          "question": "understand",
+          "choices": [
+            "يهرب",
+            "ينتظر",
+            "يهمل",
+            "يفهم"
+          ],
+          "answer": "يفهم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=understand",
+          "section": "vocabulary"
+        },
+        {
+          "id": 132,
+          "question": "use",
+          "choices": [
+            "يهرب",
+            "ينتظر",
+            "يستخدم",
+            "يهمل"
+          ],
+          "answer": "يستخدم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=use",
+          "section": "vocabulary"
+        },
+        {
+          "id": 133,
+          "question": "verify",
+          "choices": [
+            "يُحقّق",
+            "يهمل",
+            "ينتظر",
+            "يهرب"
+          ],
+          "answer": "يُحقّق",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=verify",
+          "section": "vocabulary"
+        },
+        {
+          "id": 134,
+          "question": "view",
+          "choices": [
+            "ينتظر",
+            "يهرب",
+            "يشاهد",
+            "يهمل"
+          ],
+          "answer": "يشاهد",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=view",
+          "section": "vocabulary"
+        },
+        {
+          "id": 135,
+          "question": "warn",
+          "choices": [
+            "ينتظر",
+            "يهمل",
+            "يهرب",
+            "يحذّر"
+          ],
+          "answer": "يحذّر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=warn",
+          "section": "vocabulary"
+        },
+        {
+          "id": 136,
+          "question": "write",
+          "choices": [
+            "يهرب",
+            "يكتب",
+            "يهمل",
+            "ينتظر"
+          ],
+          "answer": "يكتب",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=write",
+          "section": "vocabulary"
+        },
+        {
+          "id": 137,
+          "question": "adaptation",
+          "choices": [
+            "إلغاء",
+            "رفض",
+            "تكيّف",
+            "إعداد"
+          ],
+          "answer": "تكيّف",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=adaptation",
+          "section": "vocabulary"
+        },
+        {
+          "id": 138,
+          "question": "analysis",
+          "choices": [
+            "تحليل",
+            "خطة",
+            "خطر",
+            "إشارة"
+          ],
+          "answer": "تحليل",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=analysis",
+          "section": "vocabulary"
+        },
+        {
+          "id": 139,
+          "question": "assessment",
+          "choices": [
+            "انفصال",
+            "خطر",
+            "تقييم",
+            "هجوم"
+          ],
+          "answer": "تقييم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=assessment",
+          "section": "vocabulary"
+        },
+        {
+          "id": 140,
+          "question": "assumption",
+          "choices": [
+            "افتراض",
+            "انتظار",
+            "خيار",
+            "رفض"
+          ],
+          "answer": "افتراض",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=assumption",
+          "section": "vocabulary"
+        },
+        {
+          "id": 141,
+          "question": "challenge",
+          "choices": [
+            "خطر",
+            "توقف",
+            "تحدي",
+            "خسارة"
+          ],
+          "answer": "تحدي",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=challenge",
+          "section": "vocabulary"
+        },
+        {
+          "id": 142,
+          "question": "comparison",
+          "choices": [
+            "خطر",
+            "إلغاء",
+            "اختلاف",
+            "مقارنة"
+          ],
+          "answer": "مقارنة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=comparison",
+          "section": "vocabulary"
+        },
+        {
+          "id": 143,
+          "question": "consequence",
+          "choices": [
+            "سبب",
+            "نتيجة",
+            "خطة",
+            "خطر"
+          ],
+          "answer": "نتيجة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=consequence",
+          "section": "vocabulary"
+        },
+        {
+          "id": 144,
+          "question": "consideration",
+          "choices": [
+            "إهمال",
+            "خطر",
+            "خيار",
+            "اعتبار"
+          ],
+          "answer": "اعتبار",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=consideration",
+          "section": "vocabulary"
+        },
+        {
+          "id": 145,
+          "question": "creation",
+          "choices": [
+            "خسارة",
+            "رفض",
+            "دمار",
+            "إبداع"
+          ],
+          "answer": "إبداع",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=creation",
+          "section": "vocabulary"
+        },
+        {
+          "id": 146,
+          "question": "criticism",
+          "choices": [
+            "تجاهل",
+            "نقد",
+            "تهنئة",
+            "مدح"
+          ],
+          "answer": "نقد",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=criticism",
+          "section": "vocabulary"
+        },
+        {
+          "id": 147,
+          "question": "decision",
+          "choices": [
+            "رفض",
+            "قرار",
+            "خيار",
+            "خطر"
+          ],
+          "answer": "قرار",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=decision",
+          "section": "vocabulary"
+        },
+        {
+          "id": 148,
+          "question": "definition",
+          "choices": [
+            "إلغاء",
+            "خطر",
+            "تعريف",
+            "غموض"
+          ],
+          "answer": "تعريف",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=definition",
+          "section": "vocabulary"
+        },
+        {
+          "id": 149,
+          "question": "development",
+          "choices": [
+            "تطوير",
+            "خطر",
+            "دمار",
+            "إلغاء"
+          ],
+          "answer": "تطوير",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=development",
+          "section": "vocabulary"
+        },
+        {
+          "id": 150,
+          "question": "difference",
+          "choices": [
+            "خطر",
+            "تشابه",
+            "رفض",
+            "فرق"
+          ],
+          "answer": "فرق",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=difference",
+          "section": "vocabulary"
+        },
+        {
+          "id": 151,
+          "question": "discussion",
+          "choices": [
+            "إلغاء",
+            "صمت",
+            "نقاش",
+            "خطر"
+          ],
+          "answer": "نقاش",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=discussion",
+          "section": "vocabulary"
+        },
+        {
+          "id": 152,
+          "question": "evaluation",
+          "choices": [
+            "تقييم",
+            "خطر",
+            "إلغاء",
+            "رفض"
+          ],
+          "answer": "تقييم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=evaluation",
+          "section": "vocabulary"
+        },
+        {
+          "id": 153,
+          "question": "evidence",
+          "choices": [
+            "خسارة",
+            "دليل",
+            "إلغاء",
+            "خطر"
+          ],
+          "answer": "دليل",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=evidence",
+          "section": "vocabulary"
+        },
+        {
+          "id": 154,
+          "question": "explanation",
+          "choices": [
+            "غموض",
+            "خطر",
+            "إلغاء",
+            "تفسير"
+          ],
+          "answer": "تفسير",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=explanation",
+          "section": "vocabulary"
+        },
+        {
+          "id": 155,
+          "question": "expression",
+          "choices": [
+            "تعبير",
+            "إلغاء",
+            "صمت",
+            "خطر"
+          ],
+          "answer": "تعبير",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=expression",
+          "section": "vocabulary"
+        },
+        {
+          "id": 156,
+          "question": "function",
+          "choices": [
+            "خطة",
+            "رفض",
+            "خطر",
+            "وظيفة"
+          ],
+          "answer": "وظيفة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=function",
+          "section": "vocabulary"
+        },
+        {
+          "id": 157,
+          "question": "idea",
+          "choices": [
+            "خطر",
+            "إلغاء",
+            "فكرة",
+            "خسارة"
+          ],
+          "answer": "فكرة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=idea",
+          "section": "vocabulary"
+        },
+        {
+          "id": 158,
+          "question": "improvement",
+          "choices": [
+            "فشل",
+            "خطر",
+            "إلغاء",
+            "تحسين"
+          ],
+          "answer": "تحسين",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=improvement",
+          "section": "vocabulary"
+        },
+        {
+          "id": 159,
+          "question": "information",
+          "choices": [
+            "إلغاء",
+            "خطر",
+            "معلومات",
+            "رفض"
+          ],
+          "answer": "معلومات",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=information",
+          "section": "vocabulary"
+        },
+        {
+          "id": 160,
+          "question": "instruction",
+          "choices": [
+            "إلغاء",
+            "رفض",
+            "خطر",
+            "تعليمات"
+          ],
+          "answer": "تعليمات",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=instruction",
+          "section": "vocabulary"
+        },
+        {
+          "id": 161,
+          "question": "intention",
+          "choices": [
+            "نية",
+            "إلغاء",
+            "رفض",
+            "خطر"
+          ],
+          "answer": "نية",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=intention",
+          "section": "vocabulary"
+        },
+        {
+          "id": 162,
+          "question": "interpretation",
+          "choices": [
+            "رفض",
+            "إلغاء",
+            "خطر",
+            "تفسير"
+          ],
+          "answer": "تفسير",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=interpretation",
+          "section": "vocabulary"
+        },
+        {
+          "id": 163,
+          "question": "knowledge",
+          "choices": [
+            "إلغاء",
+            "رفض",
+            "خطر",
+            "معرفة"
+          ],
+          "answer": "معرفة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=knowledge",
+          "section": "vocabulary"
+        },
+        {
+          "id": 164,
+          "question": "learning",
+          "choices": [
+            "تعلم",
+            "خطر",
+            "إلغاء",
+            "رفض"
+          ],
+          "answer": "تعلم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=learning",
+          "section": "vocabulary"
+        },
+        {
+          "id": 165,
+          "question": "method",
+          "choices": [
+            "خطر",
+            "إلغاء",
+            "رفض",
+            "طريقة"
+          ],
+          "answer": "طريقة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=method",
+          "section": "vocabulary"
+        },
+        {
+          "id": 166,
+          "question": "objective",
+          "choices": [
+            "رفض",
+            "خطر",
+            "إلغاء",
+            "هدف"
+          ],
+          "answer": "هدف",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=objective",
+          "section": "vocabulary"
+        },
+        {
+          "id": 167,
+          "question": "opinion",
+          "choices": [
+            "إلغاء",
+            "خطر",
+            "رفض",
+            "رأي"
+          ],
+          "answer": "رأي",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=opinion",
+          "section": "vocabulary"
+        },
+        {
+          "id": 168,
+          "question": "performance",
+          "choices": [
+            "إلغاء",
+            "رفض",
+            "أداء",
+            "خطر"
+          ],
+          "answer": "أداء",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=performance",
+          "section": "vocabulary"
+        },
+        {
+          "id": 169,
+          "question": "perspective",
+          "choices": [
+            "رفض",
+            "وجهة نظر",
+            "خطر",
+            "إلغاء"
+          ],
+          "answer": "وجهة نظر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=perspective",
+          "section": "vocabulary"
+        },
+        {
+          "id": 170,
+          "question": "priority",
+          "choices": [
+            "خطر",
+            "أولوية",
+            "إلغاء",
+            "رفض"
+          ],
+          "answer": "أولوية",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=priority",
+          "section": "vocabulary"
+        },
+        {
+          "id": 171,
+          "question": "problem",
+          "choices": [
+            "رفض",
+            "خطر",
+            "مشكلة",
+            "إلغاء"
+          ],
+          "answer": "مشكلة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=problem",
+          "section": "vocabulary"
+        },
+        {
+          "id": 172,
+          "question": "product",
+          "choices": [
+            "خطر",
+            "منتج",
+            "إلغاء",
+            "رفض"
+          ],
+          "answer": "منتج",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=product",
+          "section": "vocabulary"
+        },
+        {
+          "id": 173,
+          "question": "project",
+          "choices": [
+            "رفض",
+            "خطر",
+            "إلغاء",
+            "مشروع"
+          ],
+          "answer": "مشروع",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=project",
+          "section": "vocabulary"
+        },
+        {
+          "id": 174,
+          "question": "reason",
+          "choices": [
+            "خطر",
+            "رفض",
+            "سبب",
+            "إلغاء"
+          ],
+          "answer": "سبب",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=reason",
+          "section": "vocabulary"
+        },
+        {
+          "id": 175,
+          "question": "recommendation",
+          "choices": [
+            "إلغاء",
+            "رفض",
+            "خطر",
+            "توصية"
+          ],
+          "answer": "توصية",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=recommendation",
+          "section": "vocabulary"
+        },
+        {
+          "id": 176,
+          "question": "relation",
+          "choices": [
+            "علاقة",
+            "إلغاء",
+            "رفض",
+            "خطر"
+          ],
+          "answer": "علاقة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=relation",
+          "section": "vocabulary"
+        },
+        {
+          "id": 177,
+          "question": "report",
+          "choices": [
+            "رفض",
+            "إلغاء",
+            "خطر",
+            "تقرير"
+          ],
+          "answer": "تقرير",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=report",
+          "section": "vocabulary"
+        },
+        {
+          "id": 178,
+          "question": "requirement",
+          "choices": [
+            "متطلب",
+            "رفض",
+            "خطر",
+            "إلغاء"
+          ],
+          "answer": "متطلب",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=requirement",
+          "section": "vocabulary"
+        },
+        {
+          "id": 179,
+          "question": "research",
+          "choices": [
+            "رفض",
+            "إلغاء",
+            "خطر",
+            "بحث"
+          ],
+          "answer": "بحث",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=research",
+          "section": "vocabulary"
+        },
+        {
+          "id": 180,
+          "question": "response",
+          "choices": [
+            "خطر",
+            "استجابة",
+            "رفض",
+            "إلغاء"
+          ],
+          "answer": "استجابة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=response",
+          "section": "vocabulary"
+        },
+        {
+          "id": 181,
+          "question": "role",
+          "choices": [
+            "خطر",
+            "دور",
+            "إلغاء",
+            "رفض"
+          ],
+          "answer": "دور",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=role",
+          "section": "vocabulary"
+        },
+        {
+          "id": 182,
+          "question": "solution",
+          "choices": [
+            "رفض",
+            "حلّ",
+            "خطر",
+            "إلغاء"
+          ],
+          "answer": "حلّ",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=solution",
+          "section": "vocabulary"
+        },
+        {
+          "id": 183,
+          "question": "strategy",
+          "choices": [
+            "إلغاء",
+            "رفض",
+            "استراتيجية",
+            "خطر"
+          ],
+          "answer": "استراتيجية",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=strategy",
+          "section": "vocabulary"
+        },
+        {
+          "id": 184,
+          "question": "structure",
+          "choices": [
+            "رفض",
+            "إلغاء",
+            "هيكل",
+            "خطر"
+          ],
+          "answer": "هيكل",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=structure",
+          "section": "vocabulary"
+        },
+        {
+          "id": 185,
+          "question": "task",
+          "choices": [
+            "خطر",
+            "مهمة",
+            "إلغاء",
+            "رفض"
+          ],
+          "answer": "مهمة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=task",
+          "section": "vocabulary"
+        },
+        {
+          "id": 186,
+          "question": "technique",
+          "choices": [
+            "خطر",
+            "تقنية",
+            "رفض",
+            "إلغاء"
+          ],
+          "answer": "تقنية",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=technique",
+          "section": "vocabulary"
+        },
+        {
+          "id": 187,
+          "question": "theme",
+          "choices": [
+            "خطر",
+            "رفض",
+            "إلغاء",
+            "موضوع"
+          ],
+          "answer": "موضوع",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=theme",
+          "section": "vocabulary"
+        },
+        {
+          "id": 188,
+          "question": "topic",
+          "choices": [
+            "خطر",
+            "موضوع",
+            "رفض",
+            "إلغاء"
+          ],
+          "answer": "موضوع",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=topic",
+          "section": "vocabulary"
+        },
+        {
+          "id": 189,
+          "question": "tool",
+          "choices": [
+            "إلغاء",
+            "رفض",
+            "أداة",
+            "خطر"
+          ],
+          "answer": "أداة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=tool",
+          "section": "vocabulary"
+        },
+        {
+          "id": 190,
+          "question": "understanding",
+          "choices": [
+            "فهم",
+            "إلغاء",
+            "رفض",
+            "خطر"
+          ],
+          "answer": "فهم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=understanding",
+          "section": "vocabulary"
+        },
+        {
+          "id": 191,
+          "question": "value",
+          "choices": [
+            "إلغاء",
+            "رفض",
+            "قيمة",
+            "خطر"
+          ],
+          "answer": "قيمة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=value",
+          "section": "vocabulary"
+        },
+        {
+          "id": 192,
+          "question": "vision",
+          "choices": [
+            "خطر",
+            "رفض",
+            "رؤية",
+            "إلغاء"
+          ],
+          "answer": "رؤية",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=vision",
+          "section": "vocabulary"
+        },
+        {
+          "id": 193,
+          "question": "way",
+          "choices": [
+            "رفض",
+            "إلغاء",
+            "طريقة",
+            "خطر"
+          ],
+          "answer": "طريقة",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=way",
+          "section": "vocabulary"
+        },
+        {
+          "id": 194,
+          "question": "work",
+          "choices": [
+            "عمل",
+            "رفض",
+            "خطر",
+            "إلغاء"
+          ],
+          "answer": "عمل",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=work",
+          "section": "vocabulary"
+        },
+        {
+          "id": 195,
+          "question": "achievement",
+          "choices": [
+            "إنجاز",
+            "خطر",
+            "رفض",
+            "إلغاء"
+          ],
+          "answer": "إنجاز",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=achievement",
+          "section": "vocabulary"
+        },
+        {
+          "id": 196,
+          "question": "apply",
+          "choices": [
+            "رفض",
+            "إلغاء",
+            "يطبق",
+            "خطر"
+          ],
+          "answer": "يطبق",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=apply",
+          "section": "vocabulary"
+        },
+        {
+          "id": 197,
+          "question": "assess",
+          "choices": [
+            "رفض",
+            "خطر",
+            "يقيم",
+            "إلغاء"
+          ],
+          "answer": "يقيم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=assess",
+          "section": "vocabulary"
+        },
+        {
+          "id": 198,
+          "question": "decide",
+          "choices": [
+            "خطر",
+            "رفض",
+            "إلغاء",
+            "يقرر"
+          ],
+          "answer": "يقرر",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=decide",
+          "section": "vocabulary"
+        },
+        {
+          "id": 199,
+          "question": "evaluate",
+          "choices": [
+            "رفض",
+            "يقيّم",
+            "خطر",
+            "إلغاء"
+          ],
+          "answer": "يقيّم",
+          "audio": "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=evaluate",
+          "section": "vocabulary"
+        }
+      ]
     }
   ],
   "sentenceCompletion": [

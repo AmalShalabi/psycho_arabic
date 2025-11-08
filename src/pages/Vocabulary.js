@@ -4,6 +4,8 @@ import { ArrowLeft, RotateCcw, Clock, ArrowRight } from 'lucide-react';
 import QuestionCard from '../components/QuestionCard';
 import questionsData from '../data/questions.json';
 
+const UNIT_SIZE = 20;
+
 const Vocabulary = () => {
   const navigate = useNavigate();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -17,26 +19,52 @@ const Vocabulary = () => {
 
   // Initialize vocabulary questions in sequential order
   useEffect(() => {
-    // Get vocabulary questions and sort by ID to ensure sequential order
-    const vocabQuestions = [...questionsData.vocabulary].sort((a, b) => a.id - b.id);
-    setVocabularyQuestions(vocabQuestions);
+    const rawVocabulary = Array.isArray(questionsData.vocabulary)
+      ? questionsData.vocabulary
+      : [];
+
+    const flattenedVocabulary = rawVocabulary.flatMap((entry) => {
+      if (entry && Array.isArray(entry.words) && entry.unit) {
+        return entry.words.map((word) => ({
+          ...word,
+          unit: entry.unit,
+          section: word.section || 'vocabulary'
+        }));
+      }
+
+      return entry ? [{ ...entry, unit: entry.unit, section: entry.section || 'vocabulary' }] : [];
+    });
+
+    const sortedVocabulary = flattenedVocabulary
+      .filter(Boolean)
+      .sort((a, b) => ((a.id ?? 0) - (b.id ?? 0)))
+      .map((item, index) => ({
+        ...item,
+        id: item.id ?? index + 1,
+        unit: item.unit || `Unit ${Math.floor(index / UNIT_SIZE) + 1}`,
+        section: item.section || 'vocabulary'
+      }));
+
+    setVocabularyQuestions(sortedVocabulary);
     setStartTime(Date.now());
-    
+
     // Handle navigation from GroupResult page
     const location = window.location;
     const urlParams = new URLSearchParams(location.search);
-    const startGroup = urlParams.get('startGroup');
+    const startGroup = urlParams.get('startUnit') || urlParams.get('startGroup');
     const startQuestion = urlParams.get('startQuestion');
-    
+
     if (startGroup && startQuestion) {
-      const questionIndex = parseInt(startQuestion) - 1; // Convert to 0-based index
-      setCurrentQuestionIndex(questionIndex);
-      setSelectedAnswer(null);
-      setShowResult(false);
-      setScore({ correct: 0, total: 0 });
-      setTimeSpent(0);
-      setAnswers({});
-      setStartTime(Date.now());
+      const questionIndex = parseInt(startQuestion, 10) - 1; // Convert to 0-based index
+      if (!Number.isNaN(questionIndex)) {
+        setCurrentQuestionIndex(Math.max(0, Math.min(questionIndex, sortedVocabulary.length - 1)));
+        setSelectedAnswer(null);
+        setShowResult(false);
+        setScore({ correct: 0, total: 0 });
+        setTimeSpent(0);
+        setAnswers({});
+        setStartTime(Date.now());
+      }
     }
   }, []);
 
@@ -75,11 +103,29 @@ const Vocabulary = () => {
     }
   };
 
+  const totalUnits = Math.max(1, Math.ceil(vocabularyQuestions.length / UNIT_SIZE));
+
+  const getGroupInfo = (groupNumber) => {
+    const startIndex = (groupNumber - 1) * UNIT_SIZE;
+    const endIndex = Math.min(startIndex + UNIT_SIZE - 1, vocabularyQuestions.length - 1);
+    return {
+      startIndex,
+      endIndex,
+      startQuestion: startIndex + 1,
+      endQuestion: endIndex + 1,
+      totalQuestions: endIndex >= startIndex ? (endIndex - startIndex + 1) : 0
+    };
+  };
+
+  const getCurrentGroup = () => {
+    return Math.floor(currentQuestionIndex / UNIT_SIZE) + 1;
+  };
+
   const handleNextQuestion = () => {
     const currentGroup = getCurrentGroup();
     const groupInfo = getGroupInfo(currentGroup);
     const isEndOfGroup = currentQuestionIndex === groupInfo.endIndex;
-    
+
     if (isEndOfGroup) {
       // Calculate score for current group only
       const groupAnswers = {};
@@ -91,7 +137,7 @@ const Vocabulary = () => {
       
       const groupScore = {
         correct: Object.entries(groupAnswers).filter(([index, answer]) => {
-          const question = vocabularyQuestions[parseInt(index)];
+          const question = vocabularyQuestions[parseInt(index, 10)];
           const correctIndex = question.answer ? 
             question.choices?.indexOf(question.answer) : -1;
           return answer === correctIndex;
@@ -99,15 +145,19 @@ const Vocabulary = () => {
         total: groupInfo.totalQuestions
       };
       
+      const unitName = vocabularyQuestions[groupInfo.startIndex]?.unit || `Unit ${currentGroup}`;
+
       // Navigate to group result page
       const groupResults = {
         groupNumber: currentGroup,
+        unitName,
         groupRange: {
           start: groupInfo.startQuestion,
           end: groupInfo.endQuestion
         },
         score: groupScore,
         totalQuestions: groupInfo.totalQuestions,
+        totalUnits,
         timeSpent: timeSpent,
         answers: groupAnswers,
         questions: vocabularyQuestions.slice(groupInfo.startIndex, groupInfo.endIndex + 1)
@@ -153,23 +203,6 @@ const Vocabulary = () => {
     setStartTime(Date.now());
   };
 
-  // Group navigation functions
-  const getGroupInfo = (groupNumber) => {
-    const startIndex = (groupNumber - 1) * 20;
-    const endIndex = Math.min(startIndex + 19, vocabularyQuestions.length - 1);
-    return {
-      startIndex,
-      endIndex,
-      startQuestion: startIndex + 1,
-      endQuestion: endIndex + 1,
-      totalQuestions: endIndex - startIndex + 1
-    };
-  };
-
-  const getCurrentGroup = () => {
-    return Math.floor(currentQuestionIndex / 20) + 1;
-  };
-
   const handleGroupSelect = (groupNumber) => {
     const groupInfo = getGroupInfo(groupNumber);
     setCurrentQuestionIndex(groupInfo.startIndex);
@@ -203,6 +236,7 @@ const Vocabulary = () => {
   const currentQuestion = vocabularyQuestions[currentQuestionIndex];
   const isLastQuestion = currentQuestionIndex === vocabularyQuestions.length - 1;
   const isFirstQuestion = currentQuestionIndex === 0;
+  const currentUnitLabel = currentQuestion?.unit || `Unit ${getCurrentGroup()}`;
 
   return (
     <div className="single-screen-layout bg-gradient-to-br from-primary-50 to-secondary-50">
@@ -221,11 +255,11 @@ const Vocabulary = () => {
               <div className="text-xs md:text-sm text-secondary-600 font-medium">
                 {formatTime(timeSpent)}
               </div>
-            <div className="text-xs md:text-sm text-secondary-600 font-medium">
-              {currentQuestionIndex + 1} من {vocabularyQuestions.length}
-              <span className="text-secondary-500 mr-1">•</span>
-              <span>المجموعة {getCurrentGroup()}</span>
-            </div>
+              <div className="text-xs md:text-sm text-secondary-600 font-medium">
+                {currentQuestionIndex + 1} من {vocabularyQuestions.length}
+                <span className="text-secondary-500 mr-1">•</span>
+                <span>{currentUnitLabel}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -242,16 +276,17 @@ const Vocabulary = () => {
             currentQuestion.choices?.indexOf(currentQuestion.answer) : -1)}
         />
 
-        {/* Group Navigation */}
+        {/* Unit Navigation */}
         <div className="compact-groups">
           <h3 className="text-sm md:text-base font-semibold text-secondary-700 mb-2 text-center">
-            اختر مجموعة المفردات
+            اختر وحدة المفردات
           </h3>
           <div className="flex flex-wrap justify-center gap-1 md:gap-2 overflow-x-auto pb-1">
-            {Array.from({ length: 10 }, (_, i) => {
+            {Array.from({ length: totalUnits }, (_, i) => {
               const groupNumber = i + 1;
               const groupInfo = getGroupInfo(groupNumber);
               const isActive = isInCurrentGroup(groupNumber);
+              const unitLabel = vocabularyQuestions[groupInfo.startIndex]?.unit || `Unit ${groupNumber}`;
               
               return (
                 <button
@@ -264,7 +299,7 @@ const Vocabulary = () => {
                   }`}
                 >
                   <div className="text-center">
-                    <div className="font-bold text-xs md:text-sm">{groupNumber}</div>
+                    <div className="font-bold text-xs md:text-sm">{unitLabel}</div>
                     <div className="text-xs opacity-75">
                       {groupInfo.startQuestion}-{groupInfo.endQuestion}
                     </div>

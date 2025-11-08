@@ -6,7 +6,15 @@ import { RotateCcw, ArrowRight, ArrowLeft, Home, Trophy, Target, Clock } from 'l
 const GroupResult = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { groupNumber, groupRange, score, totalQuestions, timeSpent } = location.state || {};
+  const {
+    groupNumber,
+    unitName,
+    groupRange,
+    score,
+    totalQuestions,
+    totalUnits,
+    timeSpent
+  } = location.state || {};
 
   // RTL/LTR detection for proper icon direction
   const isRTL = document.dir === 'rtl' || document.documentElement.dir === 'rtl';
@@ -36,7 +44,7 @@ const GroupResult = () => {
   };
 
   const handleRetryGroup = () => {
-    navigate(`/vocabulary?startGroup=${groupNumber}&startQuestion=${groupRange.start}`);
+    navigate(`/vocabulary?startUnit=${groupNumber}&startGroup=${groupNumber}&startQuestion=${groupRange.start}`);
   };
 
   const handlePreviousGroup = () => {
@@ -44,7 +52,7 @@ const GroupResult = () => {
     const prevGroupStart = (prevGroup - 1) * 20 + 1;
     
     if (prevGroup >= 1) {
-      navigate(`/vocabulary?startGroup=${prevGroup}&startQuestion=${prevGroupStart}`);
+      navigate(`/vocabulary?startUnit=${prevGroup}&startGroup=${prevGroup}&startQuestion=${prevGroupStart}`);
     }
   };
 
@@ -52,8 +60,8 @@ const GroupResult = () => {
     const nextGroup = groupNumber + 1;
     const nextGroupStart = (nextGroup - 1) * 20 + 1;
     
-    if (nextGroupStart <= 199) {
-      navigate(`/vocabulary?startGroup=${nextGroup}&startQuestion=${nextGroupStart}`);
+    if (nextGroup <= totalUnitsCount) {
+      navigate(`/vocabulary?startUnit=${nextGroup}&startGroup=${nextGroup}&startQuestion=${nextGroupStart}`);
     } else {
       // Navigate to main results if no more groups
       navigate('/results?type=vocabulary');
@@ -76,7 +84,9 @@ const GroupResult = () => {
   }
 
   const percentage = Math.round((score.correct / totalQuestions) * 100);
-  const isLastGroup = groupNumber >= 10;
+  const totalUnitsCount = totalUnits || 10;
+  const isLastGroup = groupNumber >= totalUnitsCount;
+  const unitLabel = unitName || `Unit ${groupNumber}`;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-50 flex flex-col">
@@ -98,10 +108,10 @@ const GroupResult = () => {
             </motion.div>
             
             <h1 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-secondary-800 mb-1">
-              نتائج المجموعة {groupNumber}
+              نتائج الوحدة {groupNumber}
             </h1>
             <p className="text-xs sm:text-base md:text-lg text-secondary-600">
-              الأسئلة {groupRange.start} - {groupRange.end}
+              {unitLabel} • الأسئلة {groupRange.start} - {groupRange.end}
             </p>
           </div>
 
