@@ -73,7 +73,7 @@ const QuestionCard = ({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
-      className="card max-w-4xl mx-auto compact-question"
+      className="card compact-question"
     >
       <div className="mb-4 md:mb-6">
         <div className="flex items-center justify-between mb-4 md:mb-5">

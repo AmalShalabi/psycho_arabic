@@ -127,13 +127,28 @@
   
   /* Modern Card Styles - Soft shadow, clean border radius, equal padding */
   .card {
-    @apply bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100/50 hover:shadow-xl transition-all duration-300;
+    @apply bg-white rounded-2xl shadow-lg border border-gray-100/50 hover:shadow-xl transition-all duration-300;
     box-shadow: var(--shadow-lg);
+    /* Questions container: 70% width, centered, max-width 900px */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    padding: 1.5rem;
+    align-self: flex-start; /* Top-aligned, not vertically centered */
   }
   
   .card:hover {
     box-shadow: var(--shadow-xl);
     transform: translateY(-2px);
+  }
+  
+  /* Responsive width adjustments - Tablet and Desktop: 70% width */
+  @media (min-width: 768px) {
+    .card {
+      width: 70%;
+      padding: 2rem;
+    }
   }
   
   .input-field {
@@ -205,8 +220,10 @@
     }
     
     .card {
-      @apply p-5 rounded-2xl;
+      @apply rounded-2xl;
       box-shadow: var(--shadow-md);
+      width: 90% !important; /* Ensure 90% width on mobile */
+      padding: 1.5rem; /* Keep consistent padding */
     }
     
     .question-option {
@@ -224,8 +241,10 @@
     }
     
     .card {
-      @apply p-4 rounded-xl;
+      @apply rounded-xl;
       box-shadow: var(--shadow-md);
+      width: 90% !important; /* Ensure 90% width on small screens */
+      padding: 1.5rem; /* Keep consistent padding */
     }
     
     .question-option {
