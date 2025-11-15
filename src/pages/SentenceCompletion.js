@@ -102,10 +102,10 @@ const SentenceCompletion = () => {
 
   if (sentenceQuestions.length === 0) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-50 flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
-          <p className="text-secondary-600">جاري تحميل الأسئلة...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-500 mx-auto mb-4"></div>
+          <p className="text-gray-600 font-medium">جاري تحميل الأسئلة...</p>
         </div>
       </div>
     );
@@ -116,14 +116,14 @@ const SentenceCompletion = () => {
   const isFirstQuestion = currentQuestionIndex === 0;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-50">
+    <div className="min-h-screen">
       {/* Header */}
-      <header className="bg-white shadow-lg border-b border-gray-100 sticky top-0 z-10">
+      <header className="bg-white/80 backdrop-blur-sm shadow-md border-b border-gray-100/50 sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
           <div className="flex items-center justify-between">
             <button
               onClick={() => navigate('/')}
-              className="text-secondary-600 hover:text-secondary-800 transition-colors p-1 rounded-lg hover:bg-gray-100"
+              className="text-gray-600 hover:text-gray-800 transition-all p-2 rounded-xl hover:bg-gray-100 hover:scale-105 active:scale-95"
             >
               <ArrowLeft className="w-5 h-5 md:w-6 md:h-6" />
             </button>
@@ -160,10 +160,10 @@ const SentenceCompletion = () => {
             <button
               onClick={handlePreviousQuestion}
               disabled={isFirstQuestion}
-              className={`flex items-center space-x-1 space-x-reverse px-3 md:px-4 py-2 md:py-3 rounded-lg font-medium transition-all text-sm md:text-base shadow-sm hover:shadow-md ${
+              className={`flex items-center gap-2 px-4 md:px-5 py-3 md:py-3.5 rounded-xl font-semibold transition-all text-sm md:text-base shadow-md hover:shadow-lg min-h-[3rem] ${
                 isFirstQuestion
                   ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                  : 'bg-white text-secondary-700 hover:bg-gray-50 hover:scale-105'
+                  : 'bg-white text-gray-700 hover:bg-gray-50 hover:scale-105 active:scale-95 border-2 border-gray-200'
               }`}
             >
               <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
@@ -172,7 +172,7 @@ const SentenceCompletion = () => {
 
             <button
               onClick={handleRestart}
-              className="flex items-center space-x-1 space-x-reverse px-3 md:px-4 py-2 md:py-3 rounded-lg font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all text-sm md:text-base shadow-sm hover:shadow-md hover:scale-105"
+              className="flex items-center gap-2 px-4 md:px-5 py-3 md:py-3.5 rounded-xl font-semibold bg-white text-gray-700 hover:bg-gray-50 transition-all text-sm md:text-base shadow-md hover:shadow-lg hover:scale-105 active:scale-95 border-2 border-gray-200 min-h-[3rem]"
             >
               <RotateCcw className="w-4 h-4 md:w-5 md:h-5" />
               <span>إعادة تشغيل</span>
@@ -189,7 +189,7 @@ const SentenceCompletion = () => {
           {showResult && (
             <button
               onClick={handleNextQuestion}
-              className="btn-primary text-sm md:text-base px-4 md:px-6 py-2 md:py-3 flex items-center space-x-1 space-x-reverse"
+              className="btn-primary text-sm md:text-base px-5 md:px-7 py-3 md:py-3.5 flex items-center gap-2 min-h-[3rem]"
             >
               <span>{isLastQuestion ? 'إنهاء التدريب' : 'التالي'}</span>
               <ArrowLeft className="w-4 h-4 md:w-5 md:h-5" />

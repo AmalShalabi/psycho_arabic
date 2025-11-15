@@ -2,31 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CSS Variables for consistent theming */
+:root {
+  /* Color Palette - Soft Professional Gradient */
+  --color-pink-50: #fdf2f8;
+  --color-pink-100: #fce7f3;
+  --color-pink-200: #fbcfe8;
+  --color-pink-500: #ec4899;
+  --color-pink-600: #db2777;
+  --color-purple-50: #faf5ff;
+  --color-purple-100: #f3e8ff;
+  --color-purple-200: #e9d5ff;
+  --color-white: #ffffff;
+  
+  /* Typography */
+  --font-size-base: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+}
+
 @layer base {
   html {
-    font-family: 'Arial', 'Tahoma', sans-serif;
+    font-family: 'Arial', 'Tahoma', 'Segoe UI', sans-serif;
     direction: rtl;
     font-size: 16px;
+    scroll-behavior: smooth;
   }
   
   body {
     margin: 0;
-    font-family: 'Arial', 'Tahoma', sans-serif;
+    padding: 0;
+    font-family: 'Arial', 'Tahoma', 'Segoe UI', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     direction: rtl;
     text-align: right;
-    line-height: 1.5;
+    line-height: 1.6;
+    color: #1f2937;
+    background: linear-gradient(135deg, var(--color-pink-50) 0%, var(--color-white) 50%, var(--color-purple-50) 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
   }
 
   * {
     box-sizing: border-box;
   }
 
-  /* Mobile optimizations - Increased font sizes for better readability */
+  /* Typography improvements */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  /* Mobile optimizations */
   @media (max-width: 768px) {
     html {
-      font-size: 16px; /* Increased from 14px */
+      font-size: 16px;
     }
     
     body {
@@ -37,42 +104,67 @@
 
   @media (max-width: 480px) {
     html {
-      font-size: 15px; /* Increased from 13px */
+      font-size: 15px;
     }
   }
 }
 
 @layer components {
+  /* Modern Button Styles - Larger and more rounded for mobile */
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105;
+    @apply bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-semibold py-3.5 px-8 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95;
+    font-size: var(--font-size-base);
+    min-height: 3rem;
+    touch-action: manipulation;
   }
   
   .btn-secondary {
-    @apply bg-secondary-100 hover:bg-secondary-200 text-secondary-800 font-medium py-3 px-6 rounded-xl transition-all duration-300 border border-secondary-300 shadow-md hover:shadow-lg hover:scale-105;
+    @apply bg-white hover:bg-gray-50 text-gray-800 font-semibold py-3.5 px-8 rounded-2xl transition-all duration-300 border-2 border-gray-200 hover:border-gray-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95;
+    font-size: var(--font-size-base);
+    min-height: 3rem;
+    touch-action: manipulation;
   }
   
+  /* Modern Card Styles - Soft shadow, clean border radius, equal padding */
   .card {
-    @apply bg-white rounded-2xl shadow-xl p-4 md:p-6 border border-gray-100 hover:shadow-2xl transition-all duration-300;
+    @apply bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100/50 hover:shadow-xl transition-all duration-300;
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .card:hover {
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-2px);
   }
   
   .input-field {
-    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200;
+    @apply w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all duration-200;
+    font-size: var(--font-size-base);
   }
   
+  /* Question Option Styles - Better spacing and visual feedback */
   .question-option {
-    @apply w-full p-3 md:p-4 text-right border-2 border-gray-200 rounded-xl hover:border-primary-300 hover:bg-primary-50 transition-all duration-300 cursor-pointer shadow-sm hover:shadow-md;
+    @apply w-full p-4 md:p-5 text-right border-2 border-gray-200 rounded-xl hover:border-pink-300 hover:bg-pink-50 transition-all duration-300 cursor-pointer shadow-sm hover:shadow-md;
+    font-size: var(--font-size-base);
+    min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    touch-action: manipulation;
   }
   
   .question-option.selected {
-    @apply border-primary-500 bg-primary-100 text-primary-800 shadow-md;
+    @apply border-pink-500 bg-pink-100 text-pink-800 shadow-md;
+    font-weight: 600;
   }
   
   .question-option.correct {
-    @apply border-green-500 bg-green-100 text-green-800 shadow-md;
+    @apply border-green-500 bg-green-50 text-green-800 shadow-md;
+    font-weight: 600;
   }
   
   .question-option.incorrect {
-    @apply border-red-500 bg-red-100 text-red-800 shadow-md;
+    @apply border-red-400 bg-red-50 text-red-800 shadow-md;
+    font-weight: 600;
   }
 
   /* Single-screen layout optimization */
@@ -104,32 +196,42 @@
     @apply mt-2 md:mt-3 mb-2 md:mb-3;
   }
 
-  /* Mobile responsive components - Optimized for single-screen layout */
+  /* Mobile responsive components - Larger buttons for easier tapping */
   @media (max-width: 768px) {
     .btn-primary, .btn-secondary {
-      @apply py-2 px-3 text-sm; /* Compact for mobile */
+      @apply py-3.5 px-6 text-base rounded-2xl;
+      min-height: 3.25rem;
+      font-size: var(--font-size-base);
     }
     
     .card {
-      @apply p-3 rounded-lg; /* Reduced padding for mobile */
+      @apply p-5 rounded-2xl;
+      box-shadow: var(--shadow-md);
     }
     
     .question-option {
-      @apply p-2 text-sm; /* Compact options for mobile */
+      @apply p-4 text-base rounded-xl;
+      min-height: 3.5rem;
+      font-size: var(--font-size-base);
     }
   }
 
   @media (max-width: 480px) {
     .btn-primary, .btn-secondary {
-      @apply py-2 px-3 text-xs; /* Very compact for small screens */
+      @apply py-3 px-5 text-base rounded-xl;
+      min-height: 3rem;
+      font-size: var(--font-size-base);
     }
     
     .card {
-      @apply p-2 rounded-md; /* Minimal padding for small screens */
+      @apply p-4 rounded-xl;
+      box-shadow: var(--shadow-md);
     }
     
     .question-option {
-      @apply p-2 text-xs; /* Very compact for small screens */
+      @apply p-3.5 text-base rounded-xl;
+      min-height: 3.25rem;
+      font-size: var(--font-size-sm);
     }
   }
 }

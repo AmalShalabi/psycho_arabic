@@ -74,10 +74,10 @@ const GroupResult = () => {
 
   if (!groupNumber || !score) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-50 flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
-          <p className="text-secondary-600">جاري تحميل النتائج...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500 mx-auto mb-4"></div>
+          <p className="text-gray-600 font-medium">جاري تحميل النتائج...</p>
         </div>
       </div>
     );
@@ -89,12 +89,12 @@ const GroupResult = () => {
   const unitLabel = unitName || `Unit ${groupNumber}`;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-50 flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col justify-center items-center h-screen max-h-[100vh] p-3 sm:p-6 text-center space-y-4 sm:space-y-6 bg-white rounded-lg sm:rounded-2xl shadow-xl mx-2 sm:mx-4 md:mx-6 lg:mx-8"
+        className="flex flex-col justify-center items-center h-screen max-h-[100vh] p-4 sm:p-6 md:p-8 text-center space-y-4 sm:space-y-6 bg-white rounded-2xl shadow-xl mx-2 sm:mx-4 md:mx-6 lg:mx-8"
       >
           {/* Header */}
           <div className="text-center">
@@ -161,14 +161,14 @@ const GroupResult = () => {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-1 sm:gap-3 md:gap-4 justify-center w-full">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center w-full">
             {/* Previous Group Button */}
             {groupNumber > 1 && (
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handlePreviousGroup}
-                className="flex items-center justify-center space-x-1 space-x-reverse bg-blue-600 hover:bg-blue-700 text-white font-medium py-1.5 sm:py-3 px-3 sm:px-6 rounded-lg sm:rounded-xl transition-colors duration-200 shadow-md hover:shadow-lg w-full sm:w-auto text-xs sm:text-base"
+                className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-3 sm:py-3.5 px-5 sm:px-7 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto text-sm sm:text-base min-h-[3rem]"
               >
                 {prevIcon}
                 <span>السابقة</span>
@@ -180,9 +180,9 @@ const GroupResult = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={handleRetryGroup}
-              className="flex items-center justify-center space-x-1 space-x-reverse bg-primary-600 hover:bg-primary-700 text-white font-medium py-1.5 sm:py-3 px-3 sm:px-6 rounded-lg sm:rounded-xl transition-colors duration-200 shadow-md hover:shadow-lg w-full sm:w-auto text-xs sm:text-base"
+              className="flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-semibold py-3 sm:py-3.5 px-5 sm:px-7 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto text-sm sm:text-base min-h-[3rem]"
             >
-              <RotateCcw className="w-3 h-3 sm:w-5 sm:h-5" />
+              <RotateCcw className="w-4 h-4 sm:w-5 sm:h-5" />
               <span>إعادة</span>
             </motion.button>
 
@@ -192,7 +192,7 @@ const GroupResult = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleNextGroup}
-                className="flex items-center justify-center space-x-1 space-x-reverse bg-green-600 hover:bg-green-700 text-white font-medium py-1.5 sm:py-3 px-3 sm:px-6 rounded-lg sm:rounded-xl transition-colors duration-200 shadow-md hover:shadow-lg w-full sm:w-auto text-xs sm:text-base"
+                className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-3 sm:py-3.5 px-5 sm:px-7 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto text-sm sm:text-base min-h-[3rem]"
               >
                 {nextIcon}
                 <span>التالية</span>
@@ -205,9 +205,9 @@ const GroupResult = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate('/results?type=vocabulary')}
-                className="flex items-center justify-center space-x-1 space-x-reverse bg-purple-600 hover:bg-purple-700 text-white font-medium py-1.5 sm:py-3 px-3 sm:px-6 rounded-lg sm:rounded-xl transition-colors duration-200 shadow-md hover:shadow-lg w-full sm:w-auto text-xs sm:text-base"
+                className="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold py-3 sm:py-3.5 px-5 sm:px-7 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto text-sm sm:text-base min-h-[3rem]"
               >
-                <Trophy className="w-3 h-3 sm:w-5 sm:h-5" />
+                <Trophy className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>النتائج</span>
               </motion.button>
             )}
@@ -217,9 +217,9 @@ const GroupResult = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={handleGoHome}
-              className="flex items-center justify-center space-x-1 space-x-reverse bg-gray-600 hover:bg-gray-700 text-white font-medium py-1.5 sm:py-3 px-3 sm:px-6 rounded-lg sm:rounded-xl transition-colors duration-200 shadow-md hover:shadow-lg w-full sm:w-auto text-xs sm:text-base"
+              className="flex items-center justify-center gap-2 bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-600 hover:to-gray-700 text-white font-semibold py-3 sm:py-3.5 px-5 sm:px-7 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto text-sm sm:text-base min-h-[3rem]"
             >
-              <Home className="w-3 h-3 sm:w-5 sm:h-5" />
+              <Home className="w-4 h-4 sm:w-5 sm:h-5" />
               <span>الرئيسية</span>
             </motion.button>
           </div>

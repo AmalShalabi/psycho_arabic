@@ -10,7 +10,10 @@ import './index.css';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-50" dir="rtl">
+    <div className="min-h-screen" dir="rtl" style={{
+      background: 'linear-gradient(135deg, #fdf2f8 0%, #ffffff 50%, #faf5ff 100%)',
+      backgroundAttachment: 'fixed'
+    }}>
       <Router>
         <motion.div
           initial={{ opacity: 0 }}

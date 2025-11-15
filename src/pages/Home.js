@@ -10,7 +10,7 @@ const Home = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="flex flex-col justify-center items-center h-screen max-h-[100vh] p-4 text-center space-y-6 bg-gradient-to-b from-pink-50 to-white"
+      className="flex flex-col justify-center items-center h-screen max-h-[100vh] p-4 sm:p-6 md:p-8 text-center space-y-6"
       dir="rtl"
     >
       {/* App Title */}
@@ -44,9 +44,9 @@ const Home = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => navigate('/vocabulary')}
-          className="w-full sm:w-56 py-4 px-6 rounded-2xl bg-gradient-to-r from-pink-500 to-pink-600 text-white text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2 space-x-reverse"
+          className="w-full sm:w-64 md:w-72 py-4 md:py-5 px-6 md:px-8 rounded-2xl bg-gradient-to-r from-pink-500 to-pink-600 text-white text-base md:text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3 min-h-[3.5rem] md:min-h-[4rem]"
         >
-          <span className="text-2xl">📘</span>
+          <span className="text-2xl md:text-3xl">📘</span>
           <span>مفردات إنجليزية</span>
         </motion.button>
         
@@ -54,9 +54,9 @@ const Home = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => navigate('/sentence-completion')}
-          className="w-full sm:w-56 py-4 px-6 rounded-2xl bg-gradient-to-r from-teal-500 to-teal-600 text-white text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2 space-x-reverse"
+          className="w-full sm:w-64 md:w-72 py-4 md:py-5 px-6 md:px-8 rounded-2xl bg-gradient-to-r from-purple-500 to-purple-600 text-white text-base md:text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3 min-h-[3.5rem] md:min-h-[4rem]"
         >
-          <span className="text-2xl">✏️</span>
+          <span className="text-2xl md:text-3xl">✏️</span>
           <span>إكمال الجمل</span>
         </motion.button>
       </motion.div>
