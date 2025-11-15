@@ -289,7 +289,7 @@ const Vocabulary = () => {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 compact-main">
+      <main className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-4 compact-main">
         <QuestionCard
           question={currentQuestion}
           selectedAnswer={selectedAnswer}

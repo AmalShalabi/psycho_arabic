@@ -75,23 +75,23 @@ const QuestionCard = ({
       transition={{ duration: 0.3 }}
       className="card compact-question"
     >
-      <div className="mb-4 md:mb-6">
-        <div className="flex items-center justify-between mb-4 md:mb-5">
-          <span className="text-xs md:text-sm font-semibold text-gray-600 bg-pink-100 px-3 md:px-4 py-1.5 md:py-2 rounded-full shadow-sm">
+      <div className="mb-3">
+        <div className="flex items-center justify-between mb-2.5">
+          <span className="text-xs font-semibold text-gray-600 bg-pink-100 px-2.5 py-1 rounded-full shadow-sm">
             {question.section === 'quantitative' ? 'كمي' : 
              question.section === 'verbal' ? 'لفظي' : 
              question.section === 'english' ? 'إنجليزي' : 
              question.section === 'vocabulary' ? 'مفردات إنجليزية' : 
              question.section === 'sentence-completion' ? 'إكمال الجمل' : 'مفردات إنجليزية'}
           </span>
-          <span className="text-xs md:text-sm text-gray-500 font-medium">
+          <span className="text-xs text-gray-500 font-medium">
             السؤال {question.id}
           </span>
         </div>
         
-        <div className="flex items-start justify-between gap-3 md:gap-4">
+        <div className="flex items-start justify-between gap-2">
           <h2 
-            className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 leading-relaxed flex-1 cursor-pointer hover:text-pink-600 transition-colors"
+            className="text-base md:text-lg font-bold text-gray-800 leading-relaxed flex-1 cursor-pointer hover:text-pink-600 transition-colors"
             onClick={handleAudioPlay}
             title="اضغط للاستماع للنطق"
           >
@@ -101,13 +101,13 @@ const QuestionCard = ({
             <button
               onClick={handleAudioPlay}
               disabled={isPlaying}
-              className="flex-shrink-0 p-2.5 md:p-3 bg-pink-100 hover:bg-pink-200 rounded-xl transition-all duration-300 disabled:opacity-50 shadow-md hover:shadow-lg hover:scale-105 active:scale-95"
+              className="flex-shrink-0 p-2 bg-pink-100 hover:bg-pink-200 rounded-lg transition-all duration-300 disabled:opacity-50 shadow-sm hover:shadow-md hover:scale-105 active:scale-95"
               title="استمع للنطق"
             >
               {isPlaying ? (
-                <VolumeX className="w-5 h-5 md:w-6 md:h-6 text-pink-600" />
+                <VolumeX className="w-4 h-4 md:w-5 md:h-5 text-pink-600" />
               ) : (
-                <Volume2 className="w-5 h-5 md:w-6 md:h-6 text-pink-600" />
+                <Volume2 className="w-4 h-4 md:w-5 md:h-5 text-pink-600" />
               )}
             </button>
           )}
@@ -142,10 +142,10 @@ const QuestionCard = ({
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
           transition={{ duration: 0.3, delay: 0.2 }}
-          className="mt-4 md:mt-6 p-3 md:p-4 bg-blue-50 border-r-4 border-blue-400 rounded-lg"
+          className="mt-2 p-2.5 bg-blue-50 border-r-4 border-blue-400 rounded-lg"
         >
-          <h4 className="font-semibold text-blue-800 mb-2 text-sm md:text-base">التفسير:</h4>
-          <p className="text-blue-700 leading-relaxed text-sm md:text-base">{question.explanation}</p>
+          <h4 className="font-semibold text-blue-800 mb-1 text-xs md:text-sm">التفسير:</h4>
+          <p className="text-blue-700 leading-relaxed text-xs md:text-sm">{question.explanation}</p>
         </motion.div>
       )}
 

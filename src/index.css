@@ -125,29 +125,40 @@
     touch-action: manipulation;
   }
   
-  /* Modern Card Styles - Soft shadow, clean border radius, equal padding */
+  /* Modern Card Styles - Compact, responsive design */
   .card {
-    @apply bg-white rounded-2xl shadow-lg border border-gray-100/50 hover:shadow-xl transition-all duration-300;
-    box-shadow: var(--shadow-lg);
-    /* Questions container: 70% width, centered, max-width 900px */
-    width: 90%;
+    @apply bg-white rounded-xl shadow-md border border-gray-100/50 hover:shadow-lg transition-all duration-300;
+    box-shadow: var(--shadow-md);
+    /* Compact Vocabulary question card: responsive widths */
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 900px;
-    padding: 1.5rem;
-    align-self: flex-start; /* Top-aligned, not vertically centered */
+    max-width: 700px;
+    padding: 1rem;
+    align-self: flex-start;
   }
   
   .card:hover {
-    box-shadow: var(--shadow-xl);
-    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-1px);
   }
   
-  /* Responsive width adjustments - Tablet and Desktop: 70% width */
-  @media (min-width: 768px) {
+  /* Responsive width adjustments */
+  @media (min-width: 640px) {
     .card {
-      width: 70%;
-      padding: 2rem;
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .card {
+      width: 65%;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .card {
+      width: 60%;
     }
   }
   
@@ -156,15 +167,22 @@
     font-size: var(--font-size-base);
   }
   
-  /* Question Option Styles - Better spacing and visual feedback */
+  /* Question Option Styles - Compact, equal-sized buttons */
   .question-option {
-    @apply w-full p-4 md:p-5 text-right border-2 border-gray-200 rounded-xl hover:border-pink-300 hover:bg-pink-50 transition-all duration-300 cursor-pointer shadow-sm hover:shadow-md;
+    @apply w-full p-3 text-right border-2 border-gray-200 rounded-lg hover:border-pink-300 hover:bg-pink-50 transition-all duration-300 cursor-pointer shadow-sm hover:shadow-md;
     font-size: var(--font-size-base);
-    min-height: 3.5rem;
+    min-height: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     touch-action: manipulation;
+  }
+  
+  @media (min-width: 640px) {
+    .question-option {
+      @apply p-3.5;
+      min-height: 3.25rem;
+    }
   }
   
   .question-option.selected {
@@ -188,27 +206,31 @@
   }
 
   .compact-header {
-    @apply py-2 md:py-3;
+    @apply py-2;
   }
 
   .compact-main {
-    @apply py-2 md:py-4 flex-1 flex flex-col;
+    @apply py-2 flex-1 flex flex-col;
+    gap: 0.75rem;
   }
 
   .compact-question {
-    @apply mb-2 md:mb-3;
+    @apply mb-1;
+    margin-top: 0;
   }
 
   .compact-options {
-    @apply space-y-1 md:space-y-2;
+    @apply space-y-1.5;
+    margin-top: 0.5rem;
   }
 
   .compact-navigation {
-    @apply mt-2 md:mt-3;
+    @apply mt-1.5;
+    margin-bottom: 0;
   }
-
+  
   .compact-groups {
-    @apply mt-2 md:mt-3 mb-2 md:mb-3;
+    @apply mt-1.5 mb-1.5;
   }
 
   /* Mobile responsive components - Larger buttons for easier tapping */
@@ -220,15 +242,15 @@
     }
     
     .card {
-      @apply rounded-2xl;
+      @apply rounded-xl;
       box-shadow: var(--shadow-md);
-      width: 90% !important; /* Ensure 90% width on mobile */
-      padding: 1.5rem; /* Keep consistent padding */
+      width: 95% !important; /* Ensure 95% width on mobile */
+      padding: 1rem; /* Compact padding */
     }
     
     .question-option {
-      @apply p-4 text-base rounded-xl;
-      min-height: 3.5rem;
+      @apply p-3 text-base rounded-lg;
+      min-height: 3rem;
       font-size: var(--font-size-base);
     }
   }
@@ -243,13 +265,13 @@
     .card {
       @apply rounded-xl;
       box-shadow: var(--shadow-md);
-      width: 90% !important; /* Ensure 90% width on small screens */
-      padding: 1.5rem; /* Keep consistent padding */
+      width: 95% !important; /* Ensure 95% width on small screens */
+      padding: 1rem; /* Compact padding */
     }
     
     .question-option {
-      @apply p-3.5 text-base rounded-xl;
-      min-height: 3.25rem;
+      @apply p-3 text-base rounded-lg;
+      min-height: 3rem;
       font-size: var(--font-size-sm);
     }
   }
