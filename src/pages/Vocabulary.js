@@ -23,16 +23,39 @@ const Vocabulary = () => {
       ? questionsData.vocabulary
       : [];
 
-    const flattenedVocabulary = rawVocabulary.flatMap((entry) => {
-      if (entry && Array.isArray(entry.words) && entry.unit) {
-        return entry.words.map((word) => ({
+    const flattenedVocabulary = rawVocabulary.flatMap((levelEntry) => {
+      // Handle new structure: { level: "1", units: [{ unit: "Unit 1", questions: [...] }] }
+      if (levelEntry && Array.isArray(levelEntry.units)) {
+        return levelEntry.units.flatMap((unitEntry) => {
+          if (unitEntry && Array.isArray(unitEntry.questions)) {
+            return unitEntry.questions.map((question) => ({
+              ...question,
+              question: question.word || question.question, // Support both 'word' and 'question' fields
+              unit: unitEntry.unit,
+              section: 'vocabulary'
+            }));
+          }
+          return [];
+        });
+      }
+      
+      // Handle old structure: { unit: "Unit 1", words: [...] }
+      if (levelEntry && Array.isArray(levelEntry.words) && levelEntry.unit) {
+        return levelEntry.words.map((word) => ({
           ...word,
-          unit: entry.unit,
+          question: word.word || word.question,
+          unit: levelEntry.unit,
           section: word.section || 'vocabulary'
         }));
       }
 
-      return entry ? [{ ...entry, unit: entry.unit, section: entry.section || 'vocabulary' }] : [];
+      // Handle flat structure: direct question objects
+      return levelEntry ? [{ 
+        ...levelEntry, 
+        question: levelEntry.word || levelEntry.question,
+        unit: levelEntry.unit || 'Unit 1', 
+        section: levelEntry.section || 'vocabulary' 
+      }] : [];
     });
 
     const sortedVocabulary = flattenedVocabulary

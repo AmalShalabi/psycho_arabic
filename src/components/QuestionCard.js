@@ -42,8 +42,9 @@ const QuestionCard = ({
   };
 
   const handleAudioPlay = () => {
-    if (question.question) {
-      speakWord(question.question);
+    const wordToSpeak = question.word || question.question;
+    if (wordToSpeak) {
+      speakWord(wordToSpeak);
     }
   };
 
@@ -94,7 +95,7 @@ const QuestionCard = ({
             onClick={handleAudioPlay}
             title="اضغط للاستماع للنطق"
           >
-            {question.question}
+            {question.word || question.question}
           </h2>
           {(question.section === 'vocabulary' || question.audio) && (
             <button
